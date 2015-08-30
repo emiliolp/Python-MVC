@@ -1,0 +1,1268 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>bcC_clima</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Module&nbsp;bcC_clima
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="bcC_clima-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="bcC_clima-module.html">Module bcC_clima</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno">  1</tt>  <tt class="py-line"><tt class="py-comment">#!/usr/bin/env python</tt> </tt>
+<a name="L2"></a><tt class="py-lineno">  2</tt>  <tt class="py-line"><tt class="py-comment"># -*- coding: iso-8859-1 -*-</tt> </tt>
+<a name="L3"></a><tt class="py-lineno">  3</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L4"></a><tt class="py-lineno">  4</tt>  <tt class="py-line"><tt class="py-docstring">Created on Sun Jan 19 12:19:10 2014</tt> </tt>
+<a name="L5"></a><tt class="py-lineno">  5</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L6"></a><tt class="py-lineno">  6</tt>  <tt class="py-line"><tt class="py-docstring">@author: Pablo Garc&#237;a Tamarit</tt> </tt>
+<a name="L7"></a><tt class="py-lineno">  7</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L8"></a><tt class="py-lineno">  8</tt>  <tt class="py-line"> </tt>
+<a name="Atributos"></a><div id="Atributos-def"><a name="L9"></a><tt class="py-lineno">  9</tt> <a class="py-toggle" href="#" id="Atributos-toggle" onclick="return toggle('Atributos');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bcC_clima.Atributos-class.html">Atributos</a><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Atributos-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Atributos-expanded"><a name="L10"></a><tt class="py-lineno"> 10</tt>  <tt class="py-line">    <tt class="py-docstring">'''Definici&#243;n de atributo'''</tt>    </tt>
+<a name="Atributos.__init__"></a><div id="Atributos.__init__-def"><a name="L11"></a><tt class="py-lineno"> 11</tt> <a class="py-toggle" href="#" id="Atributos.__init__-toggle" onclick="return toggle('Atributos.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="bcC_clima.Atributos-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">nombre</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">,</tt> <tt class="py-param">atrib</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">,</tt> <tt class="py-param">defecto</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">,</tt> <tt class="py-param">booleano</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">,</tt> <tt class="py-param">valores</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Atributos.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Atributos.__init__-expanded"><a name="L12"></a><tt class="py-lineno"> 12</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">nombre</tt><tt class="py-op">=</tt><tt class="py-name">nombre</tt> </tt>
+<a name="L13"></a><tt class="py-lineno"> 13</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">atrib</tt><tt class="py-op">=</tt><tt class="py-name">atrib</tt> </tt>
+<a name="L14"></a><tt class="py-lineno"> 14</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">defecto</tt><tt class="py-op">=</tt><tt class="py-name">defecto</tt> </tt>
+<a name="L15"></a><tt class="py-lineno"> 15</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">booleano</tt><tt class="py-op">=</tt><tt class="py-name">booleano</tt> </tt>
+<a name="L16"></a><tt class="py-lineno"> 16</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">valores</tt><tt class="py-op">=</tt><tt class="py-name">valores</tt> </tt>
+</div></div><a name="L17"></a><tt class="py-lineno"> 17</tt>  <tt class="py-line">    </tt>
+<a name="L18"></a><tt class="py-lineno"> 18</tt>  <tt class="py-line"><tt class="py-string">'''Definici&#243;n de los atributos del sistema'''</tt>      </tt>
+<a name="Temp"></a><div id="Temp-def"><a name="L19"></a><tt class="py-lineno"> 19</tt> <a class="py-toggle" href="#" id="Temp-toggle" onclick="return toggle('Temp');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bcC_clima.Temp-class.html">Temp</a><tt class="py-op">(</tt><tt class="py-base-class">Atributos</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Temp-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Temp-expanded"><a name="Temp.__init__"></a><div id="Temp.__init__-def"><a name="L20"></a><tt class="py-lineno"> 20</tt> <a class="py-toggle" href="#" id="Temp.__init__-toggle" onclick="return toggle('Temp.__init__');">-</a><tt class="py-line">       <tt class="py-keyword">def</tt> <a class="py-def-name" href="bcC_clima.Temp-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">defecto</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">,</tt> <tt class="py-param">booleano</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Temp.__init__-collapsed" style="display:none;" pad="+++" indent="+++++++++++"></div><div id="Temp.__init__-expanded"><a name="L21"></a><tt class="py-lineno"> 21</tt>  <tt class="py-line">        <tt class="py-name">nombre</tt><tt class="py-op">=</tt><tt class="py-string">'Temperatura'</tt> </tt>
+<a name="L22"></a><tt class="py-lineno"> 22</tt>  <tt class="py-line">        <tt class="py-name">atrib</tt> <tt class="py-op">=</tt> <tt class="py-string">'Temperatura'</tt> </tt>
+<a name="L23"></a><tt class="py-lineno"> 23</tt>  <tt class="py-line">        <tt class="py-name">valores</tt><tt class="py-op">=</tt><tt class="py-op">[</tt><tt class="py-string">'muy baja'</tt><tt class="py-op">,</tt><tt class="py-string">'baja'</tt><tt class="py-op">,</tt><tt class="py-string">'suave'</tt><tt class="py-op">,</tt><tt class="py-string">'alta'</tt><tt class="py-op">,</tt><tt class="py-string">'muy alta'</tt><tt class="py-op">]</tt> </tt>
+<a name="L24"></a><tt class="py-lineno"> 24</tt>  <tt class="py-line">        <tt id="link-0" class="py-name" targets="Class bcC_clima.Atributos=bcC_clima.Atributos-class.html"><a title="bcC_clima.Atributos" class="py-name" href="#" onclick="return doclink('link-0', 'Atributos', 'link-0');">Atributos</a></tt><tt class="py-op">.</tt><tt id="link-1" class="py-name" targets="Method VistaClasificacion.VentanasAtributos.__init__()=VistaClasificacion.VentanasAtributos-class.html#__init__,Method bcC_clima.Atlantico.__init__()=bcC_clima.Atlantico-class.html#__init__,Method bcC_clima.Atributos.__init__()=bcC_clima.Atributos-class.html#__init__,Method bcC_clima.Caracteristica.__init__()=bcC_clima.Caracteristica-class.html#__init__,Method bcC_clima.Continental.__init__()=bcC_clima.Continental-class.html#__init__,Method bcC_clima.Desertico.__init__()=bcC_clima.Desertico-class.html#__init__,Method bcC_clima.Ecuatorial.__init__()=bcC_clima.Ecuatorial-class.html#__init__,Method bcC_clima.Mediterraneo.__init__()=bcC_clima.Mediterraneo-class.html#__init__,Method bcC_clima.Montana.__init__()=bcC_clima.Montana-class.html#__init__,Method bcC_clima.Polar.__init__()=bcC_clima.Polar-class.html#__init__,Method bcC_clima.Prec.__init__()=bcC_clima.Prec-class.html#__init__,Method bcC_clima.Precipitaciones.__init__()=bcC_clima.Precipitaciones-class.html#__init__,Method bcC_clima.Temp.__init__()=bcC_clima.Temp-class.html#__init__,Method bcC_clima.Temperatura.__init__()=bcC_clima.Temperatura-class.html#__init__,Method bcC_clima.Tropical.__init__()=bcC_clima.Tropical-class.html#__init__,Method bcC_clima.Veg.__init__()=bcC_clima.Veg-class.html#__init__,Method bcC_clima.Vegetacion.__init__()=bcC_clima.Vegetacion-class.html#__init__,Method bcC_clima.Zona.__init__()=bcC_clima.Zona-class.html#__init__,Method bcC_vehiculos.Asientos.__init__()=bcC_vehiculos.Asientos-class.html#__init__,Method bcC_vehiculos.Atributo.__init__()=bcC_vehiculos.Atributo-class.html#__init__,Method bcC_vehiculos.Caracteristica.__init__()=bcC_vehiculos.Caracteristica-class.html#__init__,Method bcC_vehiculos.Cilindrada.__init__()=bcC_vehiculos.Cilindrada-class.html#__init__,Method bcC_vehiculos.Edad.__init__()=bcC_vehiculos.Edad-class.html#__init__,Method bcC_vehiculos.Ejes.__init__()=bcC_vehiculos.Ejes-class.html#__init__,Method bcC_vehiculos.MercanciasPeligrosas.__init__()=bcC_vehiculos.MercanciasPeligrosas-class.html#__init__,Method bcC_vehiculos.Observable.__init__()=bcC_vehiculos.Observable-class.html#__init__,Method bcC_vehiculos.PermisoA.__init__()=bcC_vehiculos.PermisoA-class.html#__init__,Method bcC_vehiculos.PermisoA1.__init__()=bcC_vehiculos.PermisoA1-class.html#__init__,Method bcC_vehiculos.PermisoA2.__init__()=bcC_vehiculos.PermisoA2-class.html#__init__,Method bcC_vehiculos.PermisoADR.__init__()=bcC_vehiculos.PermisoADR-class.html#__init__,Method bcC_vehiculos.PermisoAM.__init__()=bcC_vehiculos.PermisoAM-class.html#__init__,Method bcC_vehiculos.PermisoB.__init__()=bcC_vehiculos.PermisoB-class.html#__init__,Method bcC_vehiculos.PermisoBTP.__init__()=bcC_vehiculos.PermisoBTP-class.html#__init__,Method bcC_vehiculos.PermisoC.__init__()=bcC_vehiculos.PermisoC-class.html#__init__,Method bcC_vehiculos.PermisoC1.__init__()=bcC_vehiculos.PermisoC1-class.html#__init__,Method bcC_vehiculos.PermisoD.__init__()=bcC_vehiculos.PermisoD-class.html#__init__,Method bcC_vehiculos.PermisoD1.__init__()=bcC_vehiculos.PermisoD1-class.html#__init__,Method bcC_vehiculos.PermisoE.__init__()=bcC_vehiculos.PermisoE-class.html#__init__,Method bcC_vehiculos.PesoRemolque.__init__()=bcC_vehiculos.PesoRemolque-class.html#__init__,Method bcC_vehiculos.Pma.__init__()=bcC_vehiculos.Pma-class.html#__init__,Method bcC_vehiculos.Potencia.__init__()=bcC_vehiculos.Potencia-class.html#__init__,Method bcC_vehiculos.Remolque.__init__()=bcC_vehiculos.Remolque-class.html#__init__,Method bcC_vehiculos.Ruedas.__init__()=bcC_vehiculos.Ruedas-class.html#__init__,Method bcC_vehiculos.Sidecar.__init__()=bcC_vehiculos.Sidecar-class.html#__init__,Method bcC_vehiculos.Taxi.__init__()=bcC_vehiculos.Taxi-class.html#__init__,Method bcC_vehiculos.TransportePersonas.__init__()=bcC_vehiculos.TransportePersonas-class.html#__init__,Method bcC_vehiculos.TransporteSanitario.__init__()=bcC_vehiculos.TransporteSanitario-class.html#__init__,Method bcC_vehiculos.Velmax.__init__()=bcC_vehiculos.Velmax-class.html#__init__,Method bcC_vehiculos.cilindrada.__init__()=bcC_vehiculos.cilindrada-class.html#__init__,Method bcC_vehiculos.edad.__init__()=bcC_vehiculos.edad-class.html#__init__,Method bcC_vehiculos.mercancias_peligrosas.__init__()=bcC_vehiculos.mercancias_peligrosas-class.html#__init__,Method bcC_vehiculos.n_asientos.__init__()=bcC_vehiculos.n_asientos-class.html#__init__,Method bcC_vehiculos.n_ejes.__init__()=bcC_vehiculos.n_ejes-class.html#__init__,Method bcC_vehiculos.n_ruedas.__init__()=bcC_vehiculos.n_ruedas-class.html#__init__,Method bcC_vehiculos.peso_remolque.__init__()=bcC_vehiculos.peso_remolque-class.html#__init__,Method bcC_vehiculos.pma.__init__()=bcC_vehiculos.pma-class.html#__init__,Method bcC_vehiculos.potencia.__init__()=bcC_vehiculos.potencia-class.html#__init__,Method bcC_vehiculos.remolque.__init__()=bcC_vehiculos.remolque-class.html#__init__,Method bcC_vehiculos.sidecar.__init__()=bcC_vehiculos.sidecar-class.html#__init__,Method bcC_vehiculos.taxi.__init__()=bcC_vehiculos.taxi-class.html#__init__,Method bcC_vehiculos.transporte_personas.__init__()=bcC_vehiculos.transporte_personas-class.html#__init__,Method bcC_vehiculos.transporte_sanitario.__init__()=bcC_vehiculos.transporte_sanitario-class.html#__init__,Method bcC_vehiculos.vel_max.__init__()=bcC_vehiculos.vel_max-class.html#__init__,Method mC.Equiparar.__init__()=mC.Equiparar-class.html#__init__,Method mC.Especificar.__init__()=mC.Especificar-class.html#__init__,Method mC.Inferencia.__init__()=mC.Inferencia-class.html#__init__,Method mC.MetodoPoda.__init__()=mC.MetodoPoda-class.html#__init__,Method mC.Obtener.__init__()=mC.Obtener-class.html#__init__,Method mC.Poda.__init__()=mC.Poda-class.html#__init__"><a title="VistaClasificacion.VentanasAtributos.__init__
+bcC_clima.Atlantico.__init__
+bcC_clima.Atributos.__init__
+bcC_clima.Caracteristica.__init__
+bcC_clima.Continental.__init__
+bcC_clima.Desertico.__init__
+bcC_clima.Ecuatorial.__init__
+bcC_clima.Mediterraneo.__init__
+bcC_clima.Montana.__init__
+bcC_clima.Polar.__init__
+bcC_clima.Prec.__init__
+bcC_clima.Precipitaciones.__init__
+bcC_clima.Temp.__init__
+bcC_clima.Temperatura.__init__
+bcC_clima.Tropical.__init__
+bcC_clima.Veg.__init__
+bcC_clima.Vegetacion.__init__
+bcC_clima.Zona.__init__
+bcC_vehiculos.Asientos.__init__
+bcC_vehiculos.Atributo.__init__
+bcC_vehiculos.Caracteristica.__init__
+bcC_vehiculos.Cilindrada.__init__
+bcC_vehiculos.Edad.__init__
+bcC_vehiculos.Ejes.__init__
+bcC_vehiculos.MercanciasPeligrosas.__init__
+bcC_vehiculos.Observable.__init__
+bcC_vehiculos.PermisoA.__init__
+bcC_vehiculos.PermisoA1.__init__
+bcC_vehiculos.PermisoA2.__init__
+bcC_vehiculos.PermisoADR.__init__
+bcC_vehiculos.PermisoAM.__init__
+bcC_vehiculos.PermisoB.__init__
+bcC_vehiculos.PermisoBTP.__init__
+bcC_vehiculos.PermisoC.__init__
+bcC_vehiculos.PermisoC1.__init__
+bcC_vehiculos.PermisoD.__init__
+bcC_vehiculos.PermisoD1.__init__
+bcC_vehiculos.PermisoE.__init__
+bcC_vehiculos.PesoRemolque.__init__
+bcC_vehiculos.Pma.__init__
+bcC_vehiculos.Potencia.__init__
+bcC_vehiculos.Remolque.__init__
+bcC_vehiculos.Ruedas.__init__
+bcC_vehiculos.Sidecar.__init__
+bcC_vehiculos.Taxi.__init__
+bcC_vehiculos.TransportePersonas.__init__
+bcC_vehiculos.TransporteSanitario.__init__
+bcC_vehiculos.Velmax.__init__
+bcC_vehiculos.cilindrada.__init__
+bcC_vehiculos.edad.__init__
+bcC_vehiculos.mercancias_peligrosas.__init__
+bcC_vehiculos.n_asientos.__init__
+bcC_vehiculos.n_ejes.__init__
+bcC_vehiculos.n_ruedas.__init__
+bcC_vehiculos.peso_remolque.__init__
+bcC_vehiculos.pma.__init__
+bcC_vehiculos.potencia.__init__
+bcC_vehiculos.remolque.__init__
+bcC_vehiculos.sidecar.__init__
+bcC_vehiculos.taxi.__init__
+bcC_vehiculos.transporte_personas.__init__
+bcC_vehiculos.transporte_sanitario.__init__
+bcC_vehiculos.vel_max.__init__
+mC.Equiparar.__init__
+mC.Especificar.__init__
+mC.Inferencia.__init__
+mC.MetodoPoda.__init__
+mC.Obtener.__init__
+mC.Poda.__init__" class="py-name" href="#" onclick="return doclink('link-1', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">nombre</tt><tt class="py-op">,</tt> <tt class="py-name">atrib</tt><tt class="py-op">,</tt> <tt class="py-name">defecto</tt><tt class="py-op">,</tt> <tt class="py-name">booleano</tt><tt class="py-op">,</tt> <tt class="py-name">valores</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L25"></a><tt class="py-lineno"> 25</tt>  <tt class="py-line">         </tt>
+<a name="Prec"></a><div id="Prec-def"><a name="L26"></a><tt class="py-lineno"> 26</tt> <a class="py-toggle" href="#" id="Prec-toggle" onclick="return toggle('Prec');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bcC_clima.Prec-class.html">Prec</a><tt class="py-op">(</tt><tt class="py-base-class">Atributos</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Prec-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Prec-expanded"><a name="Prec.__init__"></a><div id="Prec.__init__-def"><a name="L27"></a><tt class="py-lineno"> 27</tt> <a class="py-toggle" href="#" id="Prec.__init__-toggle" onclick="return toggle('Prec.__init__');">-</a><tt class="py-line">       <tt class="py-keyword">def</tt> <a class="py-def-name" href="bcC_clima.Prec-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">defecto</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">,</tt> <tt class="py-param">booleano</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Prec.__init__-collapsed" style="display:none;" pad="+++" indent="+++++++++++"></div><div id="Prec.__init__-expanded"><a name="L28"></a><tt class="py-lineno"> 28</tt>  <tt class="py-line">        <tt class="py-name">nombre</tt><tt class="py-op">=</tt><tt class="py-string">'Precipitaciones'</tt> </tt>
+<a name="L29"></a><tt class="py-lineno"> 29</tt>  <tt class="py-line">        <tt class="py-name">atrib</tt> <tt class="py-op">=</tt> <tt class="py-string">'Precipitaciones'</tt> </tt>
+<a name="L30"></a><tt class="py-lineno"> 30</tt>  <tt class="py-line">        <tt class="py-name">valores</tt><tt class="py-op">=</tt><tt class="py-op">[</tt><tt class="py-string">'escasas'</tt><tt class="py-op">,</tt><tt class="py-string">'alternantes'</tt><tt class="py-op">,</tt><tt class="py-string">'abundantes'</tt><tt class="py-op">]</tt> </tt>
+<a name="L31"></a><tt class="py-lineno"> 31</tt>  <tt class="py-line">        <tt id="link-2" class="py-name"><a title="bcC_clima.Atributos" class="py-name" href="#" onclick="return doclink('link-2', 'Atributos', 'link-0');">Atributos</a></tt><tt class="py-op">.</tt><tt id="link-3" class="py-name"><a title="VistaClasificacion.VentanasAtributos.__init__
+bcC_clima.Atlantico.__init__
+bcC_clima.Atributos.__init__
+bcC_clima.Caracteristica.__init__
+bcC_clima.Continental.__init__
+bcC_clima.Desertico.__init__
+bcC_clima.Ecuatorial.__init__
+bcC_clima.Mediterraneo.__init__
+bcC_clima.Montana.__init__
+bcC_clima.Polar.__init__
+bcC_clima.Prec.__init__
+bcC_clima.Precipitaciones.__init__
+bcC_clima.Temp.__init__
+bcC_clima.Temperatura.__init__
+bcC_clima.Tropical.__init__
+bcC_clima.Veg.__init__
+bcC_clima.Vegetacion.__init__
+bcC_clima.Zona.__init__
+bcC_vehiculos.Asientos.__init__
+bcC_vehiculos.Atributo.__init__
+bcC_vehiculos.Caracteristica.__init__
+bcC_vehiculos.Cilindrada.__init__
+bcC_vehiculos.Edad.__init__
+bcC_vehiculos.Ejes.__init__
+bcC_vehiculos.MercanciasPeligrosas.__init__
+bcC_vehiculos.Observable.__init__
+bcC_vehiculos.PermisoA.__init__
+bcC_vehiculos.PermisoA1.__init__
+bcC_vehiculos.PermisoA2.__init__
+bcC_vehiculos.PermisoADR.__init__
+bcC_vehiculos.PermisoAM.__init__
+bcC_vehiculos.PermisoB.__init__
+bcC_vehiculos.PermisoBTP.__init__
+bcC_vehiculos.PermisoC.__init__
+bcC_vehiculos.PermisoC1.__init__
+bcC_vehiculos.PermisoD.__init__
+bcC_vehiculos.PermisoD1.__init__
+bcC_vehiculos.PermisoE.__init__
+bcC_vehiculos.PesoRemolque.__init__
+bcC_vehiculos.Pma.__init__
+bcC_vehiculos.Potencia.__init__
+bcC_vehiculos.Remolque.__init__
+bcC_vehiculos.Ruedas.__init__
+bcC_vehiculos.Sidecar.__init__
+bcC_vehiculos.Taxi.__init__
+bcC_vehiculos.TransportePersonas.__init__
+bcC_vehiculos.TransporteSanitario.__init__
+bcC_vehiculos.Velmax.__init__
+bcC_vehiculos.cilindrada.__init__
+bcC_vehiculos.edad.__init__
+bcC_vehiculos.mercancias_peligrosas.__init__
+bcC_vehiculos.n_asientos.__init__
+bcC_vehiculos.n_ejes.__init__
+bcC_vehiculos.n_ruedas.__init__
+bcC_vehiculos.peso_remolque.__init__
+bcC_vehiculos.pma.__init__
+bcC_vehiculos.potencia.__init__
+bcC_vehiculos.remolque.__init__
+bcC_vehiculos.sidecar.__init__
+bcC_vehiculos.taxi.__init__
+bcC_vehiculos.transporte_personas.__init__
+bcC_vehiculos.transporte_sanitario.__init__
+bcC_vehiculos.vel_max.__init__
+mC.Equiparar.__init__
+mC.Especificar.__init__
+mC.Inferencia.__init__
+mC.MetodoPoda.__init__
+mC.Obtener.__init__
+mC.Poda.__init__" class="py-name" href="#" onclick="return doclink('link-3', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">nombre</tt><tt class="py-op">,</tt> <tt class="py-name">atrib</tt><tt class="py-op">,</tt> <tt class="py-name">defecto</tt><tt class="py-op">,</tt> <tt class="py-name">booleano</tt><tt class="py-op">,</tt> <tt class="py-name">valores</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L32"></a><tt class="py-lineno"> 32</tt>  <tt class="py-line"> </tt>
+<a name="Veg"></a><div id="Veg-def"><a name="L33"></a><tt class="py-lineno"> 33</tt> <a class="py-toggle" href="#" id="Veg-toggle" onclick="return toggle('Veg');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bcC_clima.Veg-class.html">Veg</a><tt class="py-op">(</tt><tt class="py-base-class">Atributos</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Veg-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Veg-expanded"><a name="Veg.__init__"></a><div id="Veg.__init__-def"><a name="L34"></a><tt class="py-lineno"> 34</tt> <a class="py-toggle" href="#" id="Veg.__init__-toggle" onclick="return toggle('Veg.__init__');">-</a><tt class="py-line">       <tt class="py-keyword">def</tt> <a class="py-def-name" href="bcC_clima.Veg-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">defecto</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">,</tt> <tt class="py-param">booleano</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Veg.__init__-collapsed" style="display:none;" pad="+++" indent="+++++++++++"></div><div id="Veg.__init__-expanded"><a name="L35"></a><tt class="py-lineno"> 35</tt>  <tt class="py-line">        <tt class="py-name">nombre</tt><tt class="py-op">=</tt><tt class="py-string">'Vegetacion'</tt> </tt>
+<a name="L36"></a><tt class="py-lineno"> 36</tt>  <tt class="py-line">        <tt class="py-name">atrib</tt> <tt class="py-op">=</tt> <tt class="py-string">'Vegetacion'</tt> </tt>
+<a name="L37"></a><tt class="py-lineno"> 37</tt>  <tt class="py-line">        <tt class="py-name">valores</tt><tt class="py-op">=</tt><tt class="py-op">[</tt><tt class="py-string">'selva'</tt><tt class="py-op">,</tt><tt class="py-string">'sabana'</tt><tt class="py-op">,</tt><tt class="py-string">'escasa'</tt><tt class="py-op">,</tt><tt class="py-string">'bosque mediterraneo'</tt><tt class="py-op">,</tt><tt class="py-string">'bosque atlantico'</tt><tt class="py-op">,</tt><tt class="py-string">'bosque boreal o taiga'</tt><tt class="py-op">,</tt><tt class="py-string">'tundra'</tt><tt class="py-op">,</tt><tt class="py-string">'escalonada'</tt><tt class="py-op">]</tt> </tt>
+<a name="L38"></a><tt class="py-lineno"> 38</tt>  <tt class="py-line">        <tt id="link-4" class="py-name"><a title="bcC_clima.Atributos" class="py-name" href="#" onclick="return doclink('link-4', 'Atributos', 'link-0');">Atributos</a></tt><tt class="py-op">.</tt><tt id="link-5" class="py-name"><a title="VistaClasificacion.VentanasAtributos.__init__
+bcC_clima.Atlantico.__init__
+bcC_clima.Atributos.__init__
+bcC_clima.Caracteristica.__init__
+bcC_clima.Continental.__init__
+bcC_clima.Desertico.__init__
+bcC_clima.Ecuatorial.__init__
+bcC_clima.Mediterraneo.__init__
+bcC_clima.Montana.__init__
+bcC_clima.Polar.__init__
+bcC_clima.Prec.__init__
+bcC_clima.Precipitaciones.__init__
+bcC_clima.Temp.__init__
+bcC_clima.Temperatura.__init__
+bcC_clima.Tropical.__init__
+bcC_clima.Veg.__init__
+bcC_clima.Vegetacion.__init__
+bcC_clima.Zona.__init__
+bcC_vehiculos.Asientos.__init__
+bcC_vehiculos.Atributo.__init__
+bcC_vehiculos.Caracteristica.__init__
+bcC_vehiculos.Cilindrada.__init__
+bcC_vehiculos.Edad.__init__
+bcC_vehiculos.Ejes.__init__
+bcC_vehiculos.MercanciasPeligrosas.__init__
+bcC_vehiculos.Observable.__init__
+bcC_vehiculos.PermisoA.__init__
+bcC_vehiculos.PermisoA1.__init__
+bcC_vehiculos.PermisoA2.__init__
+bcC_vehiculos.PermisoADR.__init__
+bcC_vehiculos.PermisoAM.__init__
+bcC_vehiculos.PermisoB.__init__
+bcC_vehiculos.PermisoBTP.__init__
+bcC_vehiculos.PermisoC.__init__
+bcC_vehiculos.PermisoC1.__init__
+bcC_vehiculos.PermisoD.__init__
+bcC_vehiculos.PermisoD1.__init__
+bcC_vehiculos.PermisoE.__init__
+bcC_vehiculos.PesoRemolque.__init__
+bcC_vehiculos.Pma.__init__
+bcC_vehiculos.Potencia.__init__
+bcC_vehiculos.Remolque.__init__
+bcC_vehiculos.Ruedas.__init__
+bcC_vehiculos.Sidecar.__init__
+bcC_vehiculos.Taxi.__init__
+bcC_vehiculos.TransportePersonas.__init__
+bcC_vehiculos.TransporteSanitario.__init__
+bcC_vehiculos.Velmax.__init__
+bcC_vehiculos.cilindrada.__init__
+bcC_vehiculos.edad.__init__
+bcC_vehiculos.mercancias_peligrosas.__init__
+bcC_vehiculos.n_asientos.__init__
+bcC_vehiculos.n_ejes.__init__
+bcC_vehiculos.n_ruedas.__init__
+bcC_vehiculos.peso_remolque.__init__
+bcC_vehiculos.pma.__init__
+bcC_vehiculos.potencia.__init__
+bcC_vehiculos.remolque.__init__
+bcC_vehiculos.sidecar.__init__
+bcC_vehiculos.taxi.__init__
+bcC_vehiculos.transporte_personas.__init__
+bcC_vehiculos.transporte_sanitario.__init__
+bcC_vehiculos.vel_max.__init__
+mC.Equiparar.__init__
+mC.Especificar.__init__
+mC.Inferencia.__init__
+mC.MetodoPoda.__init__
+mC.Obtener.__init__
+mC.Poda.__init__" class="py-name" href="#" onclick="return doclink('link-5', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">nombre</tt><tt class="py-op">,</tt> <tt class="py-name">atrib</tt><tt class="py-op">,</tt> <tt class="py-name">defecto</tt><tt class="py-op">,</tt> <tt class="py-name">booleano</tt><tt class="py-op">,</tt> <tt class="py-name">valores</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L39"></a><tt class="py-lineno"> 39</tt>  <tt class="py-line">         </tt>
+<a name="listaAtributos"></a><div id="listaAtributos-def"><a name="L40"></a><tt class="py-lineno"> 40</tt> <a class="py-toggle" href="#" id="listaAtributos-toggle" onclick="return toggle('listaAtributos');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="bcC_clima-module.html#listaAtributos">listaAtributos</a> <tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="listaAtributos-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="listaAtributos-expanded"><a name="L41"></a><tt class="py-lineno"> 41</tt>  <tt class="py-line">        <tt class="py-docstring">'''Devuelve la lista de observables de la base del conocimiento'''</tt> </tt>
+<a name="L42"></a><tt class="py-lineno"> 42</tt>  <tt class="py-line">        <tt id="link-6" class="py-name" targets="Variable appClasificacion.atributos=appClasificacion-module.html#atributos"><a title="appClasificacion.atributos" class="py-name" href="#" onclick="return doclink('link-6', 'atributos', 'link-6');">atributos</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
+<a name="L43"></a><tt class="py-lineno"> 43</tt>  <tt class="py-line">        <tt id="link-7" class="py-name"><a title="appClasificacion.atributos" class="py-name" href="#" onclick="return doclink('link-7', 'atributos', 'link-6');">atributos</a></tt><tt class="py-op">.</tt><tt class="py-name">append</tt> <tt class="py-op">(</tt><tt id="link-8" class="py-name" targets="Class bcC_clima.Temp=bcC_clima.Temp-class.html"><a title="bcC_clima.Temp" class="py-name" href="#" onclick="return doclink('link-8', 'Temp', 'link-8');">Temp</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L44"></a><tt class="py-lineno"> 44</tt>  <tt class="py-line">        <tt id="link-9" class="py-name"><a title="appClasificacion.atributos" class="py-name" href="#" onclick="return doclink('link-9', 'atributos', 'link-6');">atributos</a></tt><tt class="py-op">.</tt><tt class="py-name">append</tt> <tt class="py-op">(</tt><tt id="link-10" class="py-name" targets="Class bcC_clima.Prec=bcC_clima.Prec-class.html"><a title="bcC_clima.Prec" class="py-name" href="#" onclick="return doclink('link-10', 'Prec', 'link-10');">Prec</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L45"></a><tt class="py-lineno"> 45</tt>  <tt class="py-line">        <tt id="link-11" class="py-name"><a title="appClasificacion.atributos" class="py-name" href="#" onclick="return doclink('link-11', 'atributos', 'link-6');">atributos</a></tt><tt class="py-op">.</tt><tt class="py-name">append</tt> <tt class="py-op">(</tt><tt id="link-12" class="py-name" targets="Class bcC_clima.Veg=bcC_clima.Veg-class.html"><a title="bcC_clima.Veg" class="py-name" href="#" onclick="return doclink('link-12', 'Veg', 'link-12');">Veg</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L46"></a><tt class="py-lineno"> 46</tt>  <tt class="py-line"> </tt>
+<a name="L47"></a><tt class="py-lineno"> 47</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt id="link-13" class="py-name"><a title="appClasificacion.atributos" class="py-name" href="#" onclick="return doclink('link-13', 'atributos', 'link-6');">atributos</a></tt> </tt>
+</div><a name="L48"></a><tt class="py-lineno"> 48</tt>  <tt class="py-line"> </tt>
+<a name="Caracteristica"></a><div id="Caracteristica-def"><a name="L49"></a><tt class="py-lineno"> 49</tt> <a class="py-toggle" href="#" id="Caracteristica-toggle" onclick="return toggle('Caracteristica');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bcC_clima.Caracteristica-class.html">Caracteristica</a><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Caracteristica-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Caracteristica-expanded"><a name="L50"></a><tt class="py-lineno"> 50</tt>  <tt class="py-line">    <tt class="py-docstring">'''Definici&#243;n de una caracteristica gen&#233;rica'''</tt> </tt>
+<a name="Caracteristica.__init__"></a><div id="Caracteristica.__init__-def"><a name="L51"></a><tt class="py-lineno"> 51</tt> <a class="py-toggle" href="#" id="Caracteristica.__init__-toggle" onclick="return toggle('Caracteristica.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="bcC_clima.Caracteristica-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">nombre</tt><tt class="py-op">=</tt><tt class="py-name">None</tt><tt class="py-op">,</tt><tt class="py-param">valoresPermitidos</tt><tt class="py-op">=</tt><tt class="py-name">None</tt><tt class="py-op">,</tt><tt class="py-param">valor</tt><tt class="py-op">=</tt><tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Caracteristica.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Caracteristica.__init__-expanded"><a name="L52"></a><tt class="py-lineno"> 52</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">nombre</tt><tt class="py-op">=</tt><tt class="py-name">nombre</tt> </tt>
+<a name="L53"></a><tt class="py-lineno"> 53</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt><tt class="py-op">=</tt><tt class="py-name">valor</tt> </tt>
+<a name="L54"></a><tt class="py-lineno"> 54</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">valoresPermitidos</tt><tt class="py-op">=</tt><tt class="py-name">valoresPermitidos</tt> </tt>
+</div></div><a name="L55"></a><tt class="py-lineno"> 55</tt>  <tt class="py-line">  </tt>
+<a name="L56"></a><tt class="py-lineno"> 56</tt>  <tt class="py-line"><tt class="py-string">'''Definici&#243;n de caracter&#237;sticas temperatura, precipitaciones y vegetacion'''</tt>        </tt>
+<a name="Temperatura"></a><div id="Temperatura-def"><a name="L57"></a><tt class="py-lineno"> 57</tt> <a class="py-toggle" href="#" id="Temperatura-toggle" onclick="return toggle('Temperatura');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bcC_clima.Temperatura-class.html">Temperatura</a><tt class="py-op">(</tt><tt class="py-base-class">Caracteristica</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Temperatura-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Temperatura-expanded"><a name="Temperatura.__init__"></a><div id="Temperatura.__init__-def"><a name="L58"></a><tt class="py-lineno"> 58</tt> <a class="py-toggle" href="#" id="Temperatura.__init__-toggle" onclick="return toggle('Temperatura.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="bcC_clima.Temperatura-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">valor</tt><tt class="py-op">=</tt><tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Temperatura.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Temperatura.__init__-expanded"><a name="L59"></a><tt class="py-lineno"> 59</tt>  <tt class="py-line">        <tt class="py-name">nombre</tt><tt class="py-op">=</tt><tt class="py-string">'temperatura'</tt> </tt>
+<a name="L60"></a><tt class="py-lineno"> 60</tt>  <tt class="py-line">        <tt class="py-name">valoresPermitidos</tt><tt class="py-op">=</tt><tt class="py-op">[</tt><tt class="py-string">'muy baja'</tt><tt class="py-op">,</tt><tt class="py-string">'baja'</tt><tt class="py-op">,</tt><tt class="py-string">'suave'</tt><tt class="py-op">,</tt><tt class="py-string">'alta'</tt><tt class="py-op">,</tt><tt class="py-string">'muy alta'</tt><tt class="py-op">]</tt> </tt>
+<a name="L61"></a><tt class="py-lineno"> 61</tt>  <tt class="py-line">        <tt id="link-14" class="py-name" targets="Class bcC_clima.Caracteristica=bcC_clima.Caracteristica-class.html,Class bcC_vehiculos.Caracteristica=bcC_vehiculos.Caracteristica-class.html"><a title="bcC_clima.Caracteristica
+bcC_vehiculos.Caracteristica" class="py-name" href="#" onclick="return doclink('link-14', 'Caracteristica', 'link-14');">Caracteristica</a></tt><tt class="py-op">.</tt><tt id="link-15" class="py-name"><a title="VistaClasificacion.VentanasAtributos.__init__
+bcC_clima.Atlantico.__init__
+bcC_clima.Atributos.__init__
+bcC_clima.Caracteristica.__init__
+bcC_clima.Continental.__init__
+bcC_clima.Desertico.__init__
+bcC_clima.Ecuatorial.__init__
+bcC_clima.Mediterraneo.__init__
+bcC_clima.Montana.__init__
+bcC_clima.Polar.__init__
+bcC_clima.Prec.__init__
+bcC_clima.Precipitaciones.__init__
+bcC_clima.Temp.__init__
+bcC_clima.Temperatura.__init__
+bcC_clima.Tropical.__init__
+bcC_clima.Veg.__init__
+bcC_clima.Vegetacion.__init__
+bcC_clima.Zona.__init__
+bcC_vehiculos.Asientos.__init__
+bcC_vehiculos.Atributo.__init__
+bcC_vehiculos.Caracteristica.__init__
+bcC_vehiculos.Cilindrada.__init__
+bcC_vehiculos.Edad.__init__
+bcC_vehiculos.Ejes.__init__
+bcC_vehiculos.MercanciasPeligrosas.__init__
+bcC_vehiculos.Observable.__init__
+bcC_vehiculos.PermisoA.__init__
+bcC_vehiculos.PermisoA1.__init__
+bcC_vehiculos.PermisoA2.__init__
+bcC_vehiculos.PermisoADR.__init__
+bcC_vehiculos.PermisoAM.__init__
+bcC_vehiculos.PermisoB.__init__
+bcC_vehiculos.PermisoBTP.__init__
+bcC_vehiculos.PermisoC.__init__
+bcC_vehiculos.PermisoC1.__init__
+bcC_vehiculos.PermisoD.__init__
+bcC_vehiculos.PermisoD1.__init__
+bcC_vehiculos.PermisoE.__init__
+bcC_vehiculos.PesoRemolque.__init__
+bcC_vehiculos.Pma.__init__
+bcC_vehiculos.Potencia.__init__
+bcC_vehiculos.Remolque.__init__
+bcC_vehiculos.Ruedas.__init__
+bcC_vehiculos.Sidecar.__init__
+bcC_vehiculos.Taxi.__init__
+bcC_vehiculos.TransportePersonas.__init__
+bcC_vehiculos.TransporteSanitario.__init__
+bcC_vehiculos.Velmax.__init__
+bcC_vehiculos.cilindrada.__init__
+bcC_vehiculos.edad.__init__
+bcC_vehiculos.mercancias_peligrosas.__init__
+bcC_vehiculos.n_asientos.__init__
+bcC_vehiculos.n_ejes.__init__
+bcC_vehiculos.n_ruedas.__init__
+bcC_vehiculos.peso_remolque.__init__
+bcC_vehiculos.pma.__init__
+bcC_vehiculos.potencia.__init__
+bcC_vehiculos.remolque.__init__
+bcC_vehiculos.sidecar.__init__
+bcC_vehiculos.taxi.__init__
+bcC_vehiculos.transporte_personas.__init__
+bcC_vehiculos.transporte_sanitario.__init__
+bcC_vehiculos.vel_max.__init__
+mC.Equiparar.__init__
+mC.Especificar.__init__
+mC.Inferencia.__init__
+mC.MetodoPoda.__init__
+mC.Obtener.__init__
+mC.Poda.__init__" class="py-name" href="#" onclick="return doclink('link-15', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt><tt class="py-name">nombre</tt><tt class="py-op">,</tt><tt class="py-name">valoresPermitidos</tt><tt class="py-op">,</tt><tt class="py-name">valor</tt><tt class="py-op">)</tt> </tt>
+<a name="L62"></a><tt class="py-lineno"> 62</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt><tt class="py-op">=</tt><tt class="py-name">valor</tt> </tt>
+</div></div><a name="L63"></a><tt class="py-lineno"> 63</tt>  <tt class="py-line">         </tt>
+<a name="Precipitaciones"></a><div id="Precipitaciones-def"><a name="L64"></a><tt class="py-lineno"> 64</tt> <a class="py-toggle" href="#" id="Precipitaciones-toggle" onclick="return toggle('Precipitaciones');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bcC_clima.Precipitaciones-class.html">Precipitaciones</a><tt class="py-op">(</tt><tt class="py-base-class">Caracteristica</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Precipitaciones-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Precipitaciones-expanded"><a name="Precipitaciones.__init__"></a><div id="Precipitaciones.__init__-def"><a name="L65"></a><tt class="py-lineno"> 65</tt> <a class="py-toggle" href="#" id="Precipitaciones.__init__-toggle" onclick="return toggle('Precipitaciones.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="bcC_clima.Precipitaciones-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">valor</tt><tt class="py-op">=</tt><tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt>  </tt>
+</div><a name="L66"></a><tt class="py-lineno"> 66</tt>  <tt class="py-line">        <tt class="py-name">nombre</tt><tt class="py-op">=</tt><tt class="py-string">'precipitaciones'</tt> </tt>
+<a name="L67"></a><tt class="py-lineno"> 67</tt>  <tt class="py-line">        <tt class="py-name">valoresPermitidos</tt><tt class="py-op">=</tt><tt class="py-op">[</tt><tt class="py-string">'escasas'</tt><tt class="py-op">,</tt><tt class="py-string">'alternantes'</tt><tt class="py-op">,</tt><tt class="py-string">'abundantes'</tt><tt class="py-op">]</tt> </tt>
+<a name="L68"></a><tt class="py-lineno"> 68</tt>  <tt class="py-line">        <tt id="link-16" class="py-name"><a title="bcC_clima.Caracteristica
+bcC_vehiculos.Caracteristica" class="py-name" href="#" onclick="return doclink('link-16', 'Caracteristica', 'link-14');">Caracteristica</a></tt><tt class="py-op">.</tt><tt id="link-17" class="py-name"><a title="VistaClasificacion.VentanasAtributos.__init__
+bcC_clima.Atlantico.__init__
+bcC_clima.Atributos.__init__
+bcC_clima.Caracteristica.__init__
+bcC_clima.Continental.__init__
+bcC_clima.Desertico.__init__
+bcC_clima.Ecuatorial.__init__
+bcC_clima.Mediterraneo.__init__
+bcC_clima.Montana.__init__
+bcC_clima.Polar.__init__
+bcC_clima.Prec.__init__
+bcC_clima.Precipitaciones.__init__
+bcC_clima.Temp.__init__
+bcC_clima.Temperatura.__init__
+bcC_clima.Tropical.__init__
+bcC_clima.Veg.__init__
+bcC_clima.Vegetacion.__init__
+bcC_clima.Zona.__init__
+bcC_vehiculos.Asientos.__init__
+bcC_vehiculos.Atributo.__init__
+bcC_vehiculos.Caracteristica.__init__
+bcC_vehiculos.Cilindrada.__init__
+bcC_vehiculos.Edad.__init__
+bcC_vehiculos.Ejes.__init__
+bcC_vehiculos.MercanciasPeligrosas.__init__
+bcC_vehiculos.Observable.__init__
+bcC_vehiculos.PermisoA.__init__
+bcC_vehiculos.PermisoA1.__init__
+bcC_vehiculos.PermisoA2.__init__
+bcC_vehiculos.PermisoADR.__init__
+bcC_vehiculos.PermisoAM.__init__
+bcC_vehiculos.PermisoB.__init__
+bcC_vehiculos.PermisoBTP.__init__
+bcC_vehiculos.PermisoC.__init__
+bcC_vehiculos.PermisoC1.__init__
+bcC_vehiculos.PermisoD.__init__
+bcC_vehiculos.PermisoD1.__init__
+bcC_vehiculos.PermisoE.__init__
+bcC_vehiculos.PesoRemolque.__init__
+bcC_vehiculos.Pma.__init__
+bcC_vehiculos.Potencia.__init__
+bcC_vehiculos.Remolque.__init__
+bcC_vehiculos.Ruedas.__init__
+bcC_vehiculos.Sidecar.__init__
+bcC_vehiculos.Taxi.__init__
+bcC_vehiculos.TransportePersonas.__init__
+bcC_vehiculos.TransporteSanitario.__init__
+bcC_vehiculos.Velmax.__init__
+bcC_vehiculos.cilindrada.__init__
+bcC_vehiculos.edad.__init__
+bcC_vehiculos.mercancias_peligrosas.__init__
+bcC_vehiculos.n_asientos.__init__
+bcC_vehiculos.n_ejes.__init__
+bcC_vehiculos.n_ruedas.__init__
+bcC_vehiculos.peso_remolque.__init__
+bcC_vehiculos.pma.__init__
+bcC_vehiculos.potencia.__init__
+bcC_vehiculos.remolque.__init__
+bcC_vehiculos.sidecar.__init__
+bcC_vehiculos.taxi.__init__
+bcC_vehiculos.transporte_personas.__init__
+bcC_vehiculos.transporte_sanitario.__init__
+bcC_vehiculos.vel_max.__init__
+mC.Equiparar.__init__
+mC.Especificar.__init__
+mC.Inferencia.__init__
+mC.MetodoPoda.__init__
+mC.Obtener.__init__
+mC.Poda.__init__" class="py-name" href="#" onclick="return doclink('link-17', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt><tt class="py-name">nombre</tt><tt class="py-op">,</tt><tt class="py-name">valoresPermitidos</tt><tt class="py-op">,</tt><tt class="py-name">valor</tt><tt class="py-op">)</tt> </tt>
+<a name="L69"></a><tt class="py-lineno"> 69</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt><tt class="py-op">=</tt><tt class="py-name">valor</tt>       </tt>
+</div></div><a name="L70"></a><tt class="py-lineno"> 70</tt>  <tt class="py-line"> </tt>
+<a name="Vegetacion"></a><div id="Vegetacion-def"><a name="L71"></a><tt class="py-lineno"> 71</tt> <a class="py-toggle" href="#" id="Vegetacion-toggle" onclick="return toggle('Vegetacion');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bcC_clima.Vegetacion-class.html">Vegetacion</a><tt class="py-op">(</tt><tt class="py-base-class">Caracteristica</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Vegetacion-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Vegetacion-expanded"><a name="Vegetacion.__init__"></a><div id="Vegetacion.__init__-def"><a name="L72"></a><tt class="py-lineno"> 72</tt> <a class="py-toggle" href="#" id="Vegetacion.__init__-toggle" onclick="return toggle('Vegetacion.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="bcC_clima.Vegetacion-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">valor</tt><tt class="py-op">=</tt><tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Vegetacion.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Vegetacion.__init__-expanded"><a name="L73"></a><tt class="py-lineno"> 73</tt>  <tt class="py-line">        <tt class="py-name">nombre</tt><tt class="py-op">=</tt><tt class="py-string">'vegetacion'</tt> </tt>
+<a name="L74"></a><tt class="py-lineno"> 74</tt>  <tt class="py-line">        <tt class="py-name">valoresPermitidos</tt><tt class="py-op">=</tt><tt class="py-op">[</tt><tt class="py-string">'selva'</tt><tt class="py-op">,</tt><tt class="py-string">'sabana'</tt><tt class="py-op">,</tt><tt class="py-string">'escasa'</tt><tt class="py-op">,</tt><tt class="py-string">'bosque mediterraneo'</tt><tt class="py-op">,</tt><tt class="py-string">'bosque atlantico'</tt><tt class="py-op">,</tt><tt class="py-string">'bosque boreal o taiga'</tt><tt class="py-op">,</tt><tt class="py-string">'tundra'</tt><tt class="py-op">,</tt><tt class="py-string">'escalonada'</tt><tt class="py-op">]</tt> </tt>
+<a name="L75"></a><tt class="py-lineno"> 75</tt>  <tt class="py-line">        <tt id="link-18" class="py-name"><a title="bcC_clima.Caracteristica
+bcC_vehiculos.Caracteristica" class="py-name" href="#" onclick="return doclink('link-18', 'Caracteristica', 'link-14');">Caracteristica</a></tt><tt class="py-op">.</tt><tt id="link-19" class="py-name"><a title="VistaClasificacion.VentanasAtributos.__init__
+bcC_clima.Atlantico.__init__
+bcC_clima.Atributos.__init__
+bcC_clima.Caracteristica.__init__
+bcC_clima.Continental.__init__
+bcC_clima.Desertico.__init__
+bcC_clima.Ecuatorial.__init__
+bcC_clima.Mediterraneo.__init__
+bcC_clima.Montana.__init__
+bcC_clima.Polar.__init__
+bcC_clima.Prec.__init__
+bcC_clima.Precipitaciones.__init__
+bcC_clima.Temp.__init__
+bcC_clima.Temperatura.__init__
+bcC_clima.Tropical.__init__
+bcC_clima.Veg.__init__
+bcC_clima.Vegetacion.__init__
+bcC_clima.Zona.__init__
+bcC_vehiculos.Asientos.__init__
+bcC_vehiculos.Atributo.__init__
+bcC_vehiculos.Caracteristica.__init__
+bcC_vehiculos.Cilindrada.__init__
+bcC_vehiculos.Edad.__init__
+bcC_vehiculos.Ejes.__init__
+bcC_vehiculos.MercanciasPeligrosas.__init__
+bcC_vehiculos.Observable.__init__
+bcC_vehiculos.PermisoA.__init__
+bcC_vehiculos.PermisoA1.__init__
+bcC_vehiculos.PermisoA2.__init__
+bcC_vehiculos.PermisoADR.__init__
+bcC_vehiculos.PermisoAM.__init__
+bcC_vehiculos.PermisoB.__init__
+bcC_vehiculos.PermisoBTP.__init__
+bcC_vehiculos.PermisoC.__init__
+bcC_vehiculos.PermisoC1.__init__
+bcC_vehiculos.PermisoD.__init__
+bcC_vehiculos.PermisoD1.__init__
+bcC_vehiculos.PermisoE.__init__
+bcC_vehiculos.PesoRemolque.__init__
+bcC_vehiculos.Pma.__init__
+bcC_vehiculos.Potencia.__init__
+bcC_vehiculos.Remolque.__init__
+bcC_vehiculos.Ruedas.__init__
+bcC_vehiculos.Sidecar.__init__
+bcC_vehiculos.Taxi.__init__
+bcC_vehiculos.TransportePersonas.__init__
+bcC_vehiculos.TransporteSanitario.__init__
+bcC_vehiculos.Velmax.__init__
+bcC_vehiculos.cilindrada.__init__
+bcC_vehiculos.edad.__init__
+bcC_vehiculos.mercancias_peligrosas.__init__
+bcC_vehiculos.n_asientos.__init__
+bcC_vehiculos.n_ejes.__init__
+bcC_vehiculos.n_ruedas.__init__
+bcC_vehiculos.peso_remolque.__init__
+bcC_vehiculos.pma.__init__
+bcC_vehiculos.potencia.__init__
+bcC_vehiculos.remolque.__init__
+bcC_vehiculos.sidecar.__init__
+bcC_vehiculos.taxi.__init__
+bcC_vehiculos.transporte_personas.__init__
+bcC_vehiculos.transporte_sanitario.__init__
+bcC_vehiculos.vel_max.__init__
+mC.Equiparar.__init__
+mC.Especificar.__init__
+mC.Inferencia.__init__
+mC.MetodoPoda.__init__
+mC.Obtener.__init__
+mC.Poda.__init__" class="py-name" href="#" onclick="return doclink('link-19', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt><tt class="py-name">nombre</tt><tt class="py-op">,</tt><tt class="py-name">valoresPermitidos</tt><tt class="py-op">,</tt><tt class="py-name">valor</tt><tt class="py-op">)</tt> </tt>
+<a name="L76"></a><tt class="py-lineno"> 76</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt><tt class="py-op">=</tt><tt class="py-name">valor</tt> </tt>
+</div></div><a name="L77"></a><tt class="py-lineno"> 77</tt>  <tt class="py-line">                              </tt>
+<a name="caracteristicas"></a><div id="caracteristicas-def"><a name="L78"></a><tt class="py-lineno"> 78</tt> <a class="py-toggle" href="#" id="caracteristicas-toggle" onclick="return toggle('caracteristicas');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="bcC_clima-module.html#caracteristicas">caracteristicas</a><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="caracteristicas-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="caracteristicas-expanded"><a name="L79"></a><tt class="py-lineno"> 79</tt>  <tt class="py-line">    <tt class="py-docstring">'''Devuelve la lista de caracteristicas de la base de conocimiento'''</tt> </tt>
+<a name="L80"></a><tt class="py-lineno"> 80</tt>  <tt class="py-line">    <tt class="py-name">obs</tt><tt class="py-op">=</tt><tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
+<a name="L81"></a><tt class="py-lineno"> 81</tt>  <tt class="py-line">    <tt class="py-name">obs</tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt id="link-20" class="py-name" targets="Class bcC_clima.Temperatura=bcC_clima.Temperatura-class.html"><a title="bcC_clima.Temperatura" class="py-name" href="#" onclick="return doclink('link-20', 'Temperatura', 'link-20');">Temperatura</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L82"></a><tt class="py-lineno"> 82</tt>  <tt class="py-line">    <tt class="py-name">obs</tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt id="link-21" class="py-name" targets="Class bcC_clima.Precipitaciones=bcC_clima.Precipitaciones-class.html"><a title="bcC_clima.Precipitaciones" class="py-name" href="#" onclick="return doclink('link-21', 'Precipitaciones', 'link-21');">Precipitaciones</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L83"></a><tt class="py-lineno"> 83</tt>  <tt class="py-line">    <tt class="py-name">obs</tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt id="link-22" class="py-name" targets="Class bcC_clima.Vegetacion=bcC_clima.Vegetacion-class.html"><a title="bcC_clima.Vegetacion" class="py-name" href="#" onclick="return doclink('link-22', 'Vegetacion', 'link-22');">Vegetacion</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L84"></a><tt class="py-lineno"> 84</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">obs</tt> </tt>
+</div><a name="L85"></a><tt class="py-lineno"> 85</tt>  <tt class="py-line"> </tt>
+<a name="creaCaracteristica"></a><div id="creaCaracteristica-def"><a name="L86"></a><tt class="py-lineno"> 86</tt> <a class="py-toggle" href="#" id="creaCaracteristica-toggle" onclick="return toggle('creaCaracteristica');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="bcC_clima-module.html#creaCaracteristica">creaCaracteristica</a><tt class="py-op">(</tt><tt class="py-param">tp</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="creaCaracteristica-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="creaCaracteristica-expanded"><a name="L87"></a><tt class="py-lineno"> 87</tt>  <tt class="py-line">    <tt class="py-docstring">'''Crea una instancia de una caracteristica en el caso de que la tupla </tt> </tt>
+<a name="L88"></a><tt class="py-lineno"> 88</tt>  <tt class="py-line"><tt class="py-docstring">    coincida con la base de conocimiento'''</tt> </tt>
+<a name="L89"></a><tt class="py-lineno"> 89</tt>  <tt class="py-line">    <tt class="py-keyword">print</tt> <tt class="py-name">tp</tt> </tt>
+<a name="L90"></a><tt class="py-lineno"> 90</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">'Temperatura'</tt><tt class="py-op">:</tt> </tt>
+<a name="L91"></a><tt class="py-lineno"> 91</tt>  <tt class="py-line">        <tt class="py-name">ob</tt><tt class="py-op">=</tt><tt id="link-23" class="py-name"><a title="bcC_clima.Temperatura" class="py-name" href="#" onclick="return doclink('link-23', 'Temperatura', 'link-20');">Temperatura</a></tt><tt class="py-op">(</tt><tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L92"></a><tt class="py-lineno"> 92</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">ob</tt> </tt>
+<a name="L93"></a><tt class="py-lineno"> 93</tt>  <tt class="py-line">    <tt class="py-keyword">elif</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">'Precipitaciones'</tt><tt class="py-op">:</tt> </tt>
+<a name="L94"></a><tt class="py-lineno"> 94</tt>  <tt class="py-line">        <tt class="py-name">ob</tt><tt class="py-op">=</tt><tt id="link-24" class="py-name"><a title="bcC_clima.Precipitaciones" class="py-name" href="#" onclick="return doclink('link-24', 'Precipitaciones', 'link-21');">Precipitaciones</a></tt><tt class="py-op">(</tt><tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L95"></a><tt class="py-lineno"> 95</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">ob</tt> </tt>
+<a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line">    <tt class="py-keyword">elif</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">'Vegetacion'</tt><tt class="py-op">:</tt> </tt>
+<a name="L97"></a><tt class="py-lineno"> 97</tt>  <tt class="py-line">        <tt class="py-name">ob</tt><tt class="py-op">=</tt><tt id="link-25" class="py-name"><a title="bcC_clima.Vegetacion" class="py-name" href="#" onclick="return doclink('link-25', 'Vegetacion', 'link-22');">Vegetacion</a></tt><tt class="py-op">(</tt><tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L98"></a><tt class="py-lineno"> 98</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">'True'</tt><tt class="py-op">:</tt> </tt>
+<a name="L99"></a><tt class="py-lineno"> 99</tt>  <tt class="py-line">            <tt class="py-name">ob</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt><tt class="py-op">=</tt><tt class="py-name">True</tt> </tt>
+<a name="L100"></a><tt class="py-lineno">100</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">ob</tt> </tt>
+<a name="L101"></a><tt class="py-lineno">101</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">None</tt> </tt>
+</div><a name="L102"></a><tt class="py-lineno">102</tt>  <tt class="py-line">         </tt>
+<a name="Zona"></a><div id="Zona-def"><a name="L103"></a><tt class="py-lineno">103</tt> <a class="py-toggle" href="#" id="Zona-toggle" onclick="return toggle('Zona');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bcC_clima.Zona-class.html">Zona</a><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Zona-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Zona-expanded"><a name="L104"></a><tt class="py-lineno">104</tt>  <tt class="py-line">    <tt class="py-docstring">'''Definici&#243;n gen&#233;rica de una zona'''</tt> </tt>
+<a name="Zona.__init__"></a><div id="Zona.__init__-def"><a name="L105"></a><tt class="py-lineno">105</tt> <a class="py-toggle" href="#" id="Zona.__init__-toggle" onclick="return toggle('Zona.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="bcC_clima.Zona-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">nombre</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Zona.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Zona.__init__-expanded"><a name="L106"></a><tt class="py-lineno">106</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">nombre</tt><tt class="py-op">=</tt><tt class="py-name">nombre</tt> </tt>
+</div></div><a name="L107"></a><tt class="py-lineno">107</tt>  <tt class="py-line"> </tt>
+<a name="L108"></a><tt class="py-lineno">108</tt>  <tt class="py-line"><tt class="py-string">'''Definici&#243;n de las zonas del sistema'''</tt> </tt>
+<a name="Ecuatorial"></a><div id="Ecuatorial-def"><a name="L109"></a><tt class="py-lineno">109</tt> <a class="py-toggle" href="#" id="Ecuatorial-toggle" onclick="return toggle('Ecuatorial');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bcC_clima.Ecuatorial-class.html">Ecuatorial</a><tt class="py-op">(</tt><tt class="py-base-class">Zona</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Ecuatorial-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Ecuatorial-expanded"><a name="Ecuatorial.__init__"></a><div id="Ecuatorial.__init__-def"><a name="L110"></a><tt class="py-lineno">110</tt> <a class="py-toggle" href="#" id="Ecuatorial.__init__-toggle" onclick="return toggle('Ecuatorial.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="bcC_clima.Ecuatorial-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Ecuatorial.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Ecuatorial.__init__-expanded"><a name="L111"></a><tt class="py-lineno">111</tt>  <tt class="py-line">         </tt>
+<a name="L112"></a><tt class="py-lineno">112</tt>  <tt class="py-line">        <tt class="py-comment">#nombre='Ecuatorial'</tt> </tt>
+<a name="L113"></a><tt class="py-lineno">113</tt>  <tt class="py-line">        <tt class="py-name">calor</tt><tt class="py-op">=</tt><tt id="link-26" class="py-name"><a title="bcC_clima.Temperatura" class="py-name" href="#" onclick="return doclink('link-26', 'Temperatura', 'link-20');">Temperatura</a></tt><tt class="py-op">(</tt><tt class="py-string">'muy alta'</tt><tt class="py-op">)</tt> </tt>
+<a name="L114"></a><tt class="py-lineno">114</tt>  <tt class="py-line">        <tt class="py-name">lluviasAbundantes</tt><tt class="py-op">=</tt><tt id="link-27" class="py-name"><a title="bcC_clima.Precipitaciones" class="py-name" href="#" onclick="return doclink('link-27', 'Precipitaciones', 'link-21');">Precipitaciones</a></tt><tt class="py-op">(</tt><tt class="py-string">'abundantes'</tt><tt class="py-op">)</tt> </tt>
+<a name="L115"></a><tt class="py-lineno">115</tt>  <tt class="py-line">        <tt class="py-name">plantas</tt><tt class="py-op">=</tt><tt id="link-28" class="py-name"><a title="bcC_clima.Vegetacion" class="py-name" href="#" onclick="return doclink('link-28', 'Vegetacion', 'link-22');">Vegetacion</a></tt><tt class="py-op">(</tt><tt class="py-string">'selva'</tt><tt class="py-op">)</tt> </tt>
+<a name="L116"></a><tt class="py-lineno">116</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">debePresentar</tt><tt class="py-op">=</tt><tt class="py-op">[</tt><tt class="py-name">calor</tt><tt class="py-op">,</tt><tt class="py-name">lluviasAbundantes</tt><tt class="py-op">,</tt><tt class="py-name">plantas</tt><tt class="py-op">]</tt> </tt>
+<a name="L117"></a><tt class="py-lineno">117</tt>  <tt class="py-line">        <tt id="link-29" class="py-name" targets="Class bcC_clima.Zona=bcC_clima.Zona-class.html"><a title="bcC_clima.Zona" class="py-name" href="#" onclick="return doclink('link-29', 'Zona', 'link-29');">Zona</a></tt><tt class="py-op">.</tt><tt id="link-30" class="py-name"><a title="VistaClasificacion.VentanasAtributos.__init__
+bcC_clima.Atlantico.__init__
+bcC_clima.Atributos.__init__
+bcC_clima.Caracteristica.__init__
+bcC_clima.Continental.__init__
+bcC_clima.Desertico.__init__
+bcC_clima.Ecuatorial.__init__
+bcC_clima.Mediterraneo.__init__
+bcC_clima.Montana.__init__
+bcC_clima.Polar.__init__
+bcC_clima.Prec.__init__
+bcC_clima.Precipitaciones.__init__
+bcC_clima.Temp.__init__
+bcC_clima.Temperatura.__init__
+bcC_clima.Tropical.__init__
+bcC_clima.Veg.__init__
+bcC_clima.Vegetacion.__init__
+bcC_clima.Zona.__init__
+bcC_vehiculos.Asientos.__init__
+bcC_vehiculos.Atributo.__init__
+bcC_vehiculos.Caracteristica.__init__
+bcC_vehiculos.Cilindrada.__init__
+bcC_vehiculos.Edad.__init__
+bcC_vehiculos.Ejes.__init__
+bcC_vehiculos.MercanciasPeligrosas.__init__
+bcC_vehiculos.Observable.__init__
+bcC_vehiculos.PermisoA.__init__
+bcC_vehiculos.PermisoA1.__init__
+bcC_vehiculos.PermisoA2.__init__
+bcC_vehiculos.PermisoADR.__init__
+bcC_vehiculos.PermisoAM.__init__
+bcC_vehiculos.PermisoB.__init__
+bcC_vehiculos.PermisoBTP.__init__
+bcC_vehiculos.PermisoC.__init__
+bcC_vehiculos.PermisoC1.__init__
+bcC_vehiculos.PermisoD.__init__
+bcC_vehiculos.PermisoD1.__init__
+bcC_vehiculos.PermisoE.__init__
+bcC_vehiculos.PesoRemolque.__init__
+bcC_vehiculos.Pma.__init__
+bcC_vehiculos.Potencia.__init__
+bcC_vehiculos.Remolque.__init__
+bcC_vehiculos.Ruedas.__init__
+bcC_vehiculos.Sidecar.__init__
+bcC_vehiculos.Taxi.__init__
+bcC_vehiculos.TransportePersonas.__init__
+bcC_vehiculos.TransporteSanitario.__init__
+bcC_vehiculos.Velmax.__init__
+bcC_vehiculos.cilindrada.__init__
+bcC_vehiculos.edad.__init__
+bcC_vehiculos.mercancias_peligrosas.__init__
+bcC_vehiculos.n_asientos.__init__
+bcC_vehiculos.n_ejes.__init__
+bcC_vehiculos.n_ruedas.__init__
+bcC_vehiculos.peso_remolque.__init__
+bcC_vehiculos.pma.__init__
+bcC_vehiculos.potencia.__init__
+bcC_vehiculos.remolque.__init__
+bcC_vehiculos.sidecar.__init__
+bcC_vehiculos.taxi.__init__
+bcC_vehiculos.transporte_personas.__init__
+bcC_vehiculos.transporte_sanitario.__init__
+bcC_vehiculos.vel_max.__init__
+mC.Equiparar.__init__
+mC.Especificar.__init__
+mC.Inferencia.__init__
+mC.MetodoPoda.__init__
+mC.Obtener.__init__
+mC.Poda.__init__" class="py-name" href="#" onclick="return doclink('link-30', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt><tt class="py-name">nombre</tt><tt class="py-op">=</tt><tt class="py-string">u'Ecuatorial'</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L118"></a><tt class="py-lineno">118</tt>  <tt class="py-line"> </tt>
+<a name="Tropical"></a><div id="Tropical-def"><a name="L119"></a><tt class="py-lineno">119</tt> <a class="py-toggle" href="#" id="Tropical-toggle" onclick="return toggle('Tropical');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bcC_clima.Tropical-class.html">Tropical</a><tt class="py-op">(</tt><tt class="py-base-class">Zona</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Tropical-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Tropical-expanded"><a name="Tropical.__init__"></a><div id="Tropical.__init__-def"><a name="L120"></a><tt class="py-lineno">120</tt> <a class="py-toggle" href="#" id="Tropical.__init__-toggle" onclick="return toggle('Tropical.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="bcC_clima.Tropical-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Tropical.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Tropical.__init__-expanded"><a name="L121"></a><tt class="py-lineno">121</tt>  <tt class="py-line">         </tt>
+<a name="L122"></a><tt class="py-lineno">122</tt>  <tt class="py-line">        <tt class="py-comment">#self.nombre='Tropical'</tt> </tt>
+<a name="L123"></a><tt class="py-lineno">123</tt>  <tt class="py-line">        <tt class="py-name">calor</tt><tt class="py-op">=</tt><tt id="link-31" class="py-name"><a title="bcC_clima.Temperatura" class="py-name" href="#" onclick="return doclink('link-31', 'Temperatura', 'link-20');">Temperatura</a></tt><tt class="py-op">(</tt><tt class="py-string">'alta'</tt><tt class="py-op">)</tt> </tt>
+<a name="L124"></a><tt class="py-lineno">124</tt>  <tt class="py-line">        <tt class="py-name">lluviasAlternas</tt><tt class="py-op">=</tt><tt id="link-32" class="py-name"><a title="bcC_clima.Precipitaciones" class="py-name" href="#" onclick="return doclink('link-32', 'Precipitaciones', 'link-21');">Precipitaciones</a></tt><tt class="py-op">(</tt><tt class="py-string">'alternantes'</tt><tt class="py-op">)</tt> </tt>
+<a name="L125"></a><tt class="py-lineno">125</tt>  <tt class="py-line">        <tt class="py-name">plantas</tt><tt class="py-op">=</tt><tt id="link-33" class="py-name"><a title="bcC_clima.Vegetacion" class="py-name" href="#" onclick="return doclink('link-33', 'Vegetacion', 'link-22');">Vegetacion</a></tt><tt class="py-op">(</tt><tt class="py-string">'sabana'</tt><tt class="py-op">)</tt> </tt>
+<a name="L126"></a><tt class="py-lineno">126</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">debePresentar</tt><tt class="py-op">=</tt><tt class="py-op">[</tt><tt class="py-name">calor</tt><tt class="py-op">,</tt><tt class="py-name">lluviasAlternas</tt><tt class="py-op">,</tt><tt class="py-name">plantas</tt><tt class="py-op">]</tt> </tt>
+<a name="L127"></a><tt class="py-lineno">127</tt>  <tt class="py-line">        <tt id="link-34" class="py-name"><a title="bcC_clima.Zona" class="py-name" href="#" onclick="return doclink('link-34', 'Zona', 'link-29');">Zona</a></tt><tt class="py-op">.</tt><tt id="link-35" class="py-name"><a title="VistaClasificacion.VentanasAtributos.__init__
+bcC_clima.Atlantico.__init__
+bcC_clima.Atributos.__init__
+bcC_clima.Caracteristica.__init__
+bcC_clima.Continental.__init__
+bcC_clima.Desertico.__init__
+bcC_clima.Ecuatorial.__init__
+bcC_clima.Mediterraneo.__init__
+bcC_clima.Montana.__init__
+bcC_clima.Polar.__init__
+bcC_clima.Prec.__init__
+bcC_clima.Precipitaciones.__init__
+bcC_clima.Temp.__init__
+bcC_clima.Temperatura.__init__
+bcC_clima.Tropical.__init__
+bcC_clima.Veg.__init__
+bcC_clima.Vegetacion.__init__
+bcC_clima.Zona.__init__
+bcC_vehiculos.Asientos.__init__
+bcC_vehiculos.Atributo.__init__
+bcC_vehiculos.Caracteristica.__init__
+bcC_vehiculos.Cilindrada.__init__
+bcC_vehiculos.Edad.__init__
+bcC_vehiculos.Ejes.__init__
+bcC_vehiculos.MercanciasPeligrosas.__init__
+bcC_vehiculos.Observable.__init__
+bcC_vehiculos.PermisoA.__init__
+bcC_vehiculos.PermisoA1.__init__
+bcC_vehiculos.PermisoA2.__init__
+bcC_vehiculos.PermisoADR.__init__
+bcC_vehiculos.PermisoAM.__init__
+bcC_vehiculos.PermisoB.__init__
+bcC_vehiculos.PermisoBTP.__init__
+bcC_vehiculos.PermisoC.__init__
+bcC_vehiculos.PermisoC1.__init__
+bcC_vehiculos.PermisoD.__init__
+bcC_vehiculos.PermisoD1.__init__
+bcC_vehiculos.PermisoE.__init__
+bcC_vehiculos.PesoRemolque.__init__
+bcC_vehiculos.Pma.__init__
+bcC_vehiculos.Potencia.__init__
+bcC_vehiculos.Remolque.__init__
+bcC_vehiculos.Ruedas.__init__
+bcC_vehiculos.Sidecar.__init__
+bcC_vehiculos.Taxi.__init__
+bcC_vehiculos.TransportePersonas.__init__
+bcC_vehiculos.TransporteSanitario.__init__
+bcC_vehiculos.Velmax.__init__
+bcC_vehiculos.cilindrada.__init__
+bcC_vehiculos.edad.__init__
+bcC_vehiculos.mercancias_peligrosas.__init__
+bcC_vehiculos.n_asientos.__init__
+bcC_vehiculos.n_ejes.__init__
+bcC_vehiculos.n_ruedas.__init__
+bcC_vehiculos.peso_remolque.__init__
+bcC_vehiculos.pma.__init__
+bcC_vehiculos.potencia.__init__
+bcC_vehiculos.remolque.__init__
+bcC_vehiculos.sidecar.__init__
+bcC_vehiculos.taxi.__init__
+bcC_vehiculos.transporte_personas.__init__
+bcC_vehiculos.transporte_sanitario.__init__
+bcC_vehiculos.vel_max.__init__
+mC.Equiparar.__init__
+mC.Especificar.__init__
+mC.Inferencia.__init__
+mC.MetodoPoda.__init__
+mC.Obtener.__init__
+mC.Poda.__init__" class="py-name" href="#" onclick="return doclink('link-35', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt><tt class="py-name">nombre</tt><tt class="py-op">=</tt><tt class="py-string">u'Tropical'</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L128"></a><tt class="py-lineno">128</tt>  <tt class="py-line">         </tt>
+<a name="Desertico"></a><div id="Desertico-def"><a name="L129"></a><tt class="py-lineno">129</tt> <a class="py-toggle" href="#" id="Desertico-toggle" onclick="return toggle('Desertico');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bcC_clima.Desertico-class.html">Desertico</a><tt class="py-op">(</tt><tt class="py-base-class">Zona</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Desertico-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Desertico-expanded"><a name="Desertico.__init__"></a><div id="Desertico.__init__-def"><a name="L130"></a><tt class="py-lineno">130</tt> <a class="py-toggle" href="#" id="Desertico.__init__-toggle" onclick="return toggle('Desertico.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="bcC_clima.Desertico-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Desertico.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Desertico.__init__-expanded"><a name="L131"></a><tt class="py-lineno">131</tt>  <tt class="py-line">         </tt>
+<a name="L132"></a><tt class="py-lineno">132</tt>  <tt class="py-line">        <tt class="py-comment">#self.nombre='Desertico'</tt> </tt>
+<a name="L133"></a><tt class="py-lineno">133</tt>  <tt class="py-line">        <tt class="py-name">calor</tt><tt class="py-op">=</tt><tt id="link-36" class="py-name"><a title="bcC_clima.Temperatura" class="py-name" href="#" onclick="return doclink('link-36', 'Temperatura', 'link-20');">Temperatura</a></tt><tt class="py-op">(</tt><tt class="py-string">'muy alta'</tt><tt class="py-op">)</tt> </tt>
+<a name="L134"></a><tt class="py-lineno">134</tt>  <tt class="py-line">        <tt class="py-name">lluviasEscasas</tt><tt class="py-op">=</tt><tt id="link-37" class="py-name"><a title="bcC_clima.Precipitaciones" class="py-name" href="#" onclick="return doclink('link-37', 'Precipitaciones', 'link-21');">Precipitaciones</a></tt><tt class="py-op">(</tt><tt class="py-string">'escasas'</tt><tt class="py-op">)</tt> </tt>
+<a name="L135"></a><tt class="py-lineno">135</tt>  <tt class="py-line">        <tt class="py-name">plantas</tt><tt class="py-op">=</tt><tt id="link-38" class="py-name"><a title="bcC_clima.Vegetacion" class="py-name" href="#" onclick="return doclink('link-38', 'Vegetacion', 'link-22');">Vegetacion</a></tt><tt class="py-op">(</tt><tt class="py-string">'escasa'</tt><tt class="py-op">)</tt> </tt>
+<a name="L136"></a><tt class="py-lineno">136</tt>  <tt class="py-line">         </tt>
+<a name="L137"></a><tt class="py-lineno">137</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">debePresentar</tt><tt class="py-op">=</tt><tt class="py-op">[</tt><tt class="py-name">calor</tt><tt class="py-op">,</tt><tt class="py-name">lluviasEscasas</tt><tt class="py-op">,</tt><tt class="py-name">plantas</tt><tt class="py-op">]</tt> </tt>
+<a name="L138"></a><tt class="py-lineno">138</tt>  <tt class="py-line">        <tt id="link-39" class="py-name"><a title="bcC_clima.Zona" class="py-name" href="#" onclick="return doclink('link-39', 'Zona', 'link-29');">Zona</a></tt><tt class="py-op">.</tt><tt id="link-40" class="py-name"><a title="VistaClasificacion.VentanasAtributos.__init__
+bcC_clima.Atlantico.__init__
+bcC_clima.Atributos.__init__
+bcC_clima.Caracteristica.__init__
+bcC_clima.Continental.__init__
+bcC_clima.Desertico.__init__
+bcC_clima.Ecuatorial.__init__
+bcC_clima.Mediterraneo.__init__
+bcC_clima.Montana.__init__
+bcC_clima.Polar.__init__
+bcC_clima.Prec.__init__
+bcC_clima.Precipitaciones.__init__
+bcC_clima.Temp.__init__
+bcC_clima.Temperatura.__init__
+bcC_clima.Tropical.__init__
+bcC_clima.Veg.__init__
+bcC_clima.Vegetacion.__init__
+bcC_clima.Zona.__init__
+bcC_vehiculos.Asientos.__init__
+bcC_vehiculos.Atributo.__init__
+bcC_vehiculos.Caracteristica.__init__
+bcC_vehiculos.Cilindrada.__init__
+bcC_vehiculos.Edad.__init__
+bcC_vehiculos.Ejes.__init__
+bcC_vehiculos.MercanciasPeligrosas.__init__
+bcC_vehiculos.Observable.__init__
+bcC_vehiculos.PermisoA.__init__
+bcC_vehiculos.PermisoA1.__init__
+bcC_vehiculos.PermisoA2.__init__
+bcC_vehiculos.PermisoADR.__init__
+bcC_vehiculos.PermisoAM.__init__
+bcC_vehiculos.PermisoB.__init__
+bcC_vehiculos.PermisoBTP.__init__
+bcC_vehiculos.PermisoC.__init__
+bcC_vehiculos.PermisoC1.__init__
+bcC_vehiculos.PermisoD.__init__
+bcC_vehiculos.PermisoD1.__init__
+bcC_vehiculos.PermisoE.__init__
+bcC_vehiculos.PesoRemolque.__init__
+bcC_vehiculos.Pma.__init__
+bcC_vehiculos.Potencia.__init__
+bcC_vehiculos.Remolque.__init__
+bcC_vehiculos.Ruedas.__init__
+bcC_vehiculos.Sidecar.__init__
+bcC_vehiculos.Taxi.__init__
+bcC_vehiculos.TransportePersonas.__init__
+bcC_vehiculos.TransporteSanitario.__init__
+bcC_vehiculos.Velmax.__init__
+bcC_vehiculos.cilindrada.__init__
+bcC_vehiculos.edad.__init__
+bcC_vehiculos.mercancias_peligrosas.__init__
+bcC_vehiculos.n_asientos.__init__
+bcC_vehiculos.n_ejes.__init__
+bcC_vehiculos.n_ruedas.__init__
+bcC_vehiculos.peso_remolque.__init__
+bcC_vehiculos.pma.__init__
+bcC_vehiculos.potencia.__init__
+bcC_vehiculos.remolque.__init__
+bcC_vehiculos.sidecar.__init__
+bcC_vehiculos.taxi.__init__
+bcC_vehiculos.transporte_personas.__init__
+bcC_vehiculos.transporte_sanitario.__init__
+bcC_vehiculos.vel_max.__init__
+mC.Equiparar.__init__
+mC.Especificar.__init__
+mC.Inferencia.__init__
+mC.MetodoPoda.__init__
+mC.Obtener.__init__
+mC.Poda.__init__" class="py-name" href="#" onclick="return doclink('link-40', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt><tt class="py-name">nombre</tt><tt class="py-op">=</tt><tt class="py-string">u'Desertico'</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L139"></a><tt class="py-lineno">139</tt>  <tt class="py-line">         </tt>
+<a name="Mediterraneo"></a><div id="Mediterraneo-def"><a name="L140"></a><tt class="py-lineno">140</tt> <a class="py-toggle" href="#" id="Mediterraneo-toggle" onclick="return toggle('Mediterraneo');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bcC_clima.Mediterraneo-class.html">Mediterraneo</a><tt class="py-op">(</tt><tt class="py-base-class">Zona</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Mediterraneo-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Mediterraneo-expanded"><a name="Mediterraneo.__init__"></a><div id="Mediterraneo.__init__-def"><a name="L141"></a><tt class="py-lineno">141</tt> <a class="py-toggle" href="#" id="Mediterraneo.__init__-toggle" onclick="return toggle('Mediterraneo.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="bcC_clima.Mediterraneo-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Mediterraneo.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Mediterraneo.__init__-expanded"><a name="L142"></a><tt class="py-lineno">142</tt>  <tt class="py-line">         </tt>
+<a name="L143"></a><tt class="py-lineno">143</tt>  <tt class="py-line">        <tt class="py-comment">#self.nombre='Mediterraneo'</tt> </tt>
+<a name="L144"></a><tt class="py-lineno">144</tt>  <tt class="py-line">        <tt class="py-name">tempSuaveInvierno</tt><tt class="py-op">=</tt><tt id="link-41" class="py-name"><a title="bcC_clima.Temperatura" class="py-name" href="#" onclick="return doclink('link-41', 'Temperatura', 'link-20');">Temperatura</a></tt><tt class="py-op">(</tt><tt class="py-string">'suave'</tt><tt class="py-op">)</tt> </tt>
+<a name="L145"></a><tt class="py-lineno">145</tt>  <tt class="py-line">        <tt class="py-name">lluviasAlternas</tt><tt class="py-op">=</tt><tt id="link-42" class="py-name"><a title="bcC_clima.Precipitaciones" class="py-name" href="#" onclick="return doclink('link-42', 'Precipitaciones', 'link-21');">Precipitaciones</a></tt><tt class="py-op">(</tt><tt class="py-string">'alternantes'</tt><tt class="py-op">)</tt> </tt>
+<a name="L146"></a><tt class="py-lineno">146</tt>  <tt class="py-line">        <tt class="py-name">calorEstival</tt><tt class="py-op">=</tt><tt id="link-43" class="py-name"><a title="bcC_clima.Temperatura" class="py-name" href="#" onclick="return doclink('link-43', 'Temperatura', 'link-20');">Temperatura</a></tt><tt class="py-op">(</tt><tt class="py-string">'alta'</tt><tt class="py-op">)</tt> </tt>
+<a name="L147"></a><tt class="py-lineno">147</tt>  <tt class="py-line">        <tt class="py-name">plantas</tt><tt class="py-op">=</tt><tt id="link-44" class="py-name"><a title="bcC_clima.Vegetacion" class="py-name" href="#" onclick="return doclink('link-44', 'Vegetacion', 'link-22');">Vegetacion</a></tt><tt class="py-op">(</tt><tt class="py-string">'bosque mediterraneo'</tt><tt class="py-op">)</tt> </tt>
+<a name="L148"></a><tt class="py-lineno">148</tt>  <tt class="py-line">         </tt>
+<a name="L149"></a><tt class="py-lineno">149</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">debePresentar</tt><tt class="py-op">=</tt><tt class="py-op">[</tt><tt class="py-name">tempSuaveInvierno</tt><tt class="py-op">,</tt><tt class="py-name">lluviasAlternas</tt><tt class="py-op">,</tt><tt class="py-name">calorEstival</tt><tt class="py-op">,</tt><tt class="py-name">plantas</tt><tt class="py-op">]</tt> </tt>
+<a name="L150"></a><tt class="py-lineno">150</tt>  <tt class="py-line">        <tt id="link-45" class="py-name"><a title="bcC_clima.Zona" class="py-name" href="#" onclick="return doclink('link-45', 'Zona', 'link-29');">Zona</a></tt><tt class="py-op">.</tt><tt id="link-46" class="py-name"><a title="VistaClasificacion.VentanasAtributos.__init__
+bcC_clima.Atlantico.__init__
+bcC_clima.Atributos.__init__
+bcC_clima.Caracteristica.__init__
+bcC_clima.Continental.__init__
+bcC_clima.Desertico.__init__
+bcC_clima.Ecuatorial.__init__
+bcC_clima.Mediterraneo.__init__
+bcC_clima.Montana.__init__
+bcC_clima.Polar.__init__
+bcC_clima.Prec.__init__
+bcC_clima.Precipitaciones.__init__
+bcC_clima.Temp.__init__
+bcC_clima.Temperatura.__init__
+bcC_clima.Tropical.__init__
+bcC_clima.Veg.__init__
+bcC_clima.Vegetacion.__init__
+bcC_clima.Zona.__init__
+bcC_vehiculos.Asientos.__init__
+bcC_vehiculos.Atributo.__init__
+bcC_vehiculos.Caracteristica.__init__
+bcC_vehiculos.Cilindrada.__init__
+bcC_vehiculos.Edad.__init__
+bcC_vehiculos.Ejes.__init__
+bcC_vehiculos.MercanciasPeligrosas.__init__
+bcC_vehiculos.Observable.__init__
+bcC_vehiculos.PermisoA.__init__
+bcC_vehiculos.PermisoA1.__init__
+bcC_vehiculos.PermisoA2.__init__
+bcC_vehiculos.PermisoADR.__init__
+bcC_vehiculos.PermisoAM.__init__
+bcC_vehiculos.PermisoB.__init__
+bcC_vehiculos.PermisoBTP.__init__
+bcC_vehiculos.PermisoC.__init__
+bcC_vehiculos.PermisoC1.__init__
+bcC_vehiculos.PermisoD.__init__
+bcC_vehiculos.PermisoD1.__init__
+bcC_vehiculos.PermisoE.__init__
+bcC_vehiculos.PesoRemolque.__init__
+bcC_vehiculos.Pma.__init__
+bcC_vehiculos.Potencia.__init__
+bcC_vehiculos.Remolque.__init__
+bcC_vehiculos.Ruedas.__init__
+bcC_vehiculos.Sidecar.__init__
+bcC_vehiculos.Taxi.__init__
+bcC_vehiculos.TransportePersonas.__init__
+bcC_vehiculos.TransporteSanitario.__init__
+bcC_vehiculos.Velmax.__init__
+bcC_vehiculos.cilindrada.__init__
+bcC_vehiculos.edad.__init__
+bcC_vehiculos.mercancias_peligrosas.__init__
+bcC_vehiculos.n_asientos.__init__
+bcC_vehiculos.n_ejes.__init__
+bcC_vehiculos.n_ruedas.__init__
+bcC_vehiculos.peso_remolque.__init__
+bcC_vehiculos.pma.__init__
+bcC_vehiculos.potencia.__init__
+bcC_vehiculos.remolque.__init__
+bcC_vehiculos.sidecar.__init__
+bcC_vehiculos.taxi.__init__
+bcC_vehiculos.transporte_personas.__init__
+bcC_vehiculos.transporte_sanitario.__init__
+bcC_vehiculos.vel_max.__init__
+mC.Equiparar.__init__
+mC.Especificar.__init__
+mC.Inferencia.__init__
+mC.MetodoPoda.__init__
+mC.Obtener.__init__
+mC.Poda.__init__" class="py-name" href="#" onclick="return doclink('link-46', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt><tt class="py-name">nombre</tt><tt class="py-op">=</tt><tt class="py-string">u'Mediterraneo'</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L151"></a><tt class="py-lineno">151</tt>  <tt class="py-line">         </tt>
+<a name="Atlantico"></a><div id="Atlantico-def"><a name="L152"></a><tt class="py-lineno">152</tt> <a class="py-toggle" href="#" id="Atlantico-toggle" onclick="return toggle('Atlantico');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bcC_clima.Atlantico-class.html">Atlantico</a><tt class="py-op">(</tt><tt class="py-base-class">Zona</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Atlantico-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Atlantico-expanded"><a name="Atlantico.__init__"></a><div id="Atlantico.__init__-def"><a name="L153"></a><tt class="py-lineno">153</tt> <a class="py-toggle" href="#" id="Atlantico.__init__-toggle" onclick="return toggle('Atlantico.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="bcC_clima.Atlantico-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Atlantico.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Atlantico.__init__-expanded"><a name="L154"></a><tt class="py-lineno">154</tt>  <tt class="py-line">         </tt>
+<a name="L155"></a><tt class="py-lineno">155</tt>  <tt class="py-line">         </tt>
+<a name="L156"></a><tt class="py-lineno">156</tt>  <tt class="py-line">        <tt class="py-name">tempSuaveVerano</tt><tt class="py-op">=</tt><tt id="link-47" class="py-name"><a title="bcC_clima.Temperatura" class="py-name" href="#" onclick="return doclink('link-47', 'Temperatura', 'link-20');">Temperatura</a></tt><tt class="py-op">(</tt><tt class="py-string">'suave'</tt><tt class="py-op">)</tt> </tt>
+<a name="L157"></a><tt class="py-lineno">157</tt>  <tt class="py-line">        <tt class="py-name">lluviasAbundantes</tt><tt class="py-op">=</tt><tt id="link-48" class="py-name"><a title="bcC_clima.Precipitaciones" class="py-name" href="#" onclick="return doclink('link-48', 'Precipitaciones', 'link-21');">Precipitaciones</a></tt><tt class="py-op">(</tt><tt class="py-string">'abundantes'</tt><tt class="py-op">)</tt> </tt>
+<a name="L158"></a><tt class="py-lineno">158</tt>  <tt class="py-line">        <tt class="py-name">frioInvierno</tt><tt class="py-op">=</tt><tt id="link-49" class="py-name"><a title="bcC_clima.Temperatura" class="py-name" href="#" onclick="return doclink('link-49', 'Temperatura', 'link-20');">Temperatura</a></tt><tt class="py-op">(</tt><tt class="py-string">'alta'</tt><tt class="py-op">)</tt> </tt>
+<a name="L159"></a><tt class="py-lineno">159</tt>  <tt class="py-line">        <tt class="py-name">plantas</tt><tt class="py-op">=</tt><tt id="link-50" class="py-name"><a title="bcC_clima.Vegetacion" class="py-name" href="#" onclick="return doclink('link-50', 'Vegetacion', 'link-22');">Vegetacion</a></tt><tt class="py-op">(</tt><tt class="py-string">'bosque atlantico'</tt><tt class="py-op">)</tt> </tt>
+<a name="L160"></a><tt class="py-lineno">160</tt>  <tt class="py-line">         </tt>
+<a name="L161"></a><tt class="py-lineno">161</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">debePresentar</tt><tt class="py-op">=</tt><tt class="py-op">[</tt><tt class="py-name">tempSuaveVerano</tt><tt class="py-op">,</tt><tt class="py-name">frioInvierno</tt><tt class="py-op">,</tt><tt class="py-name">plantas</tt><tt class="py-op">,</tt><tt class="py-name">lluviasAbundantes</tt><tt class="py-op">]</tt> </tt>
+<a name="L162"></a><tt class="py-lineno">162</tt>  <tt class="py-line">        <tt id="link-51" class="py-name"><a title="bcC_clima.Zona" class="py-name" href="#" onclick="return doclink('link-51', 'Zona', 'link-29');">Zona</a></tt><tt class="py-op">.</tt><tt id="link-52" class="py-name"><a title="VistaClasificacion.VentanasAtributos.__init__
+bcC_clima.Atlantico.__init__
+bcC_clima.Atributos.__init__
+bcC_clima.Caracteristica.__init__
+bcC_clima.Continental.__init__
+bcC_clima.Desertico.__init__
+bcC_clima.Ecuatorial.__init__
+bcC_clima.Mediterraneo.__init__
+bcC_clima.Montana.__init__
+bcC_clima.Polar.__init__
+bcC_clima.Prec.__init__
+bcC_clima.Precipitaciones.__init__
+bcC_clima.Temp.__init__
+bcC_clima.Temperatura.__init__
+bcC_clima.Tropical.__init__
+bcC_clima.Veg.__init__
+bcC_clima.Vegetacion.__init__
+bcC_clima.Zona.__init__
+bcC_vehiculos.Asientos.__init__
+bcC_vehiculos.Atributo.__init__
+bcC_vehiculos.Caracteristica.__init__
+bcC_vehiculos.Cilindrada.__init__
+bcC_vehiculos.Edad.__init__
+bcC_vehiculos.Ejes.__init__
+bcC_vehiculos.MercanciasPeligrosas.__init__
+bcC_vehiculos.Observable.__init__
+bcC_vehiculos.PermisoA.__init__
+bcC_vehiculos.PermisoA1.__init__
+bcC_vehiculos.PermisoA2.__init__
+bcC_vehiculos.PermisoADR.__init__
+bcC_vehiculos.PermisoAM.__init__
+bcC_vehiculos.PermisoB.__init__
+bcC_vehiculos.PermisoBTP.__init__
+bcC_vehiculos.PermisoC.__init__
+bcC_vehiculos.PermisoC1.__init__
+bcC_vehiculos.PermisoD.__init__
+bcC_vehiculos.PermisoD1.__init__
+bcC_vehiculos.PermisoE.__init__
+bcC_vehiculos.PesoRemolque.__init__
+bcC_vehiculos.Pma.__init__
+bcC_vehiculos.Potencia.__init__
+bcC_vehiculos.Remolque.__init__
+bcC_vehiculos.Ruedas.__init__
+bcC_vehiculos.Sidecar.__init__
+bcC_vehiculos.Taxi.__init__
+bcC_vehiculos.TransportePersonas.__init__
+bcC_vehiculos.TransporteSanitario.__init__
+bcC_vehiculos.Velmax.__init__
+bcC_vehiculos.cilindrada.__init__
+bcC_vehiculos.edad.__init__
+bcC_vehiculos.mercancias_peligrosas.__init__
+bcC_vehiculos.n_asientos.__init__
+bcC_vehiculos.n_ejes.__init__
+bcC_vehiculos.n_ruedas.__init__
+bcC_vehiculos.peso_remolque.__init__
+bcC_vehiculos.pma.__init__
+bcC_vehiculos.potencia.__init__
+bcC_vehiculos.remolque.__init__
+bcC_vehiculos.sidecar.__init__
+bcC_vehiculos.taxi.__init__
+bcC_vehiculos.transporte_personas.__init__
+bcC_vehiculos.transporte_sanitario.__init__
+bcC_vehiculos.vel_max.__init__
+mC.Equiparar.__init__
+mC.Especificar.__init__
+mC.Inferencia.__init__
+mC.MetodoPoda.__init__
+mC.Obtener.__init__
+mC.Poda.__init__" class="py-name" href="#" onclick="return doclink('link-52', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt><tt class="py-name">nombre</tt><tt class="py-op">=</tt><tt class="py-string">u'Atlantico'</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L163"></a><tt class="py-lineno">163</tt>  <tt class="py-line">         </tt>
+<a name="Continental"></a><div id="Continental-def"><a name="L164"></a><tt class="py-lineno">164</tt> <a class="py-toggle" href="#" id="Continental-toggle" onclick="return toggle('Continental');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bcC_clima.Continental-class.html">Continental</a><tt class="py-op">(</tt><tt class="py-base-class">Zona</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Continental-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Continental-expanded"><a name="Continental.__init__"></a><div id="Continental.__init__-def"><a name="L165"></a><tt class="py-lineno">165</tt> <a class="py-toggle" href="#" id="Continental.__init__-toggle" onclick="return toggle('Continental.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="bcC_clima.Continental-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Continental.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Continental.__init__-expanded"><a name="L166"></a><tt class="py-lineno">166</tt>  <tt class="py-line">         </tt>
+<a name="L167"></a><tt class="py-lineno">167</tt>  <tt class="py-line">         </tt>
+<a name="L168"></a><tt class="py-lineno">168</tt>  <tt class="py-line">        <tt class="py-name">frioInvierno</tt><tt class="py-op">=</tt><tt id="link-53" class="py-name"><a title="bcC_clima.Temperatura" class="py-name" href="#" onclick="return doclink('link-53', 'Temperatura', 'link-20');">Temperatura</a></tt><tt class="py-op">(</tt><tt class="py-string">'baja'</tt><tt class="py-op">)</tt> </tt>
+<a name="L169"></a><tt class="py-lineno">169</tt>  <tt class="py-line">        <tt class="py-name">calorVerano</tt><tt class="py-op">=</tt><tt id="link-54" class="py-name"><a title="bcC_clima.Temperatura" class="py-name" href="#" onclick="return doclink('link-54', 'Temperatura', 'link-20');">Temperatura</a></tt><tt class="py-op">(</tt><tt class="py-string">'alta'</tt><tt class="py-op">)</tt> </tt>
+<a name="L170"></a><tt class="py-lineno">170</tt>  <tt class="py-line">        <tt class="py-name">lluviasAbundantes</tt><tt class="py-op">=</tt><tt id="link-55" class="py-name"><a title="bcC_clima.Precipitaciones" class="py-name" href="#" onclick="return doclink('link-55', 'Precipitaciones', 'link-21');">Precipitaciones</a></tt><tt class="py-op">(</tt><tt class="py-string">'abundantes'</tt><tt class="py-op">)</tt> </tt>
+<a name="L171"></a><tt class="py-lineno">171</tt>  <tt class="py-line">        <tt class="py-name">plantas</tt><tt class="py-op">=</tt><tt id="link-56" class="py-name"><a title="bcC_clima.Vegetacion" class="py-name" href="#" onclick="return doclink('link-56', 'Vegetacion', 'link-22');">Vegetacion</a></tt><tt class="py-op">(</tt><tt class="py-string">'bosque boreal o taiga'</tt><tt class="py-op">)</tt> </tt>
+<a name="L172"></a><tt class="py-lineno">172</tt>  <tt class="py-line">         </tt>
+<a name="L173"></a><tt class="py-lineno">173</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">debePresentar</tt><tt class="py-op">=</tt><tt class="py-op">[</tt><tt class="py-name">frioInvierno</tt><tt class="py-op">,</tt><tt class="py-name">calorVerano</tt><tt class="py-op">,</tt><tt class="py-name">lluviasAbundantes</tt><tt class="py-op">,</tt><tt class="py-name">plantas</tt><tt class="py-op">]</tt> </tt>
+<a name="L174"></a><tt class="py-lineno">174</tt>  <tt class="py-line">        <tt id="link-57" class="py-name"><a title="bcC_clima.Zona" class="py-name" href="#" onclick="return doclink('link-57', 'Zona', 'link-29');">Zona</a></tt><tt class="py-op">.</tt><tt id="link-58" class="py-name"><a title="VistaClasificacion.VentanasAtributos.__init__
+bcC_clima.Atlantico.__init__
+bcC_clima.Atributos.__init__
+bcC_clima.Caracteristica.__init__
+bcC_clima.Continental.__init__
+bcC_clima.Desertico.__init__
+bcC_clima.Ecuatorial.__init__
+bcC_clima.Mediterraneo.__init__
+bcC_clima.Montana.__init__
+bcC_clima.Polar.__init__
+bcC_clima.Prec.__init__
+bcC_clima.Precipitaciones.__init__
+bcC_clima.Temp.__init__
+bcC_clima.Temperatura.__init__
+bcC_clima.Tropical.__init__
+bcC_clima.Veg.__init__
+bcC_clima.Vegetacion.__init__
+bcC_clima.Zona.__init__
+bcC_vehiculos.Asientos.__init__
+bcC_vehiculos.Atributo.__init__
+bcC_vehiculos.Caracteristica.__init__
+bcC_vehiculos.Cilindrada.__init__
+bcC_vehiculos.Edad.__init__
+bcC_vehiculos.Ejes.__init__
+bcC_vehiculos.MercanciasPeligrosas.__init__
+bcC_vehiculos.Observable.__init__
+bcC_vehiculos.PermisoA.__init__
+bcC_vehiculos.PermisoA1.__init__
+bcC_vehiculos.PermisoA2.__init__
+bcC_vehiculos.PermisoADR.__init__
+bcC_vehiculos.PermisoAM.__init__
+bcC_vehiculos.PermisoB.__init__
+bcC_vehiculos.PermisoBTP.__init__
+bcC_vehiculos.PermisoC.__init__
+bcC_vehiculos.PermisoC1.__init__
+bcC_vehiculos.PermisoD.__init__
+bcC_vehiculos.PermisoD1.__init__
+bcC_vehiculos.PermisoE.__init__
+bcC_vehiculos.PesoRemolque.__init__
+bcC_vehiculos.Pma.__init__
+bcC_vehiculos.Potencia.__init__
+bcC_vehiculos.Remolque.__init__
+bcC_vehiculos.Ruedas.__init__
+bcC_vehiculos.Sidecar.__init__
+bcC_vehiculos.Taxi.__init__
+bcC_vehiculos.TransportePersonas.__init__
+bcC_vehiculos.TransporteSanitario.__init__
+bcC_vehiculos.Velmax.__init__
+bcC_vehiculos.cilindrada.__init__
+bcC_vehiculos.edad.__init__
+bcC_vehiculos.mercancias_peligrosas.__init__
+bcC_vehiculos.n_asientos.__init__
+bcC_vehiculos.n_ejes.__init__
+bcC_vehiculos.n_ruedas.__init__
+bcC_vehiculos.peso_remolque.__init__
+bcC_vehiculos.pma.__init__
+bcC_vehiculos.potencia.__init__
+bcC_vehiculos.remolque.__init__
+bcC_vehiculos.sidecar.__init__
+bcC_vehiculos.taxi.__init__
+bcC_vehiculos.transporte_personas.__init__
+bcC_vehiculos.transporte_sanitario.__init__
+bcC_vehiculos.vel_max.__init__
+mC.Equiparar.__init__
+mC.Especificar.__init__
+mC.Inferencia.__init__
+mC.MetodoPoda.__init__
+mC.Obtener.__init__
+mC.Poda.__init__" class="py-name" href="#" onclick="return doclink('link-58', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt><tt class="py-name">nombre</tt><tt class="py-op">=</tt><tt class="py-string">u'Continental'</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L175"></a><tt class="py-lineno">175</tt>  <tt class="py-line">         </tt>
+<a name="Polar"></a><div id="Polar-def"><a name="L176"></a><tt class="py-lineno">176</tt> <a class="py-toggle" href="#" id="Polar-toggle" onclick="return toggle('Polar');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bcC_clima.Polar-class.html">Polar</a><tt class="py-op">(</tt><tt class="py-base-class">Zona</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Polar-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Polar-expanded"><a name="Polar.__init__"></a><div id="Polar.__init__-def"><a name="L177"></a><tt class="py-lineno">177</tt> <a class="py-toggle" href="#" id="Polar.__init__-toggle" onclick="return toggle('Polar.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="bcC_clima.Polar-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Polar.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Polar.__init__-expanded"><a name="L178"></a><tt class="py-lineno">178</tt>  <tt class="py-line">         </tt>
+<a name="L179"></a><tt class="py-lineno">179</tt>  <tt class="py-line">         </tt>
+<a name="L180"></a><tt class="py-lineno">180</tt>  <tt class="py-line">        <tt class="py-name">frio</tt><tt class="py-op">=</tt><tt id="link-59" class="py-name"><a title="bcC_clima.Temperatura" class="py-name" href="#" onclick="return doclink('link-59', 'Temperatura', 'link-20');">Temperatura</a></tt><tt class="py-op">(</tt><tt class="py-string">'muy baja'</tt><tt class="py-op">)</tt> </tt>
+<a name="L181"></a><tt class="py-lineno">181</tt>  <tt class="py-line">        <tt class="py-name">lluviasEscasas</tt><tt class="py-op">=</tt><tt id="link-60" class="py-name"><a title="bcC_clima.Precipitaciones" class="py-name" href="#" onclick="return doclink('link-60', 'Precipitaciones', 'link-21');">Precipitaciones</a></tt><tt class="py-op">(</tt><tt class="py-string">'escasas'</tt><tt class="py-op">)</tt> </tt>
+<a name="L182"></a><tt class="py-lineno">182</tt>  <tt class="py-line">        <tt class="py-name">plantas</tt><tt class="py-op">=</tt><tt id="link-61" class="py-name"><a title="bcC_clima.Vegetacion" class="py-name" href="#" onclick="return doclink('link-61', 'Vegetacion', 'link-22');">Vegetacion</a></tt><tt class="py-op">(</tt><tt class="py-string">'tundra'</tt><tt class="py-op">)</tt> </tt>
+<a name="L183"></a><tt class="py-lineno">183</tt>  <tt class="py-line">         </tt>
+<a name="L184"></a><tt class="py-lineno">184</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">debePresentar</tt><tt class="py-op">=</tt><tt class="py-op">[</tt><tt class="py-name">frio</tt><tt class="py-op">,</tt><tt class="py-name">lluviasEscasas</tt><tt class="py-op">,</tt><tt class="py-name">plantas</tt><tt class="py-op">]</tt> </tt>
+<a name="L185"></a><tt class="py-lineno">185</tt>  <tt class="py-line">        <tt id="link-62" class="py-name"><a title="bcC_clima.Zona" class="py-name" href="#" onclick="return doclink('link-62', 'Zona', 'link-29');">Zona</a></tt><tt class="py-op">.</tt><tt id="link-63" class="py-name"><a title="VistaClasificacion.VentanasAtributos.__init__
+bcC_clima.Atlantico.__init__
+bcC_clima.Atributos.__init__
+bcC_clima.Caracteristica.__init__
+bcC_clima.Continental.__init__
+bcC_clima.Desertico.__init__
+bcC_clima.Ecuatorial.__init__
+bcC_clima.Mediterraneo.__init__
+bcC_clima.Montana.__init__
+bcC_clima.Polar.__init__
+bcC_clima.Prec.__init__
+bcC_clima.Precipitaciones.__init__
+bcC_clima.Temp.__init__
+bcC_clima.Temperatura.__init__
+bcC_clima.Tropical.__init__
+bcC_clima.Veg.__init__
+bcC_clima.Vegetacion.__init__
+bcC_clima.Zona.__init__
+bcC_vehiculos.Asientos.__init__
+bcC_vehiculos.Atributo.__init__
+bcC_vehiculos.Caracteristica.__init__
+bcC_vehiculos.Cilindrada.__init__
+bcC_vehiculos.Edad.__init__
+bcC_vehiculos.Ejes.__init__
+bcC_vehiculos.MercanciasPeligrosas.__init__
+bcC_vehiculos.Observable.__init__
+bcC_vehiculos.PermisoA.__init__
+bcC_vehiculos.PermisoA1.__init__
+bcC_vehiculos.PermisoA2.__init__
+bcC_vehiculos.PermisoADR.__init__
+bcC_vehiculos.PermisoAM.__init__
+bcC_vehiculos.PermisoB.__init__
+bcC_vehiculos.PermisoBTP.__init__
+bcC_vehiculos.PermisoC.__init__
+bcC_vehiculos.PermisoC1.__init__
+bcC_vehiculos.PermisoD.__init__
+bcC_vehiculos.PermisoD1.__init__
+bcC_vehiculos.PermisoE.__init__
+bcC_vehiculos.PesoRemolque.__init__
+bcC_vehiculos.Pma.__init__
+bcC_vehiculos.Potencia.__init__
+bcC_vehiculos.Remolque.__init__
+bcC_vehiculos.Ruedas.__init__
+bcC_vehiculos.Sidecar.__init__
+bcC_vehiculos.Taxi.__init__
+bcC_vehiculos.TransportePersonas.__init__
+bcC_vehiculos.TransporteSanitario.__init__
+bcC_vehiculos.Velmax.__init__
+bcC_vehiculos.cilindrada.__init__
+bcC_vehiculos.edad.__init__
+bcC_vehiculos.mercancias_peligrosas.__init__
+bcC_vehiculos.n_asientos.__init__
+bcC_vehiculos.n_ejes.__init__
+bcC_vehiculos.n_ruedas.__init__
+bcC_vehiculos.peso_remolque.__init__
+bcC_vehiculos.pma.__init__
+bcC_vehiculos.potencia.__init__
+bcC_vehiculos.remolque.__init__
+bcC_vehiculos.sidecar.__init__
+bcC_vehiculos.taxi.__init__
+bcC_vehiculos.transporte_personas.__init__
+bcC_vehiculos.transporte_sanitario.__init__
+bcC_vehiculos.vel_max.__init__
+mC.Equiparar.__init__
+mC.Especificar.__init__
+mC.Inferencia.__init__
+mC.MetodoPoda.__init__
+mC.Obtener.__init__
+mC.Poda.__init__" class="py-name" href="#" onclick="return doclink('link-63', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt><tt class="py-name">nombre</tt><tt class="py-op">=</tt><tt class="py-string">u'Polar'</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L186"></a><tt class="py-lineno">186</tt>  <tt class="py-line">         </tt>
+<a name="Montana"></a><div id="Montana-def"><a name="L187"></a><tt class="py-lineno">187</tt> <a class="py-toggle" href="#" id="Montana-toggle" onclick="return toggle('Montana');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bcC_clima.Montana-class.html">Montana</a><tt class="py-op">(</tt><tt class="py-base-class">Zona</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Montana-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Montana-expanded"><a name="Montana.__init__"></a><div id="Montana.__init__-def"><a name="L188"></a><tt class="py-lineno">188</tt> <a class="py-toggle" href="#" id="Montana.__init__-toggle" onclick="return toggle('Montana.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="bcC_clima.Montana-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Montana.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Montana.__init__-expanded"><a name="L189"></a><tt class="py-lineno">189</tt>  <tt class="py-line">         </tt>
+<a name="L190"></a><tt class="py-lineno">190</tt>  <tt class="py-line">        <tt class="py-name">frio</tt><tt class="py-op">=</tt><tt id="link-64" class="py-name"><a title="bcC_clima.Temperatura" class="py-name" href="#" onclick="return doclink('link-64', 'Temperatura', 'link-20');">Temperatura</a></tt><tt class="py-op">(</tt><tt class="py-string">'baja'</tt><tt class="py-op">)</tt> </tt>
+<a name="L191"></a><tt class="py-lineno">191</tt>  <tt class="py-line">        <tt class="py-name">lluviasAbundantes</tt><tt class="py-op">=</tt><tt id="link-65" class="py-name"><a title="bcC_clima.Precipitaciones" class="py-name" href="#" onclick="return doclink('link-65', 'Precipitaciones', 'link-21');">Precipitaciones</a></tt><tt class="py-op">(</tt><tt class="py-string">'abundantes'</tt><tt class="py-op">)</tt> </tt>
+<a name="L192"></a><tt class="py-lineno">192</tt>  <tt class="py-line">        <tt class="py-name">plantas</tt><tt class="py-op">=</tt><tt id="link-66" class="py-name"><a title="bcC_clima.Vegetacion" class="py-name" href="#" onclick="return doclink('link-66', 'Vegetacion', 'link-22');">Vegetacion</a></tt><tt class="py-op">(</tt><tt class="py-string">'escalonada'</tt><tt class="py-op">)</tt> </tt>
+<a name="L193"></a><tt class="py-lineno">193</tt>  <tt class="py-line">         </tt>
+<a name="L194"></a><tt class="py-lineno">194</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">debePresentar</tt><tt class="py-op">=</tt><tt class="py-op">[</tt><tt class="py-name">frio</tt><tt class="py-op">,</tt><tt class="py-name">lluviasAbundantes</tt><tt class="py-op">,</tt><tt class="py-name">plantas</tt><tt class="py-op">]</tt> </tt>
+<a name="L195"></a><tt class="py-lineno">195</tt>  <tt class="py-line">        <tt id="link-67" class="py-name"><a title="bcC_clima.Zona" class="py-name" href="#" onclick="return doclink('link-67', 'Zona', 'link-29');">Zona</a></tt><tt class="py-op">.</tt><tt id="link-68" class="py-name"><a title="VistaClasificacion.VentanasAtributos.__init__
+bcC_clima.Atlantico.__init__
+bcC_clima.Atributos.__init__
+bcC_clima.Caracteristica.__init__
+bcC_clima.Continental.__init__
+bcC_clima.Desertico.__init__
+bcC_clima.Ecuatorial.__init__
+bcC_clima.Mediterraneo.__init__
+bcC_clima.Montana.__init__
+bcC_clima.Polar.__init__
+bcC_clima.Prec.__init__
+bcC_clima.Precipitaciones.__init__
+bcC_clima.Temp.__init__
+bcC_clima.Temperatura.__init__
+bcC_clima.Tropical.__init__
+bcC_clima.Veg.__init__
+bcC_clima.Vegetacion.__init__
+bcC_clima.Zona.__init__
+bcC_vehiculos.Asientos.__init__
+bcC_vehiculos.Atributo.__init__
+bcC_vehiculos.Caracteristica.__init__
+bcC_vehiculos.Cilindrada.__init__
+bcC_vehiculos.Edad.__init__
+bcC_vehiculos.Ejes.__init__
+bcC_vehiculos.MercanciasPeligrosas.__init__
+bcC_vehiculos.Observable.__init__
+bcC_vehiculos.PermisoA.__init__
+bcC_vehiculos.PermisoA1.__init__
+bcC_vehiculos.PermisoA2.__init__
+bcC_vehiculos.PermisoADR.__init__
+bcC_vehiculos.PermisoAM.__init__
+bcC_vehiculos.PermisoB.__init__
+bcC_vehiculos.PermisoBTP.__init__
+bcC_vehiculos.PermisoC.__init__
+bcC_vehiculos.PermisoC1.__init__
+bcC_vehiculos.PermisoD.__init__
+bcC_vehiculos.PermisoD1.__init__
+bcC_vehiculos.PermisoE.__init__
+bcC_vehiculos.PesoRemolque.__init__
+bcC_vehiculos.Pma.__init__
+bcC_vehiculos.Potencia.__init__
+bcC_vehiculos.Remolque.__init__
+bcC_vehiculos.Ruedas.__init__
+bcC_vehiculos.Sidecar.__init__
+bcC_vehiculos.Taxi.__init__
+bcC_vehiculos.TransportePersonas.__init__
+bcC_vehiculos.TransporteSanitario.__init__
+bcC_vehiculos.Velmax.__init__
+bcC_vehiculos.cilindrada.__init__
+bcC_vehiculos.edad.__init__
+bcC_vehiculos.mercancias_peligrosas.__init__
+bcC_vehiculos.n_asientos.__init__
+bcC_vehiculos.n_ejes.__init__
+bcC_vehiculos.n_ruedas.__init__
+bcC_vehiculos.peso_remolque.__init__
+bcC_vehiculos.pma.__init__
+bcC_vehiculos.potencia.__init__
+bcC_vehiculos.remolque.__init__
+bcC_vehiculos.sidecar.__init__
+bcC_vehiculos.taxi.__init__
+bcC_vehiculos.transporte_personas.__init__
+bcC_vehiculos.transporte_sanitario.__init__
+bcC_vehiculos.vel_max.__init__
+mC.Equiparar.__init__
+mC.Especificar.__init__
+mC.Inferencia.__init__
+mC.MetodoPoda.__init__
+mC.Obtener.__init__
+mC.Poda.__init__" class="py-name" href="#" onclick="return doclink('link-68', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt><tt class="py-name">nombre</tt><tt class="py-op">=</tt><tt class="py-string">u'Montana'</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L196"></a><tt class="py-lineno">196</tt>  <tt class="py-line">         </tt>
+<a name="L197"></a><tt class="py-lineno">197</tt>  <tt class="py-line"> </tt>
+<a name="hipotesis"></a><div id="hipotesis-def"><a name="L198"></a><tt class="py-lineno">198</tt> <a class="py-toggle" href="#" id="hipotesis-toggle" onclick="return toggle('hipotesis');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="bcC_clima-module.html#hipotesis">hipotesis</a><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="hipotesis-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="hipotesis-expanded"><a name="L199"></a><tt class="py-lineno">199</tt>  <tt class="py-line">    <tt class="py-docstring">'''Devuelve la lista de zonas'''</tt> </tt>
+<a name="L200"></a><tt class="py-lineno">200</tt>  <tt class="py-line">    <tt class="py-name">ecu</tt><tt class="py-op">=</tt><tt id="link-69" class="py-name" targets="Class bcC_clima.Ecuatorial=bcC_clima.Ecuatorial-class.html"><a title="bcC_clima.Ecuatorial" class="py-name" href="#" onclick="return doclink('link-69', 'Ecuatorial', 'link-69');">Ecuatorial</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L201"></a><tt class="py-lineno">201</tt>  <tt class="py-line">    <tt class="py-name">tro</tt><tt class="py-op">=</tt><tt id="link-70" class="py-name" targets="Class bcC_clima.Tropical=bcC_clima.Tropical-class.html"><a title="bcC_clima.Tropical" class="py-name" href="#" onclick="return doclink('link-70', 'Tropical', 'link-70');">Tropical</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L202"></a><tt class="py-lineno">202</tt>  <tt class="py-line">    <tt class="py-name">des</tt><tt class="py-op">=</tt><tt id="link-71" class="py-name" targets="Class bcC_clima.Desertico=bcC_clima.Desertico-class.html"><a title="bcC_clima.Desertico" class="py-name" href="#" onclick="return doclink('link-71', 'Desertico', 'link-71');">Desertico</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L203"></a><tt class="py-lineno">203</tt>  <tt class="py-line">    <tt class="py-name">med</tt><tt class="py-op">=</tt><tt id="link-72" class="py-name" targets="Class bcC_clima.Mediterraneo=bcC_clima.Mediterraneo-class.html"><a title="bcC_clima.Mediterraneo" class="py-name" href="#" onclick="return doclink('link-72', 'Mediterraneo', 'link-72');">Mediterraneo</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L204"></a><tt class="py-lineno">204</tt>  <tt class="py-line">    <tt class="py-name">atl</tt><tt class="py-op">=</tt><tt id="link-73" class="py-name" targets="Class bcC_clima.Atlantico=bcC_clima.Atlantico-class.html"><a title="bcC_clima.Atlantico" class="py-name" href="#" onclick="return doclink('link-73', 'Atlantico', 'link-73');">Atlantico</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L205"></a><tt class="py-lineno">205</tt>  <tt class="py-line">    <tt class="py-name">con</tt><tt class="py-op">=</tt><tt id="link-74" class="py-name" targets="Class bcC_clima.Continental=bcC_clima.Continental-class.html"><a title="bcC_clima.Continental" class="py-name" href="#" onclick="return doclink('link-74', 'Continental', 'link-74');">Continental</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L206"></a><tt class="py-lineno">206</tt>  <tt class="py-line">    <tt class="py-name">pol</tt><tt class="py-op">=</tt><tt id="link-75" class="py-name" targets="Class bcC_clima.Polar=bcC_clima.Polar-class.html"><a title="bcC_clima.Polar" class="py-name" href="#" onclick="return doclink('link-75', 'Polar', 'link-75');">Polar</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L207"></a><tt class="py-lineno">207</tt>  <tt class="py-line">    <tt class="py-name">mon</tt><tt class="py-op">=</tt><tt id="link-76" class="py-name" targets="Class bcC_clima.Montana=bcC_clima.Montana-class.html"><a title="bcC_clima.Montana" class="py-name" href="#" onclick="return doclink('link-76', 'Montana', 'link-76');">Montana</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L208"></a><tt class="py-lineno">208</tt>  <tt class="py-line">    <tt class="py-name">lHp</tt><tt class="py-op">=</tt><tt class="py-op">[</tt><tt class="py-name">ecu</tt><tt class="py-op">,</tt><tt class="py-name">tro</tt><tt class="py-op">,</tt><tt class="py-name">des</tt><tt class="py-op">,</tt><tt class="py-name">med</tt><tt class="py-op">,</tt><tt class="py-name">atl</tt><tt class="py-op">,</tt><tt class="py-name">con</tt><tt class="py-op">,</tt><tt class="py-name">pol</tt><tt class="py-op">,</tt><tt class="py-name">mon</tt><tt class="py-op">]</tt> </tt>
+<a name="L209"></a><tt class="py-lineno">209</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">lHp</tt> </tt>
+</div><a name="L210"></a><tt class="py-lineno">210</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Thu Apr  3 00:11:55 2014
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

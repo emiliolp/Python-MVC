@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ckVtsDiagnosticoD</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Module&nbsp;ckVtsDiagnosticoD
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="ckVtsDiagnosticoD-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="ckVtsDiagnosticoD-module.html">Module ckVtsDiagnosticoD</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno">  1</tt>  <tt class="py-line"><tt class="py-comment">#!/usr/bin/env python</tt> </tt>
+<a name="L2"></a><tt class="py-lineno">  2</tt>  <tt class="py-line"><tt class="py-comment"># -*- coding: iso-8859-1 -*-</tt> </tt>
+<a name="L3"></a><tt class="py-lineno">  3</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L4"></a><tt class="py-lineno">  4</tt>  <tt class="py-line"><tt class="py-docstring">@author: Jael M.</tt> </tt>
+<a name="L5"></a><tt class="py-lineno">  5</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L6"></a><tt class="py-lineno">  6</tt>  <tt class="py-line"> </tt>
+<a name="L7"></a><tt class="py-lineno">  7</tt>  <tt class="py-line"> </tt>
+<a name="L8"></a><tt class="py-lineno">  8</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">sys</tt> </tt>
+<a name="L9"></a><tt class="py-lineno">  9</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">PySide</tt> <tt class="py-keyword">import</tt> <tt class="py-name">QtCore</tt> </tt>
+<a name="L10"></a><tt class="py-lineno"> 10</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">PySide</tt> <tt class="py-keyword">import</tt> <tt class="py-name">QtGui</tt> </tt>
+<a name="L11"></a><tt class="py-lineno"> 11</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt id="link-0" class="py-name" targets="Module ckCtrlDiagnostico=ckCtrlDiagnostico-module.html"><a title="ckCtrlDiagnostico" class="py-name" href="#" onclick="return doclink('link-0', 'ckCtrlDiagnostico', 'link-0');">ckCtrlDiagnostico</a></tt> </tt>
+<a name="L12"></a><tt class="py-lineno"> 12</tt>  <tt class="py-line"> </tt>
+<a name="DiagnosticDlg"></a><div id="DiagnosticDlg-def"><a name="L13"></a><tt class="py-lineno"> 13</tt> <a class="py-toggle" href="#" id="DiagnosticDlg-toggle" onclick="return toggle('DiagnosticDlg');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="ckVtsDiagnosticoD.DiagnosticDlg-class.html">DiagnosticDlg</a><tt class="py-op">(</tt><tt class="py-base-class">QtGui</tt><tt class="py-op">.</tt><tt class="py-base-class">QWidget</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="DiagnosticDlg-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="DiagnosticDlg-expanded"><a name="L14"></a><tt class="py-lineno"> 14</tt>  <tt class="py-line">    <tt class="py-docstring">'''</tt> </tt>
+<a name="L15"></a><tt class="py-lineno"> 15</tt>  <tt class="py-line"><tt class="py-docstring">    Cuadro de dial&#243;go para la tarea de diang&#243;stico</tt> </tt>
+<a name="L16"></a><tt class="py-lineno"> 16</tt>  <tt class="py-line"><tt class="py-docstring">    '''</tt> </tt>
+<a name="DiagnosticDlg.__init__"></a><div id="DiagnosticDlg.__init__-def"><a name="L17"></a><tt class="py-lineno"> 17</tt> <a class="py-toggle" href="#" id="DiagnosticDlg.__init__-toggle" onclick="return toggle('DiagnosticDlg.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="ckVtsDiagnosticoD.DiagnosticDlg-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">name</tt><tt class="py-op">,</tt> <tt class="py-param">observables</tt><tt class="py-op">=</tt><tt class="py-name">None</tt><tt class="py-op">,</tt> <tt class="py-param">parent</tt><tt class="py-op">=</tt><tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="DiagnosticDlg.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="DiagnosticDlg.__init__-expanded"><a name="L18"></a><tt class="py-lineno"> 18</tt>  <tt class="py-line">        <tt class="py-docstring">'''</tt> </tt>
+<a name="L19"></a><tt class="py-lineno"> 19</tt>  <tt class="py-line"><tt class="py-docstring">        Inicio del cuadro de di&#225;logo</tt> </tt>
+<a name="L20"></a><tt class="py-lineno"> 20</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L21"></a><tt class="py-lineno"> 21</tt>  <tt class="py-line"><tt class="py-docstring">        @param name: Nombre del cuadro</tt> </tt>
+<a name="L22"></a><tt class="py-lineno"> 22</tt>  <tt class="py-line"><tt class="py-docstring">        @type name: string</tt> </tt>
+<a name="L23"></a><tt class="py-lineno"> 23</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L24"></a><tt class="py-lineno"> 24</tt>  <tt class="py-line"><tt class="py-docstring">        @param observables: Posibles observables</tt> </tt>
+<a name="L25"></a><tt class="py-lineno"> 25</tt>  <tt class="py-line"><tt class="py-docstring">        @type obsevables: tupla de dos valores </tt> </tt>
+<a name="L26"></a><tt class="py-lineno"> 26</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L27"></a><tt class="py-lineno"> 27</tt>  <tt class="py-line"><tt class="py-docstring">        '''</tt> </tt>
+<a name="L28"></a><tt class="py-lineno"> 28</tt>  <tt class="py-line">        <tt class="py-name">super</tt><tt class="py-op">(</tt><tt id="link-1" class="py-name" targets="Class ckVtsDiagnosticoD.DiagnosticDlg=ckVtsDiagnosticoD.DiagnosticDlg-class.html"><a title="ckVtsDiagnosticoD.DiagnosticDlg" class="py-name" href="#" onclick="return doclink('link-1', 'DiagnosticDlg', 'link-1');">DiagnosticDlg</a></tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">)</tt><tt class="py-op">.</tt><tt id="link-2" class="py-name" targets="Method bc2.AdmisionObstruida.__init__()=bc2.AdmisionObstruida-class.html#__init__,Method bc2.ApagadoMotor.__init__()=bc2.ApagadoMotor-class.html#__init__,Method bc2.Averia.__init__()=bc2.Averia-class.html#__init__,Method bc2.AvisoNivelAceite.__init__()=bc2.AvisoNivelAceite-class.html#__init__,Method bc2.AvisoTemperaturaMotor.__init__()=bc2.AvisoTemperaturaMotor-class.html#__init__,Method bc2.BujiasInadecuadas.__init__()=bc2.BujiasInadecuadas-class.html#__init__,Method bc2.ExcesoConsumoAceite.__init__()=bc2.ExcesoConsumoAceite-class.html#__init__,Method bc2.FalloValvulaRalenti.__init__()=bc2.FalloValvulaRalenti-class.html#__init__,Method bc2.FaltaPotencia.__init__()=bc2.FaltaPotencia-class.html#__init__,Method bc2.FiltracionAceiteRetenes.__init__()=bc2.FiltracionAceiteRetenes-class.html#__init__,Method bc2.FisuraJuntaCulata.__init__()=bc2.FisuraJuntaCulata-class.html#__init__,Method bc2.Observable.__init__()=bc2.Observable-class.html#__init__,Method bc2.ProblemaManguito.__init__()=bc2.ProblemaManguito-class.html#__init__,Method bc2.ProblemaTermostato.__init__()=bc2.ProblemaTermostato-class.html#__init__,Method bc2.RalentiIrregular.__init__()=bc2.RalentiIrregular-class.html#__init__,Method bc2.RegimenRevolucionesExcesivo.__init__()=bc2.RegimenRevolucionesExcesivo-class.html#__init__,Method bc2.TironesEnFrio.__init__()=bc2.TironesEnFrio-class.html#__init__,Method bc2.ValvulasAdmisionObstruidas.__init__()=bc2.ValvulasAdmisionObstruidas-class.html#__init__,Method bc2_EVenereas.Clamidias.__init__()=bc2_EVenereas.Clamidias-class.html#__init__,Method bc2_EVenereas.Depresion.__init__()=bc2_EVenereas.Depresion-class.html#__init__,Method bc2_EVenereas.Diarrea.__init__()=bc2_EVenereas.Diarrea-class.html#__init__,Method bc2_EVenereas.DolorCabeza.__init__()=bc2_EVenereas.DolorCabeza-class.html#__init__,Method bc2_EVenereas.DolorOrinar.__init__()=bc2_EVenereas.DolorOrinar-class.html#__init__,Method bc2_EVenereas.Enfermedad.__init__()=bc2_EVenereas.Enfermedad-class.html#__init__,Method bc2_EVenereas.Fiebre.__init__()=bc2_EVenereas.Fiebre-class.html#__init__,Method bc2_EVenereas.Gonorrea.__init__()=bc2_EVenereas.Gonorrea-class.html#__init__,Method bc2_EVenereas.HemorragiaGenitales.__init__()=bc2_EVenereas.HemorragiaGenitales-class.html#__init__,Method bc2_EVenereas.HerpesGenital.__init__()=bc2_EVenereas.HerpesGenital-class.html#__init__,Method bc2_EVenereas.Infertilidad.__init__()=bc2_EVenereas.Infertilidad-class.html#__init__,Method bc2_EVenereas.InflamacionGangliosLinfaticos.__init__()=bc2_EVenereas.InflamacionGangliosLinfaticos-class.html#__init__,Method bc2_EVenereas.MalestarGeneral.__init__()=bc2_EVenereas.MalestarGeneral-class.html#__init__,Method bc2_EVenereas.Observable.__init__()=bc2_EVenereas.Observable-class.html#__init__,Method bc2_EVenereas.Sarpullidos.__init__()=bc2_EVenereas.Sarpullidos-class.html#__init__,Method bc2_EVenereas.Sida.__init__()=bc2_EVenereas.Sida-class.html#__init__,Method bc2_EVenereas.Sifilis.__init__()=bc2_EVenereas.Sifilis-class.html#__init__,Method bc2_EVenereas.Triconomiasis.__init__()=bc2_EVenereas.Triconomiasis-class.html#__init__,Method bc2_EVenereas.VerrugasGenitales.__init__()=bc2_EVenereas.VerrugasGenitales-class.html#__init__,Method bc2_EVenereas.Vomitos.__init__()=bc2_EVenereas.Vomitos-class.html#__init__,Method ckVtsDiagnosticoD.DiagnosticDlg.__init__()=ckVtsDiagnosticoD.DiagnosticDlg-class.html#__init__,Method modelo.Cubrir.__init__()=modelo.Cubrir-class.html#__init__,Method modelo.Especificar.__init__()=modelo.Especificar-class.html#__init__,Method modelo.Inferencia.__init__()=modelo.Inferencia-class.html#__init__,Method modelo.MetodoCoberturaCausal.__init__()=modelo.MetodoCoberturaCausal-class.html#__init__,Method modelo.Obtener.__init__()=modelo.Obtener-class.html#__init__,Method modelo.Seleccionar.__init__()=modelo.Seleccionar-class.html#__init__,Method modelo.Verificar.__init__()=modelo.Verificar-class.html#__init__"><a title="bc2.AdmisionObstruida.__init__
+bc2.ApagadoMotor.__init__
+bc2.Averia.__init__
+bc2.AvisoNivelAceite.__init__
+bc2.AvisoTemperaturaMotor.__init__
+bc2.BujiasInadecuadas.__init__
+bc2.ExcesoConsumoAceite.__init__
+bc2.FalloValvulaRalenti.__init__
+bc2.FaltaPotencia.__init__
+bc2.FiltracionAceiteRetenes.__init__
+bc2.FisuraJuntaCulata.__init__
+bc2.Observable.__init__
+bc2.ProblemaManguito.__init__
+bc2.ProblemaTermostato.__init__
+bc2.RalentiIrregular.__init__
+bc2.RegimenRevolucionesExcesivo.__init__
+bc2.TironesEnFrio.__init__
+bc2.ValvulasAdmisionObstruidas.__init__
+bc2_EVenereas.Clamidias.__init__
+bc2_EVenereas.Depresion.__init__
+bc2_EVenereas.Diarrea.__init__
+bc2_EVenereas.DolorCabeza.__init__
+bc2_EVenereas.DolorOrinar.__init__
+bc2_EVenereas.Enfermedad.__init__
+bc2_EVenereas.Fiebre.__init__
+bc2_EVenereas.Gonorrea.__init__
+bc2_EVenereas.HemorragiaGenitales.__init__
+bc2_EVenereas.HerpesGenital.__init__
+bc2_EVenereas.Infertilidad.__init__
+bc2_EVenereas.InflamacionGangliosLinfaticos.__init__
+bc2_EVenereas.MalestarGeneral.__init__
+bc2_EVenereas.Observable.__init__
+bc2_EVenereas.Sarpullidos.__init__
+bc2_EVenereas.Sida.__init__
+bc2_EVenereas.Sifilis.__init__
+bc2_EVenereas.Triconomiasis.__init__
+bc2_EVenereas.VerrugasGenitales.__init__
+bc2_EVenereas.Vomitos.__init__
+ckVtsDiagnosticoD.DiagnosticDlg.__init__
+modelo.Cubrir.__init__
+modelo.Especificar.__init__
+modelo.Inferencia.__init__
+modelo.MetodoCoberturaCausal.__init__
+modelo.Obtener.__init__
+modelo.Seleccionar.__init__
+modelo.Verificar.__init__" class="py-name" href="#" onclick="return doclink('link-2', '__init__', 'link-2');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">parent</tt><tt class="py-op">)</tt> </tt>
+<a name="L29"></a><tt class="py-lineno"> 29</tt>  <tt class="py-line"> </tt>
+<a name="L30"></a><tt class="py-lineno"> 30</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">name</tt> <tt class="py-op">=</tt> <tt class="py-name">name</tt> <tt class="py-comment">#Coloca el nombre al cuadro de di&#225;logo</tt> </tt>
+<a name="L31"></a><tt class="py-lineno"> 31</tt>  <tt class="py-line">        <tt class="py-comment">#Label</tt> </tt>
+<a name="L32"></a><tt class="py-lineno"> 32</tt>  <tt class="py-line">        <tt class="py-name">labelListA</tt><tt class="py-op">=</tt><tt class="py-name">QtGui</tt><tt class="py-op">.</tt><tt class="py-name">QLabel</tt><tt class="py-op">(</tt><tt class="py-string">"Selecione los Fallos Presentados"</tt><tt class="py-op">,</tt><tt class="py-name">self</tt><tt class="py-op">)</tt> </tt>
+<a name="L33"></a><tt class="py-lineno"> 33</tt>  <tt class="py-line">        <tt class="py-name">labelListB</tt><tt class="py-op">=</tt><tt class="py-name">QtGui</tt><tt class="py-op">.</tt><tt class="py-name">QLabel</tt><tt class="py-op">(</tt><tt class="py-string">""</tt><tt class="py-op">,</tt><tt class="py-name">self</tt><tt class="py-op">)</tt><tt class="py-comment">#quitar</tt> </tt>
+<a name="L34"></a><tt class="py-lineno"> 34</tt>  <tt class="py-line">        <tt class="py-name">observables_list</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">(</tt><tt class="py-name">f</tt><tt class="py-op">.</tt><tt class="py-name">nombre</tt> <tt class="py-op">,</tt> <tt class="py-name">f</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt><tt class="py-op">)</tt>  <tt class="py-keyword">for</tt> <tt class="py-name">f</tt> <tt class="py-keyword">in</tt> <tt id="link-3" class="py-name" targets="Variable appDiagnostico.observables=appDiagnostico-module.html#observables,Function bc2.observables()=bc2-module.html#observables,Function bc2_EVenereas.observables()=bc2_EVenereas-module.html#observables,Function ckCtrlDiagnostico.observables()=ckCtrlDiagnostico-module.html#observables"><a title="appDiagnostico.observables
+bc2.observables
+bc2_EVenereas.observables
+ckCtrlDiagnostico.observables" class="py-name" href="#" onclick="return doclink('link-3', 'observables', 'link-3');">observables</a></tt><tt class="py-op">]</tt> </tt>
+<a name="L35"></a><tt class="py-lineno"> 35</tt>  <tt class="py-line">        <tt class="py-name">header</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-string">'NOMBRE'</tt><tt class="py-op">,</tt> <tt class="py-string">'VALOR'</tt><tt class="py-op">]</tt> </tt>
+<a name="L36"></a><tt class="py-lineno"> 36</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">tableWidgetPosiblesFallos</tt> <tt class="py-op">=</tt> <tt class="py-name">QtGui</tt><tt class="py-op">.</tt><tt class="py-name">QTableWidget</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">observables_list</tt><tt class="py-op">)</tt><tt class="py-op">,</tt><tt class="py-number">2</tt><tt class="py-op">)</tt> <tt class="py-comment">#Crea la tabla de elementos</tt> </tt>
+<a name="L37"></a><tt class="py-lineno"> 37</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">tableWidgetPosiblesFallos</tt><tt class="py-op">.</tt><tt class="py-name">setColumnWidth</tt><tt class="py-op">(</tt><tt class="py-number">0</tt><tt class="py-op">,</tt> <tt class="py-number">400</tt><tt class="py-op">)</tt> <tt class="py-comment">#Asignan ancho a las columnas</tt> </tt>
+<a name="L38"></a><tt class="py-lineno"> 38</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">tableWidgetPosiblesFallos</tt><tt class="py-op">.</tt><tt class="py-name">setColumnWidth</tt><tt class="py-op">(</tt><tt class="py-number">1</tt><tt class="py-op">,</tt> <tt class="py-number">400</tt><tt class="py-op">)</tt> </tt>
+<a name="L39"></a><tt class="py-lineno"> 39</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">tableWidgetPosiblesFallos</tt><tt class="py-op">.</tt><tt class="py-name">setHorizontalHeaderLabels</tt><tt class="py-op">(</tt><tt class="py-name">header</tt><tt class="py-op">)</tt> <tt class="py-comment">#Asigna etiquetas a las columnas</tt> </tt>
+<a name="L40"></a><tt class="py-lineno"> 40</tt>  <tt class="py-line">         </tt>
+<a name="L41"></a><tt class="py-lineno"> 41</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt id="link-4" class="py-name"><a title="appDiagnostico.observables
+bc2.observables
+bc2_EVenereas.observables
+ckCtrlDiagnostico.observables" class="py-name" href="#" onclick="return doclink('link-4', 'observables', 'link-3');">observables</a></tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L42"></a><tt class="py-lineno"> 42</tt>  <tt class="py-line">            <tt class="py-name">item1</tt> <tt class="py-op">=</tt> <tt class="py-name">QtGui</tt><tt class="py-op">.</tt><tt class="py-name">QTableWidgetItem</tt><tt class="py-op">(</tt><tt id="link-5" class="py-name"><a title="appDiagnostico.observables
+bc2.observables
+bc2_EVenereas.observables
+ckCtrlDiagnostico.observables" class="py-name" href="#" onclick="return doclink('link-5', 'observables', 'link-3');">observables</a></tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt class="py-name">nombre</tt><tt class="py-op">)</tt> <tt class="py-comment">#Crea un item y le asigna el nombre de la observable</tt> </tt>
+<a name="L43"></a><tt class="py-lineno"> 43</tt>  <tt class="py-line">            <tt class="py-name">item1</tt><tt class="py-op">.</tt><tt class="py-name">setCheckState</tt><tt class="py-op">(</tt><tt class="py-name">QtCore</tt><tt class="py-op">.</tt><tt class="py-name">Qt</tt><tt class="py-op">.</tt><tt class="py-name">Checked</tt><tt class="py-op">)</tt> <tt class="py-comment"># Establece propiedades a las celdas de la primera columna</tt> </tt>
+<a name="L44"></a><tt class="py-lineno"> 44</tt>  <tt class="py-line">            <tt class="py-name">item1</tt><tt class="py-op">.</tt><tt class="py-name">setFlags</tt><tt class="py-op">(</tt><tt class="py-name">QtCore</tt><tt class="py-op">.</tt><tt class="py-name">Qt</tt><tt class="py-op">.</tt><tt class="py-name">ItemIsUserCheckable</tt><tt class="py-op">|</tt><tt class="py-name">QtCore</tt><tt class="py-op">.</tt><tt class="py-name">Qt</tt><tt class="py-op">.</tt><tt class="py-name">ItemIsEnabled</tt><tt class="py-op">)</tt> </tt>
+<a name="L45"></a><tt class="py-lineno"> 45</tt>  <tt class="py-line">            <tt class="py-name">combobox</tt> <tt class="py-op">=</tt> <tt class="py-name">QtGui</tt><tt class="py-op">.</tt><tt class="py-name">QComboBox</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L46"></a><tt class="py-lineno"> 46</tt>  <tt class="py-line">            <tt class="py-name">combobox</tt><tt class="py-op">.</tt><tt class="py-name">addItem</tt><tt class="py-op">(</tt><tt class="py-string">'True'</tt><tt class="py-op">)</tt>  </tt>
+<a name="L47"></a><tt class="py-lineno"> 47</tt>  <tt class="py-line">            <tt class="py-name">combobox</tt><tt class="py-op">.</tt><tt class="py-name">addItem</tt><tt class="py-op">(</tt><tt class="py-string">'False'</tt><tt class="py-op">)</tt>  </tt>
+<a name="L48"></a><tt class="py-lineno"> 48</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">tableWidgetPosiblesFallos</tt><tt class="py-op">.</tt><tt class="py-name">setCellWidget</tt><tt class="py-op">(</tt><tt class="py-name">i</tt><tt class="py-op">,</tt> <tt class="py-number">1</tt><tt class="py-op">,</tt> <tt class="py-name">combobox</tt><tt class="py-op">)</tt> </tt>
+<a name="L49"></a><tt class="py-lineno"> 49</tt>  <tt class="py-line"> </tt>
+<a name="L50"></a><tt class="py-lineno"> 50</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">tableWidgetPosiblesFallos</tt><tt class="py-op">.</tt><tt class="py-name">setItem</tt><tt class="py-op">(</tt><tt class="py-name">i</tt><tt class="py-op">,</tt> <tt class="py-number">0</tt><tt class="py-op">,</tt> <tt class="py-name">item1</tt><tt class="py-op">)</tt><tt class="py-comment">#Establecemos el item en la columna 0</tt> </tt>
+<a name="L51"></a><tt class="py-lineno"> 51</tt>  <tt class="py-line">                 </tt>
+<a name="L52"></a><tt class="py-lineno"> 52</tt>  <tt class="py-line">        <tt class="py-name">labelHipotesisL</tt><tt class="py-op">=</tt><tt class="py-name">QtGui</tt><tt class="py-op">.</tt><tt class="py-name">QLabel</tt><tt class="py-op">(</tt><tt class="py-string">"Posibles Hipotesis"</tt><tt class="py-op">,</tt><tt class="py-name">self</tt><tt class="py-op">)</tt><tt class="py-comment">#Creamos un listwidget para las posibles hip&#243;tesis</tt> </tt>
+<a name="L53"></a><tt class="py-lineno"> 53</tt>  <tt class="py-line">        <tt class="py-name">labelHipotesisR</tt><tt class="py-op">=</tt><tt class="py-name">QtGui</tt><tt class="py-op">.</tt><tt class="py-name">QLabel</tt><tt class="py-op">(</tt><tt class="py-string">""</tt><tt class="py-op">,</tt><tt class="py-name">self</tt><tt class="py-op">)</tt> </tt>
+<a name="L54"></a><tt class="py-lineno"> 54</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">listWidgetHipotesis</tt> <tt class="py-op">=</tt> <tt class="py-name">QtGui</tt><tt class="py-op">.</tt><tt class="py-name">QListWidget</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-comment">#Lista de hip&#243;tesis</tt> </tt>
+<a name="L55"></a><tt class="py-lineno"> 55</tt>  <tt class="py-line">         </tt>
+<a name="L56"></a><tt class="py-lineno"> 56</tt>  <tt class="py-line">        <tt class="py-name">labelDiagnosticoL</tt><tt class="py-op">=</tt><tt class="py-name">QtGui</tt><tt class="py-op">.</tt><tt class="py-name">QLabel</tt><tt class="py-op">(</tt><tt class="py-string">"Diagn&#243;stico"</tt><tt class="py-op">,</tt><tt class="py-name">self</tt><tt class="py-op">)</tt> </tt>
+<a name="L57"></a><tt class="py-lineno"> 57</tt>  <tt class="py-line">        <tt class="py-name">labelDiagnosticoR</tt><tt class="py-op">=</tt><tt class="py-name">QtGui</tt><tt class="py-op">.</tt><tt class="py-name">QLabel</tt><tt class="py-op">(</tt><tt class="py-string">""</tt><tt class="py-op">,</tt><tt class="py-name">self</tt><tt class="py-op">)</tt> </tt>
+<a name="L58"></a><tt class="py-lineno"> 58</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">listWidgetDiagnosticos</tt> <tt class="py-op">=</tt> <tt class="py-name">QtGui</tt><tt class="py-op">.</tt><tt class="py-name">QListWidget</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-comment">#Lista de diagn&#243;sticos</tt> </tt>
+<a name="L59"></a><tt class="py-lineno"> 59</tt>  <tt class="py-line">         </tt>
+<a name="L60"></a><tt class="py-lineno"> 60</tt>  <tt class="py-line">        <tt class="py-name">labelExplicacionL</tt><tt class="py-op">=</tt><tt class="py-name">QtGui</tt><tt class="py-op">.</tt><tt class="py-name">QLabel</tt><tt class="py-op">(</tt><tt class="py-string">"Explicacion"</tt><tt class="py-op">,</tt><tt class="py-name">self</tt><tt class="py-op">)</tt> </tt>
+<a name="L61"></a><tt class="py-lineno"> 61</tt>  <tt class="py-line">        <tt class="py-name">labelExplicacionR</tt><tt class="py-op">=</tt><tt class="py-name">QtGui</tt><tt class="py-op">.</tt><tt class="py-name">QLabel</tt><tt class="py-op">(</tt><tt class="py-string">"     "</tt><tt class="py-op">,</tt><tt class="py-name">self</tt><tt class="py-op">)</tt> </tt>
+<a name="L62"></a><tt class="py-lineno"> 62</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">PlainTextEditExplicacion</tt> <tt class="py-op">=</tt> <tt class="py-name">QtGui</tt><tt class="py-op">.</tt><tt class="py-name">QPlainTextEdit</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-comment">#Cuadro de texto    de la explicaci&#243;n           </tt> </tt>
+<a name="L63"></a><tt class="py-lineno"> 63</tt>  <tt class="py-line">        <tt class="py-comment">#Botones</tt> </tt>
+<a name="L64"></a><tt class="py-lineno"> 64</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">coberturaCausalButton</tt><tt class="py-op">=</tt><tt class="py-name">QtGui</tt><tt class="py-op">.</tt><tt class="py-name">QPushButton</tt><tt class="py-op">(</tt><tt class="py-string">'Cobertura Causal'</tt><tt class="py-op">)</tt><tt class="py-comment">#Para invocar el m&#233;todo de cobretura causal</tt> </tt>
+<a name="L65"></a><tt class="py-lineno"> 65</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">coberturaCausalButton</tt><tt class="py-op">.</tt><tt class="py-name">setToolTip</tt><tt class="py-op">(</tt><tt class="py-string">'Realizar cobertura causal'</tt><tt class="py-op">)</tt> </tt>
+<a name="L66"></a><tt class="py-lineno"> 66</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">diagnosticaButton</tt><tt class="py-op">=</tt><tt class="py-name">QtGui</tt><tt class="py-op">.</tt><tt class="py-name">QPushButton</tt><tt class="py-op">(</tt><tt class="py-string">'Diagnostica'</tt><tt class="py-op">)</tt> <tt class="py-comment">#Para ejecutar el diagn&#243;stico</tt> </tt>
+<a name="L67"></a><tt class="py-lineno"> 67</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">diagnosticaButton</tt><tt class="py-op">.</tt><tt class="py-name">setToolTip</tt><tt class="py-op">(</tt><tt class="py-string">'Realizar diagnostico'</tt><tt class="py-op">)</tt>         </tt>
+<a name="L68"></a><tt class="py-lineno"> 68</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">exitButton</tt><tt class="py-op">=</tt><tt class="py-name">QtGui</tt><tt class="py-op">.</tt><tt class="py-name">QPushButton</tt><tt class="py-op">(</tt><tt class="py-string">'Exit'</tt><tt class="py-op">)</tt> <tt class="py-comment">#Para salir del programa</tt> </tt>
+<a name="L69"></a><tt class="py-lineno"> 69</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">exitButton</tt><tt class="py-op">.</tt><tt class="py-name">setToolTip</tt><tt class="py-op">(</tt><tt class="py-string">'Salir'</tt><tt class="py-op">)</tt> </tt>
+<a name="L70"></a><tt class="py-lineno"> 70</tt>  <tt class="py-line">         </tt>
+<a name="L71"></a><tt class="py-lineno"> 71</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">buttonsLayout</tt> <tt class="py-op">=</tt> <tt class="py-name">QtGui</tt><tt class="py-op">.</tt><tt class="py-name">QHBoxLayout</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> <tt class="py-comment">#Gestor de dise&#241;o horizontal</tt> </tt>
+<a name="L72"></a><tt class="py-lineno"> 72</tt>  <tt class="py-line">        <tt class="py-comment">#http://stackoverflow.com/questions/20452754/how-exactly-does-addstretch-work-in-qboxlayout</tt> </tt>
+<a name="L73"></a><tt class="py-lineno"> 73</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">buttonsLayout</tt><tt class="py-op">.</tt><tt class="py-name">addStretch</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L74"></a><tt class="py-lineno"> 74</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">buttonsLayout</tt><tt class="py-op">.</tt><tt class="py-name">addWidget</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">coberturaCausalButton</tt><tt class="py-op">)</tt> </tt>
+<a name="L75"></a><tt class="py-lineno"> 75</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">buttonsLayout</tt><tt class="py-op">.</tt><tt class="py-name">addWidget</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">diagnosticaButton</tt><tt class="py-op">)</tt> </tt>
+<a name="L76"></a><tt class="py-lineno"> 76</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">buttonsLayout</tt><tt class="py-op">.</tt><tt class="py-name">addWidget</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">exitButton</tt><tt class="py-op">)</tt> </tt>
+<a name="L77"></a><tt class="py-lineno"> 77</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">buttonsLayout</tt><tt class="py-op">.</tt><tt class="py-name">addStretch</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L78"></a><tt class="py-lineno"> 78</tt>  <tt class="py-line">         </tt>
+<a name="L79"></a><tt class="py-lineno"> 79</tt>  <tt class="py-line">        <tt class="py-comment">#Rejilla de distribuci&#243;n de los controles</tt> </tt>
+<a name="L80"></a><tt class="py-lineno"> 80</tt>  <tt class="py-line">        <tt class="py-comment">#Ver http://srinikom.github.io/pyside-docs/PySide/QtGui/QGridLayout.html</tt> </tt>
+<a name="L81"></a><tt class="py-lineno"> 81</tt>  <tt class="py-line">        <tt class="py-name">grid</tt> <tt class="py-op">=</tt> <tt class="py-name">QtGui</tt><tt class="py-op">.</tt><tt class="py-name">QGridLayout</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L82"></a><tt class="py-lineno"> 82</tt>  <tt class="py-line">        <tt class="py-name">grid</tt><tt class="py-op">.</tt><tt class="py-name">setSpacing</tt><tt class="py-op">(</tt><tt class="py-number">5</tt><tt class="py-op">)</tt> </tt>
+<a name="L83"></a><tt class="py-lineno"> 83</tt>  <tt class="py-line">        <tt class="py-name">grid</tt><tt class="py-op">.</tt><tt class="py-name">addWidget</tt><tt class="py-op">(</tt><tt class="py-name">labelListA</tt><tt class="py-op">,</tt> <tt class="py-number">0</tt><tt class="py-op">,</tt> <tt class="py-number">0</tt><tt class="py-op">)</tt> </tt>
+<a name="L84"></a><tt class="py-lineno"> 84</tt>  <tt class="py-line">        <tt class="py-name">grid</tt><tt class="py-op">.</tt><tt class="py-name">addWidget</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">tableWidgetPosiblesFallos</tt><tt class="py-op">,</tt> <tt class="py-number">1</tt><tt class="py-op">,</tt> <tt class="py-number">0</tt><tt class="py-op">,</tt><tt class="py-number">1</tt><tt class="py-op">,</tt><tt class="py-number">2</tt><tt class="py-op">)</tt> </tt>
+<a name="L85"></a><tt class="py-lineno"> 85</tt>  <tt class="py-line">        <tt class="py-name">grid</tt><tt class="py-op">.</tt><tt class="py-name">addWidget</tt><tt class="py-op">(</tt><tt class="py-name">labelListB</tt><tt class="py-op">,</tt> <tt class="py-number">0</tt><tt class="py-op">,</tt> <tt class="py-number">1</tt><tt class="py-op">)</tt> </tt>
+<a name="L86"></a><tt class="py-lineno"> 86</tt>  <tt class="py-line">         </tt>
+<a name="L87"></a><tt class="py-lineno"> 87</tt>  <tt class="py-line">        <tt class="py-name">grid</tt><tt class="py-op">.</tt><tt class="py-name">addWidget</tt><tt class="py-op">(</tt><tt class="py-name">labelHipotesisL</tt><tt class="py-op">,</tt> <tt class="py-number">2</tt><tt class="py-op">,</tt> <tt class="py-number">0</tt><tt class="py-op">)</tt> </tt>
+<a name="L88"></a><tt class="py-lineno"> 88</tt>  <tt class="py-line">        <tt class="py-name">grid</tt><tt class="py-op">.</tt><tt class="py-name">addWidget</tt><tt class="py-op">(</tt><tt class="py-name">labelHipotesisR</tt><tt class="py-op">,</tt> <tt class="py-number">2</tt><tt class="py-op">,</tt> <tt class="py-number">1</tt><tt class="py-op">)</tt> </tt>
+<a name="L89"></a><tt class="py-lineno"> 89</tt>  <tt class="py-line">        <tt class="py-name">grid</tt><tt class="py-op">.</tt><tt class="py-name">addWidget</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">listWidgetHipotesis</tt><tt class="py-op">,</tt> <tt class="py-number">3</tt><tt class="py-op">,</tt> <tt class="py-number">0</tt><tt class="py-op">,</tt><tt class="py-number">1</tt><tt class="py-op">,</tt><tt class="py-number">2</tt><tt class="py-op">)</tt> </tt>
+<a name="L90"></a><tt class="py-lineno"> 90</tt>  <tt class="py-line">         </tt>
+<a name="L91"></a><tt class="py-lineno"> 91</tt>  <tt class="py-line">        <tt class="py-name">grid</tt><tt class="py-op">.</tt><tt class="py-name">addWidget</tt><tt class="py-op">(</tt><tt class="py-name">labelDiagnosticoL</tt><tt class="py-op">,</tt> <tt class="py-number">4</tt><tt class="py-op">,</tt> <tt class="py-number">0</tt><tt class="py-op">)</tt> </tt>
+<a name="L92"></a><tt class="py-lineno"> 92</tt>  <tt class="py-line">        <tt class="py-name">grid</tt><tt class="py-op">.</tt><tt class="py-name">addWidget</tt><tt class="py-op">(</tt><tt class="py-name">labelDiagnosticoR</tt><tt class="py-op">,</tt> <tt class="py-number">4</tt><tt class="py-op">,</tt> <tt class="py-number">1</tt><tt class="py-op">)</tt> </tt>
+<a name="L93"></a><tt class="py-lineno"> 93</tt>  <tt class="py-line">        <tt class="py-name">grid</tt><tt class="py-op">.</tt><tt class="py-name">addWidget</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">listWidgetDiagnosticos</tt><tt class="py-op">,</tt> <tt class="py-number">5</tt><tt class="py-op">,</tt> <tt class="py-number">0</tt><tt class="py-op">,</tt><tt class="py-number">1</tt><tt class="py-op">,</tt><tt class="py-number">2</tt><tt class="py-op">)</tt> </tt>
+<a name="L94"></a><tt class="py-lineno"> 94</tt>  <tt class="py-line">        <tt class="py-name">grid</tt><tt class="py-op">.</tt><tt class="py-name">addWidget</tt><tt class="py-op">(</tt><tt class="py-name">labelExplicacionL</tt><tt class="py-op">,</tt> <tt class="py-number">6</tt><tt class="py-op">,</tt> <tt class="py-number">0</tt><tt class="py-op">)</tt> </tt>
+<a name="L95"></a><tt class="py-lineno"> 95</tt>  <tt class="py-line">        <tt class="py-name">grid</tt><tt class="py-op">.</tt><tt class="py-name">addWidget</tt><tt class="py-op">(</tt><tt class="py-name">labelExplicacionR</tt><tt class="py-op">,</tt> <tt class="py-number">6</tt><tt class="py-op">,</tt> <tt class="py-number">1</tt><tt class="py-op">)</tt> </tt>
+<a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line">        <tt class="py-name">grid</tt><tt class="py-op">.</tt><tt class="py-name">addWidget</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">PlainTextEditExplicacion</tt><tt class="py-op">,</tt> <tt class="py-number">7</tt><tt class="py-op">,</tt> <tt class="py-number">0</tt><tt class="py-op">,</tt><tt class="py-number">1</tt><tt class="py-op">,</tt><tt class="py-number">2</tt><tt class="py-op">)</tt> </tt>
+<a name="L97"></a><tt class="py-lineno"> 97</tt>  <tt class="py-line">         </tt>
+<a name="L98"></a><tt class="py-lineno"> 98</tt>  <tt class="py-line">        <tt class="py-comment">#Dise&#241;o principal</tt> </tt>
+<a name="L99"></a><tt class="py-lineno"> 99</tt>  <tt class="py-line">        <tt class="py-name">mainLayout</tt> <tt class="py-op">=</tt> <tt class="py-name">QtGui</tt><tt class="py-op">.</tt><tt class="py-name">QVBoxLayout</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L100"></a><tt class="py-lineno">100</tt>  <tt class="py-line">        <tt class="py-name">mainLayout</tt><tt class="py-op">.</tt><tt class="py-name">addLayout</tt><tt class="py-op">(</tt><tt class="py-name">grid</tt><tt class="py-op">)</tt> </tt>
+<a name="L101"></a><tt class="py-lineno">101</tt>  <tt class="py-line">        <tt class="py-name">mainLayout</tt><tt class="py-op">.</tt><tt class="py-name">addLayout</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">buttonsLayout</tt><tt class="py-op">)</tt> </tt>
+<a name="L102"></a><tt class="py-lineno">102</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">setLayout</tt><tt class="py-op">(</tt><tt class="py-name">mainLayout</tt><tt class="py-op">)</tt> <tt class="py-comment">#Asignar a la ventana la distribuci&#243;n de los controles</tt> </tt>
+<a name="L103"></a><tt class="py-lineno">103</tt>  <tt class="py-line">         </tt>
+<a name="L104"></a><tt class="py-lineno">104</tt>  <tt class="py-line">     </tt>
+<a name="L105"></a><tt class="py-lineno">105</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">setGeometry</tt><tt class="py-op">(</tt><tt class="py-number">300</tt><tt class="py-op">,</tt> <tt class="py-number">300</tt><tt class="py-op">,</tt> <tt class="py-number">900</tt><tt class="py-op">,</tt> <tt class="py-number">600</tt><tt class="py-op">)</tt> </tt>
+<a name="L106"></a><tt class="py-lineno">106</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">setWindowTitle</tt><tt class="py-op">(</tt><tt class="py-string">u"TAREA DE DIAGNOSTICO"</tt><tt class="py-op">.</tt><tt class="py-name">format</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">name</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L107"></a><tt class="py-lineno">107</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">show</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L108"></a><tt class="py-lineno">108</tt>  <tt class="py-line">  </tt>
+<a name="L109"></a><tt class="py-lineno">109</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-6" class="py-name" targets="Method ckVtsDiagnosticoD.DiagnosticDlg.center()=ckVtsDiagnosticoD.DiagnosticDlg-class.html#center"><a title="ckVtsDiagnosticoD.DiagnosticDlg.center" class="py-name" href="#" onclick="return doclink('link-6', 'center', 'link-6');">center</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L110"></a><tt class="py-lineno">110</tt>  <tt class="py-line">         </tt>
+<a name="L111"></a><tt class="py-lineno">111</tt>  <tt class="py-line">        <tt class="py-comment">#Conexiones de los botones y eventos en las listas:</tt> </tt>
+<a name="L112"></a><tt class="py-lineno">112</tt>  <tt class="py-line">        <tt class="py-comment">#==========</tt> </tt>
+<a name="L113"></a><tt class="py-lineno">113</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">coberturaCausalButton</tt><tt class="py-op">.</tt><tt class="py-name">clicked</tt><tt class="py-op">.</tt><tt class="py-name">connect</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-7" class="py-name" targets="Method ckVtsDiagnosticoD.DiagnosticDlg.coberturaCausal()=ckVtsDiagnosticoD.DiagnosticDlg-class.html#coberturaCausal"><a title="ckVtsDiagnosticoD.DiagnosticDlg.coberturaCausal" class="py-name" href="#" onclick="return doclink('link-7', 'coberturaCausal', 'link-7');">coberturaCausal</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L114"></a><tt class="py-lineno">114</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">diagnosticaButton</tt><tt class="py-op">.</tt><tt class="py-name">clicked</tt><tt class="py-op">.</tt><tt class="py-name">connect</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-8" class="py-name" targets="Method ckVtsDiagnosticoD.DiagnosticDlg.diagnostica()=ckVtsDiagnosticoD.DiagnosticDlg-class.html#diagnostica"><a title="ckVtsDiagnosticoD.DiagnosticDlg.diagnostica" class="py-name" href="#" onclick="return doclink('link-8', 'diagnostica', 'link-8');">diagnostica</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L115"></a><tt class="py-lineno">115</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">exitButton</tt><tt class="py-op">.</tt><tt class="py-name">clicked</tt><tt class="py-op">.</tt><tt class="py-name">connect</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">close</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L116"></a><tt class="py-lineno">116</tt>  <tt class="py-line"> </tt>
+<a name="DiagnosticDlg.diagnostica"></a><div id="DiagnosticDlg.diagnostica-def"><a name="L117"></a><tt class="py-lineno">117</tt> <a class="py-toggle" href="#" id="DiagnosticDlg.diagnostica-toggle" onclick="return toggle('DiagnosticDlg.diagnostica');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="ckVtsDiagnosticoD.DiagnosticDlg-class.html#diagnostica">diagnostica</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="DiagnosticDlg.diagnostica-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="DiagnosticDlg.diagnostica-expanded"><a name="L118"></a><tt class="py-lineno">118</tt>  <tt class="py-line">        <tt class="py-docstring">'''</tt> </tt>
+<a name="L119"></a><tt class="py-lineno">119</tt>  <tt class="py-line"><tt class="py-docstring">        Funcion de inicio del evento de diagnostico</tt> </tt>
+<a name="L120"></a><tt class="py-lineno">120</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L121"></a><tt class="py-lineno">121</tt>  <tt class="py-line"><tt class="py-docstring">        @param self: Objeto de la Vista DiagnosticDlg</tt> </tt>
+<a name="L122"></a><tt class="py-lineno">122</tt>  <tt class="py-line"><tt class="py-docstring">        @type self: DiagnosticDlg</tt> </tt>
+<a name="L123"></a><tt class="py-lineno">123</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L124"></a><tt class="py-lineno">124</tt>  <tt class="py-line"><tt class="py-docstring">        '''</tt> </tt>
+<a name="L125"></a><tt class="py-lineno">125</tt>  <tt class="py-line">        <tt id="link-9" class="py-name"><a title="ckCtrlDiagnostico" class="py-name" href="#" onclick="return doclink('link-9', 'ckCtrlDiagnostico', 'link-0');">ckCtrlDiagnostico</a></tt><tt class="py-op">.</tt><tt id="link-10" class="py-name" targets="Function ckCtrlDiagnostico.eventDiagnostica()=ckCtrlDiagnostico-module.html#eventDiagnostica"><a title="ckCtrlDiagnostico.eventDiagnostica" class="py-name" href="#" onclick="return doclink('link-10', 'eventDiagnostica', 'link-10');">eventDiagnostica</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L126"></a><tt class="py-lineno">126</tt>  <tt class="py-line">         </tt>
+<a name="L127"></a><tt class="py-lineno">127</tt>  <tt class="py-line">         </tt>
+<a name="DiagnosticDlg.coberturaCausal"></a><div id="DiagnosticDlg.coberturaCausal-def"><a name="L128"></a><tt class="py-lineno">128</tt> <a class="py-toggle" href="#" id="DiagnosticDlg.coberturaCausal-toggle" onclick="return toggle('DiagnosticDlg.coberturaCausal');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="ckVtsDiagnosticoD.DiagnosticDlg-class.html#coberturaCausal">coberturaCausal</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="DiagnosticDlg.coberturaCausal-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="DiagnosticDlg.coberturaCausal-expanded"><a name="L129"></a><tt class="py-lineno">129</tt>  <tt class="py-line">        <tt class="py-docstring">'''</tt> </tt>
+<a name="L130"></a><tt class="py-lineno">130</tt>  <tt class="py-line"><tt class="py-docstring">        Funcion de inicio del evento de cobertura causal</tt> </tt>
+<a name="L131"></a><tt class="py-lineno">131</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L132"></a><tt class="py-lineno">132</tt>  <tt class="py-line"><tt class="py-docstring">        @param self: Objeto de la Vista DiagnosticDlg</tt> </tt>
+<a name="L133"></a><tt class="py-lineno">133</tt>  <tt class="py-line"><tt class="py-docstring">        @type self: DiagnosticDlg</tt> </tt>
+<a name="L134"></a><tt class="py-lineno">134</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L135"></a><tt class="py-lineno">135</tt>  <tt class="py-line"><tt class="py-docstring">        '''</tt> </tt>
+<a name="L136"></a><tt class="py-lineno">136</tt>  <tt class="py-line">        <tt class="py-comment">#Recolecta datos de las vistas y se lo pasamos al controlador</tt> </tt>
+<a name="L137"></a><tt class="py-lineno">137</tt>  <tt class="py-line">        <tt class="py-comment"># Al pasar self pasamos toda la informaci&#243;n de la ventana</tt> </tt>
+<a name="L138"></a><tt class="py-lineno">138</tt>  <tt class="py-line">        <tt id="link-11" class="py-name"><a title="ckCtrlDiagnostico" class="py-name" href="#" onclick="return doclink('link-11', 'ckCtrlDiagnostico', 'link-0');">ckCtrlDiagnostico</a></tt><tt class="py-op">.</tt><tt id="link-12" class="py-name" targets="Function ckCtrlDiagnostico.eventCoberturaCausal()=ckCtrlDiagnostico-module.html#eventCoberturaCausal"><a title="ckCtrlDiagnostico.eventCoberturaCausal" class="py-name" href="#" onclick="return doclink('link-12', 'eventCoberturaCausal', 'link-12');">eventCoberturaCausal</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L139"></a><tt class="py-lineno">139</tt>  <tt class="py-line">     </tt>
+<a name="DiagnosticDlg.center"></a><div id="DiagnosticDlg.center-def"><a name="L140"></a><tt class="py-lineno">140</tt> <a class="py-toggle" href="#" id="DiagnosticDlg.center-toggle" onclick="return toggle('DiagnosticDlg.center');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="ckVtsDiagnosticoD.DiagnosticDlg-class.html#center">center</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt>    </tt>
+</div><a name="L141"></a><tt class="py-lineno">141</tt>  <tt class="py-line">        <tt class="py-docstring">'''</tt> </tt>
+<a name="L142"></a><tt class="py-lineno">142</tt>  <tt class="py-line"><tt class="py-docstring">        Funcion para centrar la ventana</tt> </tt>
+<a name="L143"></a><tt class="py-lineno">143</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L144"></a><tt class="py-lineno">144</tt>  <tt class="py-line"><tt class="py-docstring">        @param self: Objeto de la Vista DiagnosticDlg</tt> </tt>
+<a name="L145"></a><tt class="py-lineno">145</tt>  <tt class="py-line"><tt class="py-docstring">        @type self: DiagnosticDlg</tt> </tt>
+<a name="L146"></a><tt class="py-lineno">146</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L147"></a><tt class="py-lineno">147</tt>  <tt class="py-line"><tt class="py-docstring">        '''</tt> </tt>
+<a name="L148"></a><tt class="py-lineno">148</tt>  <tt class="py-line">        <tt class="py-name">qr</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">frameGeometry</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L149"></a><tt class="py-lineno">149</tt>  <tt class="py-line">        <tt class="py-name">cp</tt> <tt class="py-op">=</tt> <tt class="py-name">QtGui</tt><tt class="py-op">.</tt><tt class="py-name">QDesktopWidget</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">.</tt><tt class="py-name">availableGeometry</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">.</tt><tt id="link-13" class="py-name"><a title="ckVtsDiagnosticoD.DiagnosticDlg.center" class="py-name" href="#" onclick="return doclink('link-13', 'center', 'link-6');">center</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L150"></a><tt class="py-lineno">150</tt>  <tt class="py-line">        <tt class="py-name">qr</tt><tt class="py-op">.</tt><tt class="py-name">moveCenter</tt><tt class="py-op">(</tt><tt class="py-name">cp</tt><tt class="py-op">)</tt> </tt>
+<a name="L151"></a><tt class="py-lineno">151</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">move</tt><tt class="py-op">(</tt><tt class="py-name">qr</tt><tt class="py-op">.</tt><tt class="py-name">topLeft</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L152"></a><tt class="py-lineno">152</tt>  <tt class="py-line"> </tt>
+<a name="L153"></a><tt class="py-lineno">153</tt>  <tt class="py-line"> </tt>
+<a name="L154"></a><tt class="py-lineno">154</tt>  <tt class="py-line"> </tt>
+<a name="L155"></a><tt class="py-lineno">155</tt>  <tt class="py-line">         </tt>
+<a name="L156"></a><tt class="py-lineno">156</tt>  <tt class="py-line"><tt class="py-keyword">if</tt> <tt class="py-name">__name__</tt> <tt class="py-op">==</tt> <tt class="py-string">"__main__"</tt><tt class="py-op">:</tt> </tt>
+<a name="L157"></a><tt class="py-lineno">157</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-name">True</tt><tt class="py-op">:</tt> </tt>
+<a name="L158"></a><tt class="py-lineno">158</tt>  <tt class="py-line">        <tt class="py-comment">#Podemos probar el m&#243;dulo de vistas de forma aut&#243;noma</tt> </tt>
+<a name="L159"></a><tt class="py-lineno">159</tt>  <tt class="py-line">        <tt id="link-14" class="py-name"><a title="appDiagnostico.observables
+bc2.observables
+bc2_EVenereas.observables
+ckCtrlDiagnostico.observables" class="py-name" href="#" onclick="return doclink('link-14', 'observables', 'link-3');">observables</a></tt> <tt class="py-op">=</tt>  <tt id="link-15" class="py-name"><a title="ckCtrlDiagnostico" class="py-name" href="#" onclick="return doclink('link-15', 'ckCtrlDiagnostico', 'link-0');">ckCtrlDiagnostico</a></tt><tt class="py-op">.</tt><tt id="link-16" class="py-name" targets="Module modelo=modelo-module.html"><a title="modelo" class="py-name" href="#" onclick="return doclink('link-16', 'modelo', 'link-16');">modelo</a></tt><tt class="py-op">.</tt><tt id="link-17" class="py-name" targets="Module bc2=bc2-module.html"><a title="bc2" class="py-name" href="#" onclick="return doclink('link-17', 'bc2', 'link-17');">bc2</a></tt><tt class="py-op">.</tt><tt id="link-18" class="py-name"><a title="appDiagnostico.observables
+bc2.observables
+bc2_EVenereas.observables
+ckCtrlDiagnostico.observables" class="py-name" href="#" onclick="return doclink('link-18', 'observables', 'link-3');">observables</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L160"></a><tt class="py-lineno">160</tt>  <tt class="py-line">         </tt>
+<a name="L161"></a><tt class="py-lineno">161</tt>  <tt class="py-line">        <tt id="link-19" class="py-name" targets="Variable appDiagnostico.app=appDiagnostico-module.html#app"><a title="appDiagnostico.app" class="py-name" href="#" onclick="return doclink('link-19', 'app', 'link-19');">app</a></tt> <tt class="py-op">=</tt> <tt class="py-name">QtGui</tt><tt class="py-op">.</tt><tt class="py-name">QApplication</tt><tt class="py-op">(</tt><tt class="py-name">sys</tt><tt class="py-op">.</tt><tt class="py-name">argv</tt><tt class="py-op">)</tt> </tt>
+<a name="L162"></a><tt class="py-lineno">162</tt>  <tt class="py-line">        <tt id="link-20" class="py-name" targets="Variable appDiagnostico.form=appDiagnostico-module.html#form"><a title="appDiagnostico.form" class="py-name" href="#" onclick="return doclink('link-20', 'form', 'link-20');">form</a></tt> <tt class="py-op">=</tt> <tt id="link-21" class="py-name"><a title="ckVtsDiagnosticoD.DiagnosticDlg" class="py-name" href="#" onclick="return doclink('link-21', 'DiagnosticDlg', 'link-1');">DiagnosticDlg</a></tt><tt class="py-op">(</tt><tt class="py-string">"Fallos"</tt><tt class="py-op">,</tt> <tt id="link-22" class="py-name"><a title="appDiagnostico.observables
+bc2.observables
+bc2_EVenereas.observables
+ckCtrlDiagnostico.observables" class="py-name" href="#" onclick="return doclink('link-22', 'observables', 'link-3');">observables</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L163"></a><tt class="py-lineno">163</tt>  <tt class="py-line">        <tt class="py-name">sys</tt><tt class="py-op">.</tt><tt class="py-name">exit</tt><tt class="py-op">(</tt><tt id="link-23" class="py-name"><a title="appDiagnostico.app" class="py-name" href="#" onclick="return doclink('link-23', 'app', 'link-19');">app</a></tt><tt class="py-op">.</tt><tt class="py-name">exec_</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L164"></a><tt class="py-lineno">164</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-name">False</tt><tt class="py-op">:</tt> </tt>
+<a name="L165"></a><tt class="py-lineno">165</tt>  <tt class="py-line">        <tt id="link-24" class="py-name"><a title="appDiagnostico.observables
+bc2.observables
+bc2_EVenereas.observables
+ckCtrlDiagnostico.observables" class="py-name" href="#" onclick="return doclink('link-24', 'observables', 'link-3');">observables</a></tt> <tt class="py-op">=</tt>  <tt id="link-25" class="py-name"><a title="ckCtrlDiagnostico" class="py-name" href="#" onclick="return doclink('link-25', 'ckCtrlDiagnostico', 'link-0');">ckCtrlDiagnostico</a></tt><tt class="py-op">.</tt><tt id="link-26" class="py-name"><a title="modelo" class="py-name" href="#" onclick="return doclink('link-26', 'modelo', 'link-16');">modelo</a></tt><tt class="py-op">.</tt><tt id="link-27" class="py-name"><a title="bc2" class="py-name" href="#" onclick="return doclink('link-27', 'bc2', 'link-17');">bc2</a></tt><tt class="py-op">.</tt><tt id="link-28" class="py-name"><a title="appDiagnostico.observables
+bc2.observables
+bc2_EVenereas.observables
+ckCtrlDiagnostico.observables" class="py-name" href="#" onclick="return doclink('link-28', 'observables', 'link-3');">observables</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L166"></a><tt class="py-lineno">166</tt>  <tt class="py-line">        <tt class="py-keyword">print</tt> <tt id="link-29" class="py-name"><a title="appDiagnostico.observables
+bc2.observables
+bc2_EVenereas.observables
+ckCtrlDiagnostico.observables" class="py-name" href="#" onclick="return doclink('link-29', 'observables', 'link-3');">observables</a></tt> </tt>
+<a name="L167"></a><tt class="py-lineno">167</tt>  <tt class="py-line">        <tt class="py-name">l</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">(</tt><tt class="py-name">f</tt><tt class="py-op">.</tt><tt class="py-name">nombre</tt> <tt class="py-op">,</tt> <tt class="py-name">f</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt><tt class="py-op">)</tt>  <tt class="py-keyword">for</tt> <tt class="py-name">f</tt> <tt class="py-keyword">in</tt> <tt id="link-30" class="py-name"><a title="appDiagnostico.observables
+bc2.observables
+bc2_EVenereas.observables
+ckCtrlDiagnostico.observables" class="py-name" href="#" onclick="return doclink('link-30', 'observables', 'link-3');">observables</a></tt><tt class="py-op">]</tt> </tt>
+<a name="L168"></a><tt class="py-lineno">168</tt>  <tt class="py-line">        <tt class="py-keyword">print</tt> <tt class="py-name">l</tt> </tt>
+<a name="L169"></a><tt class="py-lineno">169</tt>  <tt class="py-line">        <tt class="py-name">header</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-string">'Nombre'</tt><tt class="py-op">,</tt> <tt class="py-string">'Valor'</tt><tt class="py-op">]</tt> </tt>
+<a name="L170"></a><tt class="py-lineno">170</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Thu Jun 26 19:16:31 2014
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

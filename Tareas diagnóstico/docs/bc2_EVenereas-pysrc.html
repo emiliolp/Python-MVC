@@ -1,0 +1,1269 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>bc2_EVenereas</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Module&nbsp;bc2_EVenereas
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="bc2_EVenereas-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="bc2_EVenereas-module.html">Module bc2_EVenereas</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno">  1</tt>  <tt class="py-line"><tt class="py-comment">#!/usr/bin/env python</tt> </tt>
+<a name="L2"></a><tt class="py-lineno">  2</tt>  <tt class="py-line"><tt class="py-comment"># -*- coding: iso-8859-1 -*-</tt> </tt>
+<a name="L3"></a><tt class="py-lineno">  3</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L4"></a><tt class="py-lineno">  4</tt>  <tt class="py-line"><tt class="py-docstring">Created on Sun Jan 19 12:19:10 2014</tt> </tt>
+<a name="L5"></a><tt class="py-lineno">  5</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L6"></a><tt class="py-lineno">  6</tt>  <tt class="py-line"><tt class="py-docstring">@author: Pablo Garci&#173;a Tamarit</tt> </tt>
+<a name="L7"></a><tt class="py-lineno">  7</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="Observable"></a><div id="Observable-def"><a name="L8"></a><tt class="py-lineno">  8</tt> <a class="py-toggle" href="#" id="Observable-toggle" onclick="return toggle('Observable');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bc2_EVenereas.Observable-class.html">Observable</a><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Observable-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Observable-expanded"><a name="L9"></a><tt class="py-lineno">  9</tt>  <tt class="py-line">        <tt class="py-docstring">''' Valores que tiene cada sintoma '''</tt> </tt>
+<a name="Observable.__init__"></a><div id="Observable.__init__-def"><a name="L10"></a><tt class="py-lineno"> 10</tt> <a class="py-toggle" href="#" id="Observable.__init__-toggle" onclick="return toggle('Observable.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="bc2_EVenereas.Observable-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">nombre</tt><tt class="py-op">=</tt><tt class="py-name">None</tt><tt class="py-op">,</tt><tt class="py-param">tipo</tt><tt class="py-op">=</tt><tt class="py-name">None</tt><tt class="py-op">,</tt><tt class="py-param">valoresPermitidos</tt><tt class="py-op">=</tt><tt class="py-name">None</tt><tt class="py-op">,</tt><tt class="py-param">valor</tt><tt class="py-op">=</tt><tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Observable.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Observable.__init__-expanded"><a name="L11"></a><tt class="py-lineno"> 11</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">nombre</tt><tt class="py-op">=</tt><tt class="py-name">nombre</tt> </tt>
+<a name="L12"></a><tt class="py-lineno"> 12</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt><tt class="py-op">=</tt><tt class="py-name">valor</tt> </tt>
+<a name="L13"></a><tt class="py-lineno"> 13</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">tipo</tt><tt class="py-op">=</tt><tt class="py-name">tipo</tt> </tt>
+<a name="L14"></a><tt class="py-lineno"> 14</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">valoresPermitidos</tt><tt class="py-op">=</tt><tt class="py-name">valoresPermitidos</tt> </tt>
+</div></div><a name="L15"></a><tt class="py-lineno"> 15</tt>  <tt class="py-line"> </tt>
+<a name="Fiebre"></a><div id="Fiebre-def"><a name="L16"></a><tt class="py-lineno"> 16</tt> <a class="py-toggle" href="#" id="Fiebre-toggle" onclick="return toggle('Fiebre');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bc2_EVenereas.Fiebre-class.html">Fiebre</a> <tt class="py-op">(</tt><tt class="py-base-class">Observable</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Fiebre-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Fiebre-expanded"><a name="L17"></a><tt class="py-lineno"> 17</tt>  <tt class="py-line">        <tt class="py-docstring">''' Sintoma fiebre '''</tt> </tt>
+<a name="Fiebre.__init__"></a><div id="Fiebre.__init__-def"><a name="L18"></a><tt class="py-lineno"> 18</tt> <a class="py-toggle" href="#" id="Fiebre.__init__-toggle" onclick="return toggle('Fiebre.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="bc2_EVenereas.Fiebre-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">valor</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Fiebre.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Fiebre.__init__-expanded"><a name="L19"></a><tt class="py-lineno"> 19</tt>  <tt class="py-line">                <tt class="py-name">nombre</tt> <tt class="py-op">=</tt> <tt class="py-string">"Fiebre"</tt> </tt>
+<a name="L20"></a><tt class="py-lineno"> 20</tt>  <tt class="py-line">                <tt class="py-name">tipo</tt> <tt class="py-op">=</tt> <tt class="py-string">"boolean"</tt> </tt>
+<a name="L21"></a><tt class="py-lineno"> 21</tt>  <tt class="py-line">                <tt class="py-name">valoresPermitidos</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L22"></a><tt class="py-lineno"> 22</tt>  <tt class="py-line">                <tt id="link-0" class="py-name" targets="Class bc2.Observable=bc2.Observable-class.html,Class bc2_EVenereas.Observable=bc2_EVenereas.Observable-class.html"><a title="bc2.Observable
+bc2_EVenereas.Observable" class="py-name" href="#" onclick="return doclink('link-0', 'Observable', 'link-0');">Observable</a></tt><tt class="py-op">.</tt><tt id="link-1" class="py-name" targets="Method bc2.AdmisionObstruida.__init__()=bc2.AdmisionObstruida-class.html#__init__,Method bc2.ApagadoMotor.__init__()=bc2.ApagadoMotor-class.html#__init__,Method bc2.Averia.__init__()=bc2.Averia-class.html#__init__,Method bc2.AvisoNivelAceite.__init__()=bc2.AvisoNivelAceite-class.html#__init__,Method bc2.AvisoTemperaturaMotor.__init__()=bc2.AvisoTemperaturaMotor-class.html#__init__,Method bc2.BujiasInadecuadas.__init__()=bc2.BujiasInadecuadas-class.html#__init__,Method bc2.ExcesoConsumoAceite.__init__()=bc2.ExcesoConsumoAceite-class.html#__init__,Method bc2.FalloValvulaRalenti.__init__()=bc2.FalloValvulaRalenti-class.html#__init__,Method bc2.FaltaPotencia.__init__()=bc2.FaltaPotencia-class.html#__init__,Method bc2.FiltracionAceiteRetenes.__init__()=bc2.FiltracionAceiteRetenes-class.html#__init__,Method bc2.FisuraJuntaCulata.__init__()=bc2.FisuraJuntaCulata-class.html#__init__,Method bc2.Observable.__init__()=bc2.Observable-class.html#__init__,Method bc2.ProblemaManguito.__init__()=bc2.ProblemaManguito-class.html#__init__,Method bc2.ProblemaTermostato.__init__()=bc2.ProblemaTermostato-class.html#__init__,Method bc2.RalentiIrregular.__init__()=bc2.RalentiIrregular-class.html#__init__,Method bc2.RegimenRevolucionesExcesivo.__init__()=bc2.RegimenRevolucionesExcesivo-class.html#__init__,Method bc2.TironesEnFrio.__init__()=bc2.TironesEnFrio-class.html#__init__,Method bc2.ValvulasAdmisionObstruidas.__init__()=bc2.ValvulasAdmisionObstruidas-class.html#__init__,Method bc2_EVenereas.Clamidias.__init__()=bc2_EVenereas.Clamidias-class.html#__init__,Method bc2_EVenereas.Depresion.__init__()=bc2_EVenereas.Depresion-class.html#__init__,Method bc2_EVenereas.Diarrea.__init__()=bc2_EVenereas.Diarrea-class.html#__init__,Method bc2_EVenereas.DolorCabeza.__init__()=bc2_EVenereas.DolorCabeza-class.html#__init__,Method bc2_EVenereas.DolorOrinar.__init__()=bc2_EVenereas.DolorOrinar-class.html#__init__,Method bc2_EVenereas.Enfermedad.__init__()=bc2_EVenereas.Enfermedad-class.html#__init__,Method bc2_EVenereas.Fiebre.__init__()=bc2_EVenereas.Fiebre-class.html#__init__,Method bc2_EVenereas.Gonorrea.__init__()=bc2_EVenereas.Gonorrea-class.html#__init__,Method bc2_EVenereas.HemorragiaGenitales.__init__()=bc2_EVenereas.HemorragiaGenitales-class.html#__init__,Method bc2_EVenereas.HerpesGenital.__init__()=bc2_EVenereas.HerpesGenital-class.html#__init__,Method bc2_EVenereas.Infertilidad.__init__()=bc2_EVenereas.Infertilidad-class.html#__init__,Method bc2_EVenereas.InflamacionGangliosLinfaticos.__init__()=bc2_EVenereas.InflamacionGangliosLinfaticos-class.html#__init__,Method bc2_EVenereas.MalestarGeneral.__init__()=bc2_EVenereas.MalestarGeneral-class.html#__init__,Method bc2_EVenereas.Observable.__init__()=bc2_EVenereas.Observable-class.html#__init__,Method bc2_EVenereas.Sarpullidos.__init__()=bc2_EVenereas.Sarpullidos-class.html#__init__,Method bc2_EVenereas.Sida.__init__()=bc2_EVenereas.Sida-class.html#__init__,Method bc2_EVenereas.Sifilis.__init__()=bc2_EVenereas.Sifilis-class.html#__init__,Method bc2_EVenereas.Triconomiasis.__init__()=bc2_EVenereas.Triconomiasis-class.html#__init__,Method bc2_EVenereas.VerrugasGenitales.__init__()=bc2_EVenereas.VerrugasGenitales-class.html#__init__,Method bc2_EVenereas.Vomitos.__init__()=bc2_EVenereas.Vomitos-class.html#__init__,Method ckVtsDiagnosticoD.DiagnosticDlg.__init__()=ckVtsDiagnosticoD.DiagnosticDlg-class.html#__init__,Method modelo.Cubrir.__init__()=modelo.Cubrir-class.html#__init__,Method modelo.Especificar.__init__()=modelo.Especificar-class.html#__init__,Method modelo.Inferencia.__init__()=modelo.Inferencia-class.html#__init__,Method modelo.MetodoCoberturaCausal.__init__()=modelo.MetodoCoberturaCausal-class.html#__init__,Method modelo.Obtener.__init__()=modelo.Obtener-class.html#__init__,Method modelo.Seleccionar.__init__()=modelo.Seleccionar-class.html#__init__,Method modelo.Verificar.__init__()=modelo.Verificar-class.html#__init__"><a title="bc2.AdmisionObstruida.__init__
+bc2.ApagadoMotor.__init__
+bc2.Averia.__init__
+bc2.AvisoNivelAceite.__init__
+bc2.AvisoTemperaturaMotor.__init__
+bc2.BujiasInadecuadas.__init__
+bc2.ExcesoConsumoAceite.__init__
+bc2.FalloValvulaRalenti.__init__
+bc2.FaltaPotencia.__init__
+bc2.FiltracionAceiteRetenes.__init__
+bc2.FisuraJuntaCulata.__init__
+bc2.Observable.__init__
+bc2.ProblemaManguito.__init__
+bc2.ProblemaTermostato.__init__
+bc2.RalentiIrregular.__init__
+bc2.RegimenRevolucionesExcesivo.__init__
+bc2.TironesEnFrio.__init__
+bc2.ValvulasAdmisionObstruidas.__init__
+bc2_EVenereas.Clamidias.__init__
+bc2_EVenereas.Depresion.__init__
+bc2_EVenereas.Diarrea.__init__
+bc2_EVenereas.DolorCabeza.__init__
+bc2_EVenereas.DolorOrinar.__init__
+bc2_EVenereas.Enfermedad.__init__
+bc2_EVenereas.Fiebre.__init__
+bc2_EVenereas.Gonorrea.__init__
+bc2_EVenereas.HemorragiaGenitales.__init__
+bc2_EVenereas.HerpesGenital.__init__
+bc2_EVenereas.Infertilidad.__init__
+bc2_EVenereas.InflamacionGangliosLinfaticos.__init__
+bc2_EVenereas.MalestarGeneral.__init__
+bc2_EVenereas.Observable.__init__
+bc2_EVenereas.Sarpullidos.__init__
+bc2_EVenereas.Sida.__init__
+bc2_EVenereas.Sifilis.__init__
+bc2_EVenereas.Triconomiasis.__init__
+bc2_EVenereas.VerrugasGenitales.__init__
+bc2_EVenereas.Vomitos.__init__
+ckVtsDiagnosticoD.DiagnosticDlg.__init__
+modelo.Cubrir.__init__
+modelo.Especificar.__init__
+modelo.Inferencia.__init__
+modelo.MetodoCoberturaCausal.__init__
+modelo.Obtener.__init__
+modelo.Seleccionar.__init__
+modelo.Verificar.__init__" class="py-name" href="#" onclick="return doclink('link-1', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">nombre</tt><tt class="py-op">,</tt> <tt class="py-name">tipo</tt><tt class="py-op">,</tt> <tt class="py-name">valor</tt><tt class="py-op">,</tt> <tt class="py-name">valoresPermitidos</tt><tt class="py-op">)</tt> </tt>
+<a name="L23"></a><tt class="py-lineno"> 23</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt> <tt class="py-op">=</tt> <tt class="py-name">valor</tt> </tt>
+</div></div><a name="L24"></a><tt class="py-lineno"> 24</tt>  <tt class="py-line"> </tt>
+<a name="DolorCabeza"></a><div id="DolorCabeza-def"><a name="L25"></a><tt class="py-lineno"> 25</tt> <a class="py-toggle" href="#" id="DolorCabeza-toggle" onclick="return toggle('DolorCabeza');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bc2_EVenereas.DolorCabeza-class.html">DolorCabeza</a> <tt class="py-op">(</tt><tt class="py-base-class">Observable</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="DolorCabeza-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="DolorCabeza-expanded"><a name="L26"></a><tt class="py-lineno"> 26</tt>  <tt class="py-line">        <tt class="py-docstring">''' Sintoma Dolor de cabeza'''</tt> </tt>
+<a name="DolorCabeza.__init__"></a><div id="DolorCabeza.__init__-def"><a name="L27"></a><tt class="py-lineno"> 27</tt> <a class="py-toggle" href="#" id="DolorCabeza.__init__-toggle" onclick="return toggle('DolorCabeza.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="bc2_EVenereas.DolorCabeza-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">valor</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="DolorCabeza.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="DolorCabeza.__init__-expanded"><a name="L28"></a><tt class="py-lineno"> 28</tt>  <tt class="py-line">                <tt class="py-name">nombre</tt> <tt class="py-op">=</tt> <tt class="py-string">"Dolor de Cabeza"</tt> </tt>
+<a name="L29"></a><tt class="py-lineno"> 29</tt>  <tt class="py-line">                <tt class="py-name">tipo</tt> <tt class="py-op">=</tt> <tt class="py-string">"boolean"</tt> </tt>
+<a name="L30"></a><tt class="py-lineno"> 30</tt>  <tt class="py-line">                <tt class="py-name">valoresPermitidos</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L31"></a><tt class="py-lineno"> 31</tt>  <tt class="py-line">                <tt id="link-2" class="py-name"><a title="bc2.Observable
+bc2_EVenereas.Observable" class="py-name" href="#" onclick="return doclink('link-2', 'Observable', 'link-0');">Observable</a></tt><tt class="py-op">.</tt><tt id="link-3" class="py-name"><a title="bc2.AdmisionObstruida.__init__
+bc2.ApagadoMotor.__init__
+bc2.Averia.__init__
+bc2.AvisoNivelAceite.__init__
+bc2.AvisoTemperaturaMotor.__init__
+bc2.BujiasInadecuadas.__init__
+bc2.ExcesoConsumoAceite.__init__
+bc2.FalloValvulaRalenti.__init__
+bc2.FaltaPotencia.__init__
+bc2.FiltracionAceiteRetenes.__init__
+bc2.FisuraJuntaCulata.__init__
+bc2.Observable.__init__
+bc2.ProblemaManguito.__init__
+bc2.ProblemaTermostato.__init__
+bc2.RalentiIrregular.__init__
+bc2.RegimenRevolucionesExcesivo.__init__
+bc2.TironesEnFrio.__init__
+bc2.ValvulasAdmisionObstruidas.__init__
+bc2_EVenereas.Clamidias.__init__
+bc2_EVenereas.Depresion.__init__
+bc2_EVenereas.Diarrea.__init__
+bc2_EVenereas.DolorCabeza.__init__
+bc2_EVenereas.DolorOrinar.__init__
+bc2_EVenereas.Enfermedad.__init__
+bc2_EVenereas.Fiebre.__init__
+bc2_EVenereas.Gonorrea.__init__
+bc2_EVenereas.HemorragiaGenitales.__init__
+bc2_EVenereas.HerpesGenital.__init__
+bc2_EVenereas.Infertilidad.__init__
+bc2_EVenereas.InflamacionGangliosLinfaticos.__init__
+bc2_EVenereas.MalestarGeneral.__init__
+bc2_EVenereas.Observable.__init__
+bc2_EVenereas.Sarpullidos.__init__
+bc2_EVenereas.Sida.__init__
+bc2_EVenereas.Sifilis.__init__
+bc2_EVenereas.Triconomiasis.__init__
+bc2_EVenereas.VerrugasGenitales.__init__
+bc2_EVenereas.Vomitos.__init__
+ckVtsDiagnosticoD.DiagnosticDlg.__init__
+modelo.Cubrir.__init__
+modelo.Especificar.__init__
+modelo.Inferencia.__init__
+modelo.MetodoCoberturaCausal.__init__
+modelo.Obtener.__init__
+modelo.Seleccionar.__init__
+modelo.Verificar.__init__" class="py-name" href="#" onclick="return doclink('link-3', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">nombre</tt><tt class="py-op">,</tt> <tt class="py-name">tipo</tt><tt class="py-op">,</tt> <tt class="py-name">valor</tt><tt class="py-op">,</tt> <tt class="py-name">valoresPermitidos</tt><tt class="py-op">)</tt> </tt>
+<a name="L32"></a><tt class="py-lineno"> 32</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt> <tt class="py-op">=</tt> <tt class="py-name">valor</tt> </tt>
+</div></div><a name="L33"></a><tt class="py-lineno"> 33</tt>  <tt class="py-line"> </tt>
+<a name="MalestarGeneral"></a><div id="MalestarGeneral-def"><a name="L34"></a><tt class="py-lineno"> 34</tt> <a class="py-toggle" href="#" id="MalestarGeneral-toggle" onclick="return toggle('MalestarGeneral');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bc2_EVenereas.MalestarGeneral-class.html">MalestarGeneral</a> <tt class="py-op">(</tt><tt class="py-base-class">Observable</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="MalestarGeneral-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="MalestarGeneral-expanded"><a name="L35"></a><tt class="py-lineno"> 35</tt>  <tt class="py-line">        <tt class="py-docstring">''' Sintoma Malestar General '''</tt> </tt>
+<a name="MalestarGeneral.__init__"></a><div id="MalestarGeneral.__init__-def"><a name="L36"></a><tt class="py-lineno"> 36</tt> <a class="py-toggle" href="#" id="MalestarGeneral.__init__-toggle" onclick="return toggle('MalestarGeneral.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="bc2_EVenereas.MalestarGeneral-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">valor</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="MalestarGeneral.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="MalestarGeneral.__init__-expanded"><a name="L37"></a><tt class="py-lineno"> 37</tt>  <tt class="py-line">                <tt class="py-name">nombre</tt> <tt class="py-op">=</tt> <tt class="py-string">"Malestar en General"</tt> </tt>
+<a name="L38"></a><tt class="py-lineno"> 38</tt>  <tt class="py-line">                <tt class="py-name">tipo</tt> <tt class="py-op">=</tt> <tt class="py-string">"boolean"</tt> </tt>
+<a name="L39"></a><tt class="py-lineno"> 39</tt>  <tt class="py-line">                <tt class="py-name">valoresPermitidos</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L40"></a><tt class="py-lineno"> 40</tt>  <tt class="py-line">                <tt id="link-4" class="py-name"><a title="bc2.Observable
+bc2_EVenereas.Observable" class="py-name" href="#" onclick="return doclink('link-4', 'Observable', 'link-0');">Observable</a></tt><tt class="py-op">.</tt><tt id="link-5" class="py-name"><a title="bc2.AdmisionObstruida.__init__
+bc2.ApagadoMotor.__init__
+bc2.Averia.__init__
+bc2.AvisoNivelAceite.__init__
+bc2.AvisoTemperaturaMotor.__init__
+bc2.BujiasInadecuadas.__init__
+bc2.ExcesoConsumoAceite.__init__
+bc2.FalloValvulaRalenti.__init__
+bc2.FaltaPotencia.__init__
+bc2.FiltracionAceiteRetenes.__init__
+bc2.FisuraJuntaCulata.__init__
+bc2.Observable.__init__
+bc2.ProblemaManguito.__init__
+bc2.ProblemaTermostato.__init__
+bc2.RalentiIrregular.__init__
+bc2.RegimenRevolucionesExcesivo.__init__
+bc2.TironesEnFrio.__init__
+bc2.ValvulasAdmisionObstruidas.__init__
+bc2_EVenereas.Clamidias.__init__
+bc2_EVenereas.Depresion.__init__
+bc2_EVenereas.Diarrea.__init__
+bc2_EVenereas.DolorCabeza.__init__
+bc2_EVenereas.DolorOrinar.__init__
+bc2_EVenereas.Enfermedad.__init__
+bc2_EVenereas.Fiebre.__init__
+bc2_EVenereas.Gonorrea.__init__
+bc2_EVenereas.HemorragiaGenitales.__init__
+bc2_EVenereas.HerpesGenital.__init__
+bc2_EVenereas.Infertilidad.__init__
+bc2_EVenereas.InflamacionGangliosLinfaticos.__init__
+bc2_EVenereas.MalestarGeneral.__init__
+bc2_EVenereas.Observable.__init__
+bc2_EVenereas.Sarpullidos.__init__
+bc2_EVenereas.Sida.__init__
+bc2_EVenereas.Sifilis.__init__
+bc2_EVenereas.Triconomiasis.__init__
+bc2_EVenereas.VerrugasGenitales.__init__
+bc2_EVenereas.Vomitos.__init__
+ckVtsDiagnosticoD.DiagnosticDlg.__init__
+modelo.Cubrir.__init__
+modelo.Especificar.__init__
+modelo.Inferencia.__init__
+modelo.MetodoCoberturaCausal.__init__
+modelo.Obtener.__init__
+modelo.Seleccionar.__init__
+modelo.Verificar.__init__" class="py-name" href="#" onclick="return doclink('link-5', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">nombre</tt><tt class="py-op">,</tt> <tt class="py-name">tipo</tt><tt class="py-op">,</tt> <tt class="py-name">valor</tt><tt class="py-op">,</tt> <tt class="py-name">valoresPermitidos</tt><tt class="py-op">)</tt> </tt>
+<a name="L41"></a><tt class="py-lineno"> 41</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt> <tt class="py-op">=</tt> <tt class="py-name">valor</tt> </tt>
+</div></div><a name="L42"></a><tt class="py-lineno"> 42</tt>  <tt class="py-line"> </tt>
+<a name="Depresion"></a><div id="Depresion-def"><a name="L43"></a><tt class="py-lineno"> 43</tt> <a class="py-toggle" href="#" id="Depresion-toggle" onclick="return toggle('Depresion');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bc2_EVenereas.Depresion-class.html">Depresion</a> <tt class="py-op">(</tt><tt class="py-base-class">Observable</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Depresion-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Depresion-expanded"><a name="L44"></a><tt class="py-lineno"> 44</tt>  <tt class="py-line">        <tt class="py-docstring">''' Sintoma Depresion '''</tt> </tt>
+<a name="Depresion.__init__"></a><div id="Depresion.__init__-def"><a name="L45"></a><tt class="py-lineno"> 45</tt> <a class="py-toggle" href="#" id="Depresion.__init__-toggle" onclick="return toggle('Depresion.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="bc2_EVenereas.Depresion-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">valor</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Depresion.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Depresion.__init__-expanded"><a name="L46"></a><tt class="py-lineno"> 46</tt>  <tt class="py-line">                <tt class="py-name">nombre</tt> <tt class="py-op">=</tt> <tt class="py-string">"Depresion"</tt> </tt>
+<a name="L47"></a><tt class="py-lineno"> 47</tt>  <tt class="py-line">                <tt class="py-name">tipo</tt> <tt class="py-op">=</tt> <tt class="py-string">"boolean"</tt> </tt>
+<a name="L48"></a><tt class="py-lineno"> 48</tt>  <tt class="py-line">                <tt class="py-name">valoresPermitidos</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L49"></a><tt class="py-lineno"> 49</tt>  <tt class="py-line">                <tt id="link-6" class="py-name"><a title="bc2.Observable
+bc2_EVenereas.Observable" class="py-name" href="#" onclick="return doclink('link-6', 'Observable', 'link-0');">Observable</a></tt><tt class="py-op">.</tt><tt id="link-7" class="py-name"><a title="bc2.AdmisionObstruida.__init__
+bc2.ApagadoMotor.__init__
+bc2.Averia.__init__
+bc2.AvisoNivelAceite.__init__
+bc2.AvisoTemperaturaMotor.__init__
+bc2.BujiasInadecuadas.__init__
+bc2.ExcesoConsumoAceite.__init__
+bc2.FalloValvulaRalenti.__init__
+bc2.FaltaPotencia.__init__
+bc2.FiltracionAceiteRetenes.__init__
+bc2.FisuraJuntaCulata.__init__
+bc2.Observable.__init__
+bc2.ProblemaManguito.__init__
+bc2.ProblemaTermostato.__init__
+bc2.RalentiIrregular.__init__
+bc2.RegimenRevolucionesExcesivo.__init__
+bc2.TironesEnFrio.__init__
+bc2.ValvulasAdmisionObstruidas.__init__
+bc2_EVenereas.Clamidias.__init__
+bc2_EVenereas.Depresion.__init__
+bc2_EVenereas.Diarrea.__init__
+bc2_EVenereas.DolorCabeza.__init__
+bc2_EVenereas.DolorOrinar.__init__
+bc2_EVenereas.Enfermedad.__init__
+bc2_EVenereas.Fiebre.__init__
+bc2_EVenereas.Gonorrea.__init__
+bc2_EVenereas.HemorragiaGenitales.__init__
+bc2_EVenereas.HerpesGenital.__init__
+bc2_EVenereas.Infertilidad.__init__
+bc2_EVenereas.InflamacionGangliosLinfaticos.__init__
+bc2_EVenereas.MalestarGeneral.__init__
+bc2_EVenereas.Observable.__init__
+bc2_EVenereas.Sarpullidos.__init__
+bc2_EVenereas.Sida.__init__
+bc2_EVenereas.Sifilis.__init__
+bc2_EVenereas.Triconomiasis.__init__
+bc2_EVenereas.VerrugasGenitales.__init__
+bc2_EVenereas.Vomitos.__init__
+ckVtsDiagnosticoD.DiagnosticDlg.__init__
+modelo.Cubrir.__init__
+modelo.Especificar.__init__
+modelo.Inferencia.__init__
+modelo.MetodoCoberturaCausal.__init__
+modelo.Obtener.__init__
+modelo.Seleccionar.__init__
+modelo.Verificar.__init__" class="py-name" href="#" onclick="return doclink('link-7', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">nombre</tt><tt class="py-op">,</tt> <tt class="py-name">tipo</tt><tt class="py-op">,</tt> <tt class="py-name">valor</tt><tt class="py-op">,</tt> <tt class="py-name">valoresPermitidos</tt><tt class="py-op">)</tt> </tt>
+<a name="L50"></a><tt class="py-lineno"> 50</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt> <tt class="py-op">=</tt> <tt class="py-name">valor</tt> </tt>
+</div></div><a name="L51"></a><tt class="py-lineno"> 51</tt>  <tt class="py-line"> </tt>
+<a name="Infertilidad"></a><div id="Infertilidad-def"><a name="L52"></a><tt class="py-lineno"> 52</tt> <a class="py-toggle" href="#" id="Infertilidad-toggle" onclick="return toggle('Infertilidad');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bc2_EVenereas.Infertilidad-class.html">Infertilidad</a> <tt class="py-op">(</tt><tt class="py-base-class">Observable</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Infertilidad-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Infertilidad-expanded"><a name="L53"></a><tt class="py-lineno"> 53</tt>  <tt class="py-line">        <tt class="py-docstring">''' Sintoma Infertilidad '''</tt> </tt>
+<a name="Infertilidad.__init__"></a><div id="Infertilidad.__init__-def"><a name="L54"></a><tt class="py-lineno"> 54</tt> <a class="py-toggle" href="#" id="Infertilidad.__init__-toggle" onclick="return toggle('Infertilidad.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="bc2_EVenereas.Infertilidad-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">valor</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Infertilidad.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Infertilidad.__init__-expanded"><a name="L55"></a><tt class="py-lineno"> 55</tt>  <tt class="py-line">                <tt class="py-name">nombre</tt> <tt class="py-op">=</tt> <tt class="py-string">"Infertilidad"</tt> </tt>
+<a name="L56"></a><tt class="py-lineno"> 56</tt>  <tt class="py-line">                <tt class="py-name">tipo</tt> <tt class="py-op">=</tt> <tt class="py-string">"boolean"</tt> </tt>
+<a name="L57"></a><tt class="py-lineno"> 57</tt>  <tt class="py-line">                <tt class="py-name">valoresPermitidos</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L58"></a><tt class="py-lineno"> 58</tt>  <tt class="py-line">                <tt id="link-8" class="py-name"><a title="bc2.Observable
+bc2_EVenereas.Observable" class="py-name" href="#" onclick="return doclink('link-8', 'Observable', 'link-0');">Observable</a></tt><tt class="py-op">.</tt><tt id="link-9" class="py-name"><a title="bc2.AdmisionObstruida.__init__
+bc2.ApagadoMotor.__init__
+bc2.Averia.__init__
+bc2.AvisoNivelAceite.__init__
+bc2.AvisoTemperaturaMotor.__init__
+bc2.BujiasInadecuadas.__init__
+bc2.ExcesoConsumoAceite.__init__
+bc2.FalloValvulaRalenti.__init__
+bc2.FaltaPotencia.__init__
+bc2.FiltracionAceiteRetenes.__init__
+bc2.FisuraJuntaCulata.__init__
+bc2.Observable.__init__
+bc2.ProblemaManguito.__init__
+bc2.ProblemaTermostato.__init__
+bc2.RalentiIrregular.__init__
+bc2.RegimenRevolucionesExcesivo.__init__
+bc2.TironesEnFrio.__init__
+bc2.ValvulasAdmisionObstruidas.__init__
+bc2_EVenereas.Clamidias.__init__
+bc2_EVenereas.Depresion.__init__
+bc2_EVenereas.Diarrea.__init__
+bc2_EVenereas.DolorCabeza.__init__
+bc2_EVenereas.DolorOrinar.__init__
+bc2_EVenereas.Enfermedad.__init__
+bc2_EVenereas.Fiebre.__init__
+bc2_EVenereas.Gonorrea.__init__
+bc2_EVenereas.HemorragiaGenitales.__init__
+bc2_EVenereas.HerpesGenital.__init__
+bc2_EVenereas.Infertilidad.__init__
+bc2_EVenereas.InflamacionGangliosLinfaticos.__init__
+bc2_EVenereas.MalestarGeneral.__init__
+bc2_EVenereas.Observable.__init__
+bc2_EVenereas.Sarpullidos.__init__
+bc2_EVenereas.Sida.__init__
+bc2_EVenereas.Sifilis.__init__
+bc2_EVenereas.Triconomiasis.__init__
+bc2_EVenereas.VerrugasGenitales.__init__
+bc2_EVenereas.Vomitos.__init__
+ckVtsDiagnosticoD.DiagnosticDlg.__init__
+modelo.Cubrir.__init__
+modelo.Especificar.__init__
+modelo.Inferencia.__init__
+modelo.MetodoCoberturaCausal.__init__
+modelo.Obtener.__init__
+modelo.Seleccionar.__init__
+modelo.Verificar.__init__" class="py-name" href="#" onclick="return doclink('link-9', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">nombre</tt><tt class="py-op">,</tt> <tt class="py-name">tipo</tt><tt class="py-op">,</tt> <tt class="py-name">valor</tt><tt class="py-op">,</tt> <tt class="py-name">valoresPermitidos</tt><tt class="py-op">)</tt> </tt>
+<a name="L59"></a><tt class="py-lineno"> 59</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt> <tt class="py-op">=</tt> <tt class="py-name">valor</tt> </tt>
+</div></div><a name="L60"></a><tt class="py-lineno"> 60</tt>  <tt class="py-line"> </tt>
+<a name="Vomitos"></a><div id="Vomitos-def"><a name="L61"></a><tt class="py-lineno"> 61</tt> <a class="py-toggle" href="#" id="Vomitos-toggle" onclick="return toggle('Vomitos');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bc2_EVenereas.Vomitos-class.html">Vomitos</a> <tt class="py-op">(</tt><tt class="py-base-class">Observable</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Vomitos-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Vomitos-expanded"><a name="L62"></a><tt class="py-lineno"> 62</tt>  <tt class="py-line">        <tt class="py-docstring">''' Sintomas de Vomitos '''</tt> </tt>
+<a name="Vomitos.__init__"></a><div id="Vomitos.__init__-def"><a name="L63"></a><tt class="py-lineno"> 63</tt> <a class="py-toggle" href="#" id="Vomitos.__init__-toggle" onclick="return toggle('Vomitos.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="bc2_EVenereas.Vomitos-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">valor</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Vomitos.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Vomitos.__init__-expanded"><a name="L64"></a><tt class="py-lineno"> 64</tt>  <tt class="py-line">                <tt class="py-name">nombre</tt> <tt class="py-op">=</tt> <tt class="py-string">"Vomitos"</tt> </tt>
+<a name="L65"></a><tt class="py-lineno"> 65</tt>  <tt class="py-line">                <tt class="py-name">tipo</tt> <tt class="py-op">=</tt> <tt class="py-string">"boolean"</tt> </tt>
+<a name="L66"></a><tt class="py-lineno"> 66</tt>  <tt class="py-line">                <tt class="py-name">valoresPermitidos</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L67"></a><tt class="py-lineno"> 67</tt>  <tt class="py-line">                <tt id="link-10" class="py-name"><a title="bc2.Observable
+bc2_EVenereas.Observable" class="py-name" href="#" onclick="return doclink('link-10', 'Observable', 'link-0');">Observable</a></tt><tt class="py-op">.</tt><tt id="link-11" class="py-name"><a title="bc2.AdmisionObstruida.__init__
+bc2.ApagadoMotor.__init__
+bc2.Averia.__init__
+bc2.AvisoNivelAceite.__init__
+bc2.AvisoTemperaturaMotor.__init__
+bc2.BujiasInadecuadas.__init__
+bc2.ExcesoConsumoAceite.__init__
+bc2.FalloValvulaRalenti.__init__
+bc2.FaltaPotencia.__init__
+bc2.FiltracionAceiteRetenes.__init__
+bc2.FisuraJuntaCulata.__init__
+bc2.Observable.__init__
+bc2.ProblemaManguito.__init__
+bc2.ProblemaTermostato.__init__
+bc2.RalentiIrregular.__init__
+bc2.RegimenRevolucionesExcesivo.__init__
+bc2.TironesEnFrio.__init__
+bc2.ValvulasAdmisionObstruidas.__init__
+bc2_EVenereas.Clamidias.__init__
+bc2_EVenereas.Depresion.__init__
+bc2_EVenereas.Diarrea.__init__
+bc2_EVenereas.DolorCabeza.__init__
+bc2_EVenereas.DolorOrinar.__init__
+bc2_EVenereas.Enfermedad.__init__
+bc2_EVenereas.Fiebre.__init__
+bc2_EVenereas.Gonorrea.__init__
+bc2_EVenereas.HemorragiaGenitales.__init__
+bc2_EVenereas.HerpesGenital.__init__
+bc2_EVenereas.Infertilidad.__init__
+bc2_EVenereas.InflamacionGangliosLinfaticos.__init__
+bc2_EVenereas.MalestarGeneral.__init__
+bc2_EVenereas.Observable.__init__
+bc2_EVenereas.Sarpullidos.__init__
+bc2_EVenereas.Sida.__init__
+bc2_EVenereas.Sifilis.__init__
+bc2_EVenereas.Triconomiasis.__init__
+bc2_EVenereas.VerrugasGenitales.__init__
+bc2_EVenereas.Vomitos.__init__
+ckVtsDiagnosticoD.DiagnosticDlg.__init__
+modelo.Cubrir.__init__
+modelo.Especificar.__init__
+modelo.Inferencia.__init__
+modelo.MetodoCoberturaCausal.__init__
+modelo.Obtener.__init__
+modelo.Seleccionar.__init__
+modelo.Verificar.__init__" class="py-name" href="#" onclick="return doclink('link-11', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">nombre</tt><tt class="py-op">,</tt> <tt class="py-name">tipo</tt><tt class="py-op">,</tt> <tt class="py-name">valor</tt><tt class="py-op">,</tt> <tt class="py-name">valoresPermitidos</tt><tt class="py-op">)</tt> </tt>
+<a name="L68"></a><tt class="py-lineno"> 68</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt> <tt class="py-op">=</tt> <tt class="py-name">valor</tt> </tt>
+</div></div><a name="L69"></a><tt class="py-lineno"> 69</tt>  <tt class="py-line"> </tt>
+<a name="Diarrea"></a><div id="Diarrea-def"><a name="L70"></a><tt class="py-lineno"> 70</tt> <a class="py-toggle" href="#" id="Diarrea-toggle" onclick="return toggle('Diarrea');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bc2_EVenereas.Diarrea-class.html">Diarrea</a> <tt class="py-op">(</tt><tt class="py-base-class">Observable</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Diarrea-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Diarrea-expanded"><a name="L71"></a><tt class="py-lineno"> 71</tt>  <tt class="py-line">        <tt class="py-docstring">''' Sintoma de Diarrea '''</tt> </tt>
+<a name="Diarrea.__init__"></a><div id="Diarrea.__init__-def"><a name="L72"></a><tt class="py-lineno"> 72</tt> <a class="py-toggle" href="#" id="Diarrea.__init__-toggle" onclick="return toggle('Diarrea.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="bc2_EVenereas.Diarrea-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">valor</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Diarrea.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Diarrea.__init__-expanded"><a name="L73"></a><tt class="py-lineno"> 73</tt>  <tt class="py-line">                <tt class="py-name">nombre</tt> <tt class="py-op">=</tt> <tt class="py-string">"Diarrea"</tt> </tt>
+<a name="L74"></a><tt class="py-lineno"> 74</tt>  <tt class="py-line">                <tt class="py-name">tipo</tt> <tt class="py-op">=</tt> <tt class="py-string">"boolean"</tt> </tt>
+<a name="L75"></a><tt class="py-lineno"> 75</tt>  <tt class="py-line">                <tt class="py-name">valoresPermitidos</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L76"></a><tt class="py-lineno"> 76</tt>  <tt class="py-line">                <tt id="link-12" class="py-name"><a title="bc2.Observable
+bc2_EVenereas.Observable" class="py-name" href="#" onclick="return doclink('link-12', 'Observable', 'link-0');">Observable</a></tt><tt class="py-op">.</tt><tt id="link-13" class="py-name"><a title="bc2.AdmisionObstruida.__init__
+bc2.ApagadoMotor.__init__
+bc2.Averia.__init__
+bc2.AvisoNivelAceite.__init__
+bc2.AvisoTemperaturaMotor.__init__
+bc2.BujiasInadecuadas.__init__
+bc2.ExcesoConsumoAceite.__init__
+bc2.FalloValvulaRalenti.__init__
+bc2.FaltaPotencia.__init__
+bc2.FiltracionAceiteRetenes.__init__
+bc2.FisuraJuntaCulata.__init__
+bc2.Observable.__init__
+bc2.ProblemaManguito.__init__
+bc2.ProblemaTermostato.__init__
+bc2.RalentiIrregular.__init__
+bc2.RegimenRevolucionesExcesivo.__init__
+bc2.TironesEnFrio.__init__
+bc2.ValvulasAdmisionObstruidas.__init__
+bc2_EVenereas.Clamidias.__init__
+bc2_EVenereas.Depresion.__init__
+bc2_EVenereas.Diarrea.__init__
+bc2_EVenereas.DolorCabeza.__init__
+bc2_EVenereas.DolorOrinar.__init__
+bc2_EVenereas.Enfermedad.__init__
+bc2_EVenereas.Fiebre.__init__
+bc2_EVenereas.Gonorrea.__init__
+bc2_EVenereas.HemorragiaGenitales.__init__
+bc2_EVenereas.HerpesGenital.__init__
+bc2_EVenereas.Infertilidad.__init__
+bc2_EVenereas.InflamacionGangliosLinfaticos.__init__
+bc2_EVenereas.MalestarGeneral.__init__
+bc2_EVenereas.Observable.__init__
+bc2_EVenereas.Sarpullidos.__init__
+bc2_EVenereas.Sida.__init__
+bc2_EVenereas.Sifilis.__init__
+bc2_EVenereas.Triconomiasis.__init__
+bc2_EVenereas.VerrugasGenitales.__init__
+bc2_EVenereas.Vomitos.__init__
+ckVtsDiagnosticoD.DiagnosticDlg.__init__
+modelo.Cubrir.__init__
+modelo.Especificar.__init__
+modelo.Inferencia.__init__
+modelo.MetodoCoberturaCausal.__init__
+modelo.Obtener.__init__
+modelo.Seleccionar.__init__
+modelo.Verificar.__init__" class="py-name" href="#" onclick="return doclink('link-13', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">nombre</tt><tt class="py-op">,</tt> <tt class="py-name">tipo</tt><tt class="py-op">,</tt> <tt class="py-name">valor</tt><tt class="py-op">,</tt> <tt class="py-name">valoresPermitidos</tt><tt class="py-op">)</tt> </tt>
+<a name="L77"></a><tt class="py-lineno"> 77</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt> <tt class="py-op">=</tt> <tt class="py-name">valor</tt> </tt>
+</div></div><a name="L78"></a><tt class="py-lineno"> 78</tt>  <tt class="py-line"> </tt>
+<a name="HemorragiaGenitales"></a><div id="HemorragiaGenitales-def"><a name="L79"></a><tt class="py-lineno"> 79</tt> <a class="py-toggle" href="#" id="HemorragiaGenitales-toggle" onclick="return toggle('HemorragiaGenitales');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bc2_EVenereas.HemorragiaGenitales-class.html">HemorragiaGenitales</a> <tt class="py-op">(</tt><tt class="py-base-class">Observable</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="HemorragiaGenitales-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="HemorragiaGenitales-expanded"><a name="L80"></a><tt class="py-lineno"> 80</tt>  <tt class="py-line">        <tt class="py-docstring">''' Sintoma Hemorragia en los Genitales '''</tt> </tt>
+<a name="HemorragiaGenitales.__init__"></a><div id="HemorragiaGenitales.__init__-def"><a name="L81"></a><tt class="py-lineno"> 81</tt> <a class="py-toggle" href="#" id="HemorragiaGenitales.__init__-toggle" onclick="return toggle('HemorragiaGenitales.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="bc2_EVenereas.HemorragiaGenitales-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">valor</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="HemorragiaGenitales.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="HemorragiaGenitales.__init__-expanded"><a name="L82"></a><tt class="py-lineno"> 82</tt>  <tt class="py-line">                <tt class="py-name">nombre</tt> <tt class="py-op">=</tt> <tt class="py-string">"Hemorragia en los Genitales"</tt> </tt>
+<a name="L83"></a><tt class="py-lineno"> 83</tt>  <tt class="py-line">                <tt class="py-name">tipo</tt> <tt class="py-op">=</tt> <tt class="py-string">"boolean"</tt> </tt>
+<a name="L84"></a><tt class="py-lineno"> 84</tt>  <tt class="py-line">                <tt class="py-name">valoresPermitidos</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L85"></a><tt class="py-lineno"> 85</tt>  <tt class="py-line">                <tt id="link-14" class="py-name"><a title="bc2.Observable
+bc2_EVenereas.Observable" class="py-name" href="#" onclick="return doclink('link-14', 'Observable', 'link-0');">Observable</a></tt><tt class="py-op">.</tt><tt id="link-15" class="py-name"><a title="bc2.AdmisionObstruida.__init__
+bc2.ApagadoMotor.__init__
+bc2.Averia.__init__
+bc2.AvisoNivelAceite.__init__
+bc2.AvisoTemperaturaMotor.__init__
+bc2.BujiasInadecuadas.__init__
+bc2.ExcesoConsumoAceite.__init__
+bc2.FalloValvulaRalenti.__init__
+bc2.FaltaPotencia.__init__
+bc2.FiltracionAceiteRetenes.__init__
+bc2.FisuraJuntaCulata.__init__
+bc2.Observable.__init__
+bc2.ProblemaManguito.__init__
+bc2.ProblemaTermostato.__init__
+bc2.RalentiIrregular.__init__
+bc2.RegimenRevolucionesExcesivo.__init__
+bc2.TironesEnFrio.__init__
+bc2.ValvulasAdmisionObstruidas.__init__
+bc2_EVenereas.Clamidias.__init__
+bc2_EVenereas.Depresion.__init__
+bc2_EVenereas.Diarrea.__init__
+bc2_EVenereas.DolorCabeza.__init__
+bc2_EVenereas.DolorOrinar.__init__
+bc2_EVenereas.Enfermedad.__init__
+bc2_EVenereas.Fiebre.__init__
+bc2_EVenereas.Gonorrea.__init__
+bc2_EVenereas.HemorragiaGenitales.__init__
+bc2_EVenereas.HerpesGenital.__init__
+bc2_EVenereas.Infertilidad.__init__
+bc2_EVenereas.InflamacionGangliosLinfaticos.__init__
+bc2_EVenereas.MalestarGeneral.__init__
+bc2_EVenereas.Observable.__init__
+bc2_EVenereas.Sarpullidos.__init__
+bc2_EVenereas.Sida.__init__
+bc2_EVenereas.Sifilis.__init__
+bc2_EVenereas.Triconomiasis.__init__
+bc2_EVenereas.VerrugasGenitales.__init__
+bc2_EVenereas.Vomitos.__init__
+ckVtsDiagnosticoD.DiagnosticDlg.__init__
+modelo.Cubrir.__init__
+modelo.Especificar.__init__
+modelo.Inferencia.__init__
+modelo.MetodoCoberturaCausal.__init__
+modelo.Obtener.__init__
+modelo.Seleccionar.__init__
+modelo.Verificar.__init__" class="py-name" href="#" onclick="return doclink('link-15', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">nombre</tt><tt class="py-op">,</tt> <tt class="py-name">tipo</tt><tt class="py-op">,</tt> <tt class="py-name">valor</tt><tt class="py-op">,</tt> <tt class="py-name">valoresPermitidos</tt><tt class="py-op">)</tt> </tt>
+<a name="L86"></a><tt class="py-lineno"> 86</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt> <tt class="py-op">=</tt> <tt class="py-name">valor</tt> </tt>
+</div></div><a name="L87"></a><tt class="py-lineno"> 87</tt>  <tt class="py-line"> </tt>
+<a name="Sarpullidos"></a><div id="Sarpullidos-def"><a name="L88"></a><tt class="py-lineno"> 88</tt> <a class="py-toggle" href="#" id="Sarpullidos-toggle" onclick="return toggle('Sarpullidos');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bc2_EVenereas.Sarpullidos-class.html">Sarpullidos</a> <tt class="py-op">(</tt><tt class="py-base-class">Observable</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Sarpullidos-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Sarpullidos-expanded"><a name="L89"></a><tt class="py-lineno"> 89</tt>  <tt class="py-line">        <tt class="py-docstring">''' Sintomas de Sarpullidos '''</tt> </tt>
+<a name="Sarpullidos.__init__"></a><div id="Sarpullidos.__init__-def"><a name="L90"></a><tt class="py-lineno"> 90</tt> <a class="py-toggle" href="#" id="Sarpullidos.__init__-toggle" onclick="return toggle('Sarpullidos.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="bc2_EVenereas.Sarpullidos-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">valor</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Sarpullidos.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Sarpullidos.__init__-expanded"><a name="L91"></a><tt class="py-lineno"> 91</tt>  <tt class="py-line">                <tt class="py-name">nombre</tt> <tt class="py-op">=</tt> <tt class="py-string">"Sarpullidos en la Piel Genitales"</tt> </tt>
+<a name="L92"></a><tt class="py-lineno"> 92</tt>  <tt class="py-line">                <tt class="py-name">tipo</tt> <tt class="py-op">=</tt> <tt class="py-string">"boolean"</tt> </tt>
+<a name="L93"></a><tt class="py-lineno"> 93</tt>  <tt class="py-line">                <tt class="py-name">valoresPermitidos</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L94"></a><tt class="py-lineno"> 94</tt>  <tt class="py-line">                <tt id="link-16" class="py-name"><a title="bc2.Observable
+bc2_EVenereas.Observable" class="py-name" href="#" onclick="return doclink('link-16', 'Observable', 'link-0');">Observable</a></tt><tt class="py-op">.</tt><tt id="link-17" class="py-name"><a title="bc2.AdmisionObstruida.__init__
+bc2.ApagadoMotor.__init__
+bc2.Averia.__init__
+bc2.AvisoNivelAceite.__init__
+bc2.AvisoTemperaturaMotor.__init__
+bc2.BujiasInadecuadas.__init__
+bc2.ExcesoConsumoAceite.__init__
+bc2.FalloValvulaRalenti.__init__
+bc2.FaltaPotencia.__init__
+bc2.FiltracionAceiteRetenes.__init__
+bc2.FisuraJuntaCulata.__init__
+bc2.Observable.__init__
+bc2.ProblemaManguito.__init__
+bc2.ProblemaTermostato.__init__
+bc2.RalentiIrregular.__init__
+bc2.RegimenRevolucionesExcesivo.__init__
+bc2.TironesEnFrio.__init__
+bc2.ValvulasAdmisionObstruidas.__init__
+bc2_EVenereas.Clamidias.__init__
+bc2_EVenereas.Depresion.__init__
+bc2_EVenereas.Diarrea.__init__
+bc2_EVenereas.DolorCabeza.__init__
+bc2_EVenereas.DolorOrinar.__init__
+bc2_EVenereas.Enfermedad.__init__
+bc2_EVenereas.Fiebre.__init__
+bc2_EVenereas.Gonorrea.__init__
+bc2_EVenereas.HemorragiaGenitales.__init__
+bc2_EVenereas.HerpesGenital.__init__
+bc2_EVenereas.Infertilidad.__init__
+bc2_EVenereas.InflamacionGangliosLinfaticos.__init__
+bc2_EVenereas.MalestarGeneral.__init__
+bc2_EVenereas.Observable.__init__
+bc2_EVenereas.Sarpullidos.__init__
+bc2_EVenereas.Sida.__init__
+bc2_EVenereas.Sifilis.__init__
+bc2_EVenereas.Triconomiasis.__init__
+bc2_EVenereas.VerrugasGenitales.__init__
+bc2_EVenereas.Vomitos.__init__
+ckVtsDiagnosticoD.DiagnosticDlg.__init__
+modelo.Cubrir.__init__
+modelo.Especificar.__init__
+modelo.Inferencia.__init__
+modelo.MetodoCoberturaCausal.__init__
+modelo.Obtener.__init__
+modelo.Seleccionar.__init__
+modelo.Verificar.__init__" class="py-name" href="#" onclick="return doclink('link-17', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">nombre</tt><tt class="py-op">,</tt> <tt class="py-name">tipo</tt><tt class="py-op">,</tt> <tt class="py-name">valor</tt><tt class="py-op">,</tt> <tt class="py-name">valoresPermitidos</tt><tt class="py-op">)</tt> </tt>
+<a name="L95"></a><tt class="py-lineno"> 95</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt> <tt class="py-op">=</tt> <tt class="py-name">valor</tt> </tt>
+</div></div><a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line"> </tt>
+<a name="L97"></a><tt class="py-lineno"> 97</tt>  <tt class="py-line"> </tt>
+<a name="VerrugasGenitales"></a><div id="VerrugasGenitales-def"><a name="L98"></a><tt class="py-lineno"> 98</tt> <a class="py-toggle" href="#" id="VerrugasGenitales-toggle" onclick="return toggle('VerrugasGenitales');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bc2_EVenereas.VerrugasGenitales-class.html">VerrugasGenitales</a> <tt class="py-op">(</tt><tt class="py-base-class">Observable</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="VerrugasGenitales-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="VerrugasGenitales-expanded"><a name="L99"></a><tt class="py-lineno"> 99</tt>  <tt class="py-line">        <tt class="py-docstring">''' Sintoma de Verrugas en los genitales '''</tt> </tt>
+<a name="VerrugasGenitales.__init__"></a><div id="VerrugasGenitales.__init__-def"><a name="L100"></a><tt class="py-lineno">100</tt> <a class="py-toggle" href="#" id="VerrugasGenitales.__init__-toggle" onclick="return toggle('VerrugasGenitales.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="bc2_EVenereas.VerrugasGenitales-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">valor</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="VerrugasGenitales.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="VerrugasGenitales.__init__-expanded"><a name="L101"></a><tt class="py-lineno">101</tt>  <tt class="py-line">                <tt class="py-name">nombre</tt> <tt class="py-op">=</tt> <tt class="py-string">"Verrugas Genitales"</tt> </tt>
+<a name="L102"></a><tt class="py-lineno">102</tt>  <tt class="py-line">                <tt class="py-name">tipo</tt> <tt class="py-op">=</tt> <tt class="py-string">"boolean"</tt> </tt>
+<a name="L103"></a><tt class="py-lineno">103</tt>  <tt class="py-line">                <tt class="py-name">valoresPermitidos</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L104"></a><tt class="py-lineno">104</tt>  <tt class="py-line">                <tt id="link-18" class="py-name"><a title="bc2.Observable
+bc2_EVenereas.Observable" class="py-name" href="#" onclick="return doclink('link-18', 'Observable', 'link-0');">Observable</a></tt><tt class="py-op">.</tt><tt id="link-19" class="py-name"><a title="bc2.AdmisionObstruida.__init__
+bc2.ApagadoMotor.__init__
+bc2.Averia.__init__
+bc2.AvisoNivelAceite.__init__
+bc2.AvisoTemperaturaMotor.__init__
+bc2.BujiasInadecuadas.__init__
+bc2.ExcesoConsumoAceite.__init__
+bc2.FalloValvulaRalenti.__init__
+bc2.FaltaPotencia.__init__
+bc2.FiltracionAceiteRetenes.__init__
+bc2.FisuraJuntaCulata.__init__
+bc2.Observable.__init__
+bc2.ProblemaManguito.__init__
+bc2.ProblemaTermostato.__init__
+bc2.RalentiIrregular.__init__
+bc2.RegimenRevolucionesExcesivo.__init__
+bc2.TironesEnFrio.__init__
+bc2.ValvulasAdmisionObstruidas.__init__
+bc2_EVenereas.Clamidias.__init__
+bc2_EVenereas.Depresion.__init__
+bc2_EVenereas.Diarrea.__init__
+bc2_EVenereas.DolorCabeza.__init__
+bc2_EVenereas.DolorOrinar.__init__
+bc2_EVenereas.Enfermedad.__init__
+bc2_EVenereas.Fiebre.__init__
+bc2_EVenereas.Gonorrea.__init__
+bc2_EVenereas.HemorragiaGenitales.__init__
+bc2_EVenereas.HerpesGenital.__init__
+bc2_EVenereas.Infertilidad.__init__
+bc2_EVenereas.InflamacionGangliosLinfaticos.__init__
+bc2_EVenereas.MalestarGeneral.__init__
+bc2_EVenereas.Observable.__init__
+bc2_EVenereas.Sarpullidos.__init__
+bc2_EVenereas.Sida.__init__
+bc2_EVenereas.Sifilis.__init__
+bc2_EVenereas.Triconomiasis.__init__
+bc2_EVenereas.VerrugasGenitales.__init__
+bc2_EVenereas.Vomitos.__init__
+ckVtsDiagnosticoD.DiagnosticDlg.__init__
+modelo.Cubrir.__init__
+modelo.Especificar.__init__
+modelo.Inferencia.__init__
+modelo.MetodoCoberturaCausal.__init__
+modelo.Obtener.__init__
+modelo.Seleccionar.__init__
+modelo.Verificar.__init__" class="py-name" href="#" onclick="return doclink('link-19', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">nombre</tt><tt class="py-op">,</tt> <tt class="py-name">tipo</tt><tt class="py-op">,</tt> <tt class="py-name">valor</tt><tt class="py-op">,</tt> <tt class="py-name">valoresPermitidos</tt><tt class="py-op">)</tt> </tt>
+<a name="L105"></a><tt class="py-lineno">105</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt> <tt class="py-op">=</tt> <tt class="py-name">valor</tt> </tt>
+</div></div><a name="L106"></a><tt class="py-lineno">106</tt>  <tt class="py-line"> </tt>
+<a name="InflamacionGangliosLinfaticos"></a><div id="InflamacionGangliosLinfaticos-def"><a name="L107"></a><tt class="py-lineno">107</tt> <a class="py-toggle" href="#" id="InflamacionGangliosLinfaticos-toggle" onclick="return toggle('InflamacionGangliosLinfaticos');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bc2_EVenereas.InflamacionGangliosLinfaticos-class.html">InflamacionGangliosLinfaticos</a> <tt class="py-op">(</tt><tt class="py-base-class">Observable</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="InflamacionGangliosLinfaticos-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="InflamacionGangliosLinfaticos-expanded"><a name="L108"></a><tt class="py-lineno">108</tt>  <tt class="py-line">        <tt class="py-docstring">''' Sintoma de Inflamaci&#195;&#179;n de Ganglios Linfaticos '''</tt> </tt>
+<a name="InflamacionGangliosLinfaticos.__init__"></a><div id="InflamacionGangliosLinfaticos.__init__-def"><a name="L109"></a><tt class="py-lineno">109</tt> <a class="py-toggle" href="#" id="InflamacionGangliosLinfaticos.__init__-toggle" onclick="return toggle('InflamacionGangliosLinfaticos.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="bc2_EVenereas.InflamacionGangliosLinfaticos-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">valor</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="InflamacionGangliosLinfaticos.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="InflamacionGangliosLinfaticos.__init__-expanded"><a name="L110"></a><tt class="py-lineno">110</tt>  <tt class="py-line">                <tt class="py-name">nombre</tt> <tt class="py-op">=</tt> <tt class="py-string">"Inflamacion Ganglios Linfaticos"</tt> </tt>
+<a name="L111"></a><tt class="py-lineno">111</tt>  <tt class="py-line">                <tt class="py-name">tipo</tt> <tt class="py-op">=</tt> <tt class="py-string">"boolean"</tt> </tt>
+<a name="L112"></a><tt class="py-lineno">112</tt>  <tt class="py-line">                <tt class="py-name">valoresPermitidos</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L113"></a><tt class="py-lineno">113</tt>  <tt class="py-line">                <tt id="link-20" class="py-name"><a title="bc2.Observable
+bc2_EVenereas.Observable" class="py-name" href="#" onclick="return doclink('link-20', 'Observable', 'link-0');">Observable</a></tt><tt class="py-op">.</tt><tt id="link-21" class="py-name"><a title="bc2.AdmisionObstruida.__init__
+bc2.ApagadoMotor.__init__
+bc2.Averia.__init__
+bc2.AvisoNivelAceite.__init__
+bc2.AvisoTemperaturaMotor.__init__
+bc2.BujiasInadecuadas.__init__
+bc2.ExcesoConsumoAceite.__init__
+bc2.FalloValvulaRalenti.__init__
+bc2.FaltaPotencia.__init__
+bc2.FiltracionAceiteRetenes.__init__
+bc2.FisuraJuntaCulata.__init__
+bc2.Observable.__init__
+bc2.ProblemaManguito.__init__
+bc2.ProblemaTermostato.__init__
+bc2.RalentiIrregular.__init__
+bc2.RegimenRevolucionesExcesivo.__init__
+bc2.TironesEnFrio.__init__
+bc2.ValvulasAdmisionObstruidas.__init__
+bc2_EVenereas.Clamidias.__init__
+bc2_EVenereas.Depresion.__init__
+bc2_EVenereas.Diarrea.__init__
+bc2_EVenereas.DolorCabeza.__init__
+bc2_EVenereas.DolorOrinar.__init__
+bc2_EVenereas.Enfermedad.__init__
+bc2_EVenereas.Fiebre.__init__
+bc2_EVenereas.Gonorrea.__init__
+bc2_EVenereas.HemorragiaGenitales.__init__
+bc2_EVenereas.HerpesGenital.__init__
+bc2_EVenereas.Infertilidad.__init__
+bc2_EVenereas.InflamacionGangliosLinfaticos.__init__
+bc2_EVenereas.MalestarGeneral.__init__
+bc2_EVenereas.Observable.__init__
+bc2_EVenereas.Sarpullidos.__init__
+bc2_EVenereas.Sida.__init__
+bc2_EVenereas.Sifilis.__init__
+bc2_EVenereas.Triconomiasis.__init__
+bc2_EVenereas.VerrugasGenitales.__init__
+bc2_EVenereas.Vomitos.__init__
+ckVtsDiagnosticoD.DiagnosticDlg.__init__
+modelo.Cubrir.__init__
+modelo.Especificar.__init__
+modelo.Inferencia.__init__
+modelo.MetodoCoberturaCausal.__init__
+modelo.Obtener.__init__
+modelo.Seleccionar.__init__
+modelo.Verificar.__init__" class="py-name" href="#" onclick="return doclink('link-21', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">nombre</tt><tt class="py-op">,</tt> <tt class="py-name">tipo</tt><tt class="py-op">,</tt> <tt class="py-name">valor</tt><tt class="py-op">,</tt> <tt class="py-name">valoresPermitidos</tt><tt class="py-op">)</tt> </tt>
+<a name="L114"></a><tt class="py-lineno">114</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt> <tt class="py-op">=</tt> <tt class="py-name">valor</tt> </tt>
+</div></div><a name="L115"></a><tt class="py-lineno">115</tt>  <tt class="py-line"> </tt>
+<a name="DolorOrinar"></a><div id="DolorOrinar-def"><a name="L116"></a><tt class="py-lineno">116</tt> <a class="py-toggle" href="#" id="DolorOrinar-toggle" onclick="return toggle('DolorOrinar');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bc2_EVenereas.DolorOrinar-class.html">DolorOrinar</a> <tt class="py-op">(</tt><tt class="py-base-class">Observable</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="DolorOrinar-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="DolorOrinar-expanded"><a name="L117"></a><tt class="py-lineno">117</tt>  <tt class="py-line">        <tt class="py-docstring">''' Sintoma de Dolor al Orinar '''</tt> </tt>
+<a name="DolorOrinar.__init__"></a><div id="DolorOrinar.__init__-def"><a name="L118"></a><tt class="py-lineno">118</tt> <a class="py-toggle" href="#" id="DolorOrinar.__init__-toggle" onclick="return toggle('DolorOrinar.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="bc2_EVenereas.DolorOrinar-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">valor</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="DolorOrinar.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="DolorOrinar.__init__-expanded"><a name="L119"></a><tt class="py-lineno">119</tt>  <tt class="py-line">                <tt class="py-name">nombre</tt> <tt class="py-op">=</tt> <tt class="py-string">"Dolor al Orinar"</tt> </tt>
+<a name="L120"></a><tt class="py-lineno">120</tt>  <tt class="py-line">                <tt class="py-name">tipo</tt> <tt class="py-op">=</tt> <tt class="py-string">"boolean"</tt> </tt>
+<a name="L121"></a><tt class="py-lineno">121</tt>  <tt class="py-line">                <tt class="py-name">valoresPermitidos</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L122"></a><tt class="py-lineno">122</tt>  <tt class="py-line">                <tt id="link-22" class="py-name"><a title="bc2.Observable
+bc2_EVenereas.Observable" class="py-name" href="#" onclick="return doclink('link-22', 'Observable', 'link-0');">Observable</a></tt><tt class="py-op">.</tt><tt id="link-23" class="py-name"><a title="bc2.AdmisionObstruida.__init__
+bc2.ApagadoMotor.__init__
+bc2.Averia.__init__
+bc2.AvisoNivelAceite.__init__
+bc2.AvisoTemperaturaMotor.__init__
+bc2.BujiasInadecuadas.__init__
+bc2.ExcesoConsumoAceite.__init__
+bc2.FalloValvulaRalenti.__init__
+bc2.FaltaPotencia.__init__
+bc2.FiltracionAceiteRetenes.__init__
+bc2.FisuraJuntaCulata.__init__
+bc2.Observable.__init__
+bc2.ProblemaManguito.__init__
+bc2.ProblemaTermostato.__init__
+bc2.RalentiIrregular.__init__
+bc2.RegimenRevolucionesExcesivo.__init__
+bc2.TironesEnFrio.__init__
+bc2.ValvulasAdmisionObstruidas.__init__
+bc2_EVenereas.Clamidias.__init__
+bc2_EVenereas.Depresion.__init__
+bc2_EVenereas.Diarrea.__init__
+bc2_EVenereas.DolorCabeza.__init__
+bc2_EVenereas.DolorOrinar.__init__
+bc2_EVenereas.Enfermedad.__init__
+bc2_EVenereas.Fiebre.__init__
+bc2_EVenereas.Gonorrea.__init__
+bc2_EVenereas.HemorragiaGenitales.__init__
+bc2_EVenereas.HerpesGenital.__init__
+bc2_EVenereas.Infertilidad.__init__
+bc2_EVenereas.InflamacionGangliosLinfaticos.__init__
+bc2_EVenereas.MalestarGeneral.__init__
+bc2_EVenereas.Observable.__init__
+bc2_EVenereas.Sarpullidos.__init__
+bc2_EVenereas.Sida.__init__
+bc2_EVenereas.Sifilis.__init__
+bc2_EVenereas.Triconomiasis.__init__
+bc2_EVenereas.VerrugasGenitales.__init__
+bc2_EVenereas.Vomitos.__init__
+ckVtsDiagnosticoD.DiagnosticDlg.__init__
+modelo.Cubrir.__init__
+modelo.Especificar.__init__
+modelo.Inferencia.__init__
+modelo.MetodoCoberturaCausal.__init__
+modelo.Obtener.__init__
+modelo.Seleccionar.__init__
+modelo.Verificar.__init__" class="py-name" href="#" onclick="return doclink('link-23', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">nombre</tt><tt class="py-op">,</tt> <tt class="py-name">tipo</tt><tt class="py-op">,</tt> <tt class="py-name">valor</tt><tt class="py-op">,</tt> <tt class="py-name">valoresPermitidos</tt><tt class="py-op">)</tt> </tt>
+<a name="L123"></a><tt class="py-lineno">123</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt> <tt class="py-op">=</tt> <tt class="py-name">valor</tt> </tt>
+</div></div><a name="L124"></a><tt class="py-lineno">124</tt>  <tt class="py-line"> </tt>
+<a name="creaObservable"></a><div id="creaObservable-def"><a name="L125"></a><tt class="py-lineno">125</tt> <a class="py-toggle" href="#" id="creaObservable-toggle" onclick="return toggle('creaObservable');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="bc2_EVenereas-module.html#creaObservable">creaObservable</a><tt class="py-op">(</tt><tt class="py-param">tp</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="creaObservable-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="creaObservable-expanded"><a name="L126"></a><tt class="py-lineno">126</tt>  <tt class="py-line">    <tt class="py-docstring">'''Crea una instancia de un observable si la tupla coincide con la base de conocimiento</tt> </tt>
+<a name="L127"></a><tt class="py-lineno">127</tt>  <tt class="py-line"><tt class="py-docstring">    . Si la observable es correcta devuelve una instancia de la observable.</tt> </tt>
+<a name="L128"></a><tt class="py-lineno">128</tt>  <tt class="py-line"><tt class="py-docstring">    '''</tt> </tt>
+<a name="L129"></a><tt class="py-lineno">129</tt>  <tt class="py-line">     </tt>
+<a name="L130"></a><tt class="py-lineno">130</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">u'Fiebre'</tt><tt class="py-op">:</tt> </tt>
+<a name="L131"></a><tt class="py-lineno">131</tt>  <tt class="py-line">        <tt class="py-name">ob</tt><tt class="py-op">=</tt><tt id="link-24" class="py-name" targets="Class bc2_EVenereas.Fiebre=bc2_EVenereas.Fiebre-class.html"><a title="bc2_EVenereas.Fiebre" class="py-name" href="#" onclick="return doclink('link-24', 'Fiebre', 'link-24');">Fiebre</a></tt><tt class="py-op">(</tt><tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L132"></a><tt class="py-lineno">132</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">'True'</tt><tt class="py-op">:</tt> </tt>
+<a name="L133"></a><tt class="py-lineno">133</tt>  <tt class="py-line">          <tt class="py-name">ob</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt><tt class="py-op">=</tt><tt class="py-name">True</tt> </tt>
+<a name="L134"></a><tt class="py-lineno">134</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">ob</tt> </tt>
+<a name="L135"></a><tt class="py-lineno">135</tt>  <tt class="py-line">    <tt class="py-keyword">elif</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">u'Dolor de Cabeza'</tt><tt class="py-op">:</tt> </tt>
+<a name="L136"></a><tt class="py-lineno">136</tt>  <tt class="py-line">        <tt class="py-name">ob</tt><tt class="py-op">=</tt><tt id="link-25" class="py-name" targets="Class bc2_EVenereas.DolorCabeza=bc2_EVenereas.DolorCabeza-class.html"><a title="bc2_EVenereas.DolorCabeza" class="py-name" href="#" onclick="return doclink('link-25', 'DolorCabeza', 'link-25');">DolorCabeza</a></tt><tt class="py-op">(</tt><tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L137"></a><tt class="py-lineno">137</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">'True'</tt><tt class="py-op">:</tt> </tt>
+<a name="L138"></a><tt class="py-lineno">138</tt>  <tt class="py-line">            <tt class="py-name">ob</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt><tt class="py-op">=</tt><tt class="py-name">True</tt> </tt>
+<a name="L139"></a><tt class="py-lineno">139</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">ob</tt> </tt>
+<a name="L140"></a><tt class="py-lineno">140</tt>  <tt class="py-line">    <tt class="py-keyword">elif</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">u'Malestar en General'</tt><tt class="py-op">:</tt> </tt>
+<a name="L141"></a><tt class="py-lineno">141</tt>  <tt class="py-line">        <tt class="py-name">ob</tt><tt class="py-op">=</tt><tt id="link-26" class="py-name" targets="Class bc2_EVenereas.MalestarGeneral=bc2_EVenereas.MalestarGeneral-class.html"><a title="bc2_EVenereas.MalestarGeneral" class="py-name" href="#" onclick="return doclink('link-26', 'MalestarGeneral', 'link-26');">MalestarGeneral</a></tt><tt class="py-op">(</tt><tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L142"></a><tt class="py-lineno">142</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">'True'</tt><tt class="py-op">:</tt> </tt>
+<a name="L143"></a><tt class="py-lineno">143</tt>  <tt class="py-line">            <tt class="py-name">ob</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt><tt class="py-op">=</tt><tt class="py-name">True</tt> </tt>
+<a name="L144"></a><tt class="py-lineno">144</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">ob</tt> </tt>
+<a name="L145"></a><tt class="py-lineno">145</tt>  <tt class="py-line">    <tt class="py-keyword">elif</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">u'Depresion'</tt><tt class="py-op">:</tt> </tt>
+<a name="L146"></a><tt class="py-lineno">146</tt>  <tt class="py-line">        <tt class="py-name">ob</tt><tt class="py-op">=</tt><tt id="link-27" class="py-name" targets="Class bc2_EVenereas.Depresion=bc2_EVenereas.Depresion-class.html"><a title="bc2_EVenereas.Depresion" class="py-name" href="#" onclick="return doclink('link-27', 'Depresion', 'link-27');">Depresion</a></tt><tt class="py-op">(</tt><tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L147"></a><tt class="py-lineno">147</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt> <tt class="py-keyword">in</tt> <tt class="py-name">ob</tt><tt class="py-op">.</tt><tt class="py-name">valoresPermitidos</tt><tt class="py-op">:</tt> </tt>
+<a name="L148"></a><tt class="py-lineno">148</tt>  <tt class="py-line">            <tt class="py-name">ob</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt><tt class="py-op">=</tt><tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt> </tt>
+<a name="L149"></a><tt class="py-lineno">149</tt>  <tt class="py-line">            <tt class="py-keyword">return</tt> <tt class="py-name">ob</tt> </tt>
+<a name="L150"></a><tt class="py-lineno">150</tt>  <tt class="py-line">    <tt class="py-keyword">elif</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">u'Infertilidad'</tt><tt class="py-op">:</tt> </tt>
+<a name="L151"></a><tt class="py-lineno">151</tt>  <tt class="py-line">        <tt class="py-name">ob</tt><tt class="py-op">=</tt><tt id="link-28" class="py-name" targets="Class bc2_EVenereas.Infertilidad=bc2_EVenereas.Infertilidad-class.html"><a title="bc2_EVenereas.Infertilidad" class="py-name" href="#" onclick="return doclink('link-28', 'Infertilidad', 'link-28');">Infertilidad</a></tt><tt class="py-op">(</tt><tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L152"></a><tt class="py-lineno">152</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">'True'</tt><tt class="py-op">:</tt> </tt>
+<a name="L153"></a><tt class="py-lineno">153</tt>  <tt class="py-line">            <tt class="py-name">ob</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt><tt class="py-op">=</tt><tt class="py-name">True</tt> </tt>
+<a name="L154"></a><tt class="py-lineno">154</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">ob</tt> </tt>
+<a name="L155"></a><tt class="py-lineno">155</tt>  <tt class="py-line">    <tt class="py-keyword">elif</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">u'Vomitos'</tt><tt class="py-op">:</tt> </tt>
+<a name="L156"></a><tt class="py-lineno">156</tt>  <tt class="py-line">        <tt class="py-name">ob</tt><tt class="py-op">=</tt><tt id="link-29" class="py-name" targets="Class bc2_EVenereas.Vomitos=bc2_EVenereas.Vomitos-class.html"><a title="bc2_EVenereas.Vomitos" class="py-name" href="#" onclick="return doclink('link-29', 'Vomitos', 'link-29');">Vomitos</a></tt><tt class="py-op">(</tt><tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L157"></a><tt class="py-lineno">157</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">'True'</tt><tt class="py-op">:</tt> </tt>
+<a name="L158"></a><tt class="py-lineno">158</tt>  <tt class="py-line">            <tt class="py-name">ob</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt><tt class="py-op">=</tt><tt class="py-name">True</tt> </tt>
+<a name="L159"></a><tt class="py-lineno">159</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">ob</tt> </tt>
+<a name="L160"></a><tt class="py-lineno">160</tt>  <tt class="py-line">    <tt class="py-keyword">elif</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">u'Diarrea'</tt><tt class="py-op">:</tt> </tt>
+<a name="L161"></a><tt class="py-lineno">161</tt>  <tt class="py-line">        <tt class="py-name">ob</tt><tt class="py-op">=</tt><tt id="link-30" class="py-name" targets="Class bc2_EVenereas.Diarrea=bc2_EVenereas.Diarrea-class.html"><a title="bc2_EVenereas.Diarrea" class="py-name" href="#" onclick="return doclink('link-30', 'Diarrea', 'link-30');">Diarrea</a></tt><tt class="py-op">(</tt><tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L162"></a><tt class="py-lineno">162</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">'True'</tt><tt class="py-op">:</tt> </tt>
+<a name="L163"></a><tt class="py-lineno">163</tt>  <tt class="py-line">            <tt class="py-name">ob</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt><tt class="py-op">=</tt><tt class="py-name">True</tt> </tt>
+<a name="L164"></a><tt class="py-lineno">164</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">ob</tt> </tt>
+<a name="L165"></a><tt class="py-lineno">165</tt>  <tt class="py-line">    <tt class="py-keyword">elif</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">u'Hemorragia en los Genitales'</tt><tt class="py-op">:</tt> </tt>
+<a name="L166"></a><tt class="py-lineno">166</tt>  <tt class="py-line">        <tt class="py-name">ob</tt><tt class="py-op">=</tt><tt id="link-31" class="py-name" targets="Class bc2_EVenereas.HemorragiaGenitales=bc2_EVenereas.HemorragiaGenitales-class.html"><a title="bc2_EVenereas.HemorragiaGenitales" class="py-name" href="#" onclick="return doclink('link-31', 'HemorragiaGenitales', 'link-31');">HemorragiaGenitales</a></tt><tt class="py-op">(</tt><tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L167"></a><tt class="py-lineno">167</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">'True'</tt><tt class="py-op">:</tt> </tt>
+<a name="L168"></a><tt class="py-lineno">168</tt>  <tt class="py-line">            <tt class="py-name">ob</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt><tt class="py-op">=</tt><tt class="py-name">True</tt> </tt>
+<a name="L169"></a><tt class="py-lineno">169</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">ob</tt> </tt>
+<a name="L170"></a><tt class="py-lineno">170</tt>  <tt class="py-line">    <tt class="py-keyword">elif</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">u'Sarpullidos en la Piel Genitales'</tt><tt class="py-op">:</tt> </tt>
+<a name="L171"></a><tt class="py-lineno">171</tt>  <tt class="py-line">        <tt class="py-name">ob</tt><tt class="py-op">=</tt><tt id="link-32" class="py-name" targets="Class bc2_EVenereas.Sarpullidos=bc2_EVenereas.Sarpullidos-class.html"><a title="bc2_EVenereas.Sarpullidos" class="py-name" href="#" onclick="return doclink('link-32', 'Sarpullidos', 'link-32');">Sarpullidos</a></tt><tt class="py-op">(</tt><tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L172"></a><tt class="py-lineno">172</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">'True'</tt><tt class="py-op">:</tt> </tt>
+<a name="L173"></a><tt class="py-lineno">173</tt>  <tt class="py-line">            <tt class="py-name">ob</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt><tt class="py-op">=</tt><tt class="py-name">True</tt> </tt>
+<a name="L174"></a><tt class="py-lineno">174</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">ob</tt> </tt>
+<a name="L175"></a><tt class="py-lineno">175</tt>  <tt class="py-line">    <tt class="py-keyword">elif</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">u'Verrugas Genitales'</tt><tt class="py-op">:</tt> </tt>
+<a name="L176"></a><tt class="py-lineno">176</tt>  <tt class="py-line">        <tt class="py-name">ob</tt><tt class="py-op">=</tt><tt id="link-33" class="py-name" targets="Class bc2_EVenereas.VerrugasGenitales=bc2_EVenereas.VerrugasGenitales-class.html"><a title="bc2_EVenereas.VerrugasGenitales" class="py-name" href="#" onclick="return doclink('link-33', 'VerrugasGenitales', 'link-33');">VerrugasGenitales</a></tt><tt class="py-op">(</tt><tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L177"></a><tt class="py-lineno">177</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">'True'</tt><tt class="py-op">:</tt> </tt>
+<a name="L178"></a><tt class="py-lineno">178</tt>  <tt class="py-line">            <tt class="py-name">ob</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt><tt class="py-op">=</tt><tt class="py-name">True</tt> </tt>
+<a name="L179"></a><tt class="py-lineno">179</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">ob</tt> </tt>
+<a name="L180"></a><tt class="py-lineno">180</tt>  <tt class="py-line">    <tt class="py-keyword">elif</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">u'Inflamacion Ganglios Linfaticos'</tt><tt class="py-op">:</tt> </tt>
+<a name="L181"></a><tt class="py-lineno">181</tt>  <tt class="py-line">        <tt class="py-name">ob</tt><tt class="py-op">=</tt><tt id="link-34" class="py-name" targets="Class bc2_EVenereas.InflamacionGangliosLinfaticos=bc2_EVenereas.InflamacionGangliosLinfaticos-class.html"><a title="bc2_EVenereas.InflamacionGangliosLinfaticos" class="py-name" href="#" onclick="return doclink('link-34', 'InflamacionGangliosLinfaticos', 'link-34');">InflamacionGangliosLinfaticos</a></tt><tt class="py-op">(</tt><tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L182"></a><tt class="py-lineno">182</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">'True'</tt><tt class="py-op">:</tt> </tt>
+<a name="L183"></a><tt class="py-lineno">183</tt>  <tt class="py-line">            <tt class="py-name">ob</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt><tt class="py-op">=</tt><tt class="py-name">True</tt> </tt>
+<a name="L184"></a><tt class="py-lineno">184</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">ob</tt> </tt>
+<a name="L185"></a><tt class="py-lineno">185</tt>  <tt class="py-line">    <tt class="py-keyword">elif</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">u'Dolor al Orinar'</tt><tt class="py-op">:</tt> </tt>
+<a name="L186"></a><tt class="py-lineno">186</tt>  <tt class="py-line">        <tt class="py-name">ob</tt><tt class="py-op">=</tt><tt id="link-35" class="py-name" targets="Class bc2_EVenereas.DolorOrinar=bc2_EVenereas.DolorOrinar-class.html"><a title="bc2_EVenereas.DolorOrinar" class="py-name" href="#" onclick="return doclink('link-35', 'DolorOrinar', 'link-35');">DolorOrinar</a></tt><tt class="py-op">(</tt><tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L187"></a><tt class="py-lineno">187</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">tp</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">==</tt><tt class="py-string">'True'</tt><tt class="py-op">:</tt> </tt>
+<a name="L188"></a><tt class="py-lineno">188</tt>  <tt class="py-line">            <tt class="py-name">ob</tt><tt class="py-op">.</tt><tt class="py-name">valor</tt><tt class="py-op">=</tt><tt class="py-name">True</tt> </tt>
+<a name="L189"></a><tt class="py-lineno">189</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">ob</tt> </tt>
+<a name="L190"></a><tt class="py-lineno">190</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">None</tt> </tt>
+</div><a name="L191"></a><tt class="py-lineno">191</tt>  <tt class="py-line"> </tt>
+<a name="L192"></a><tt class="py-lineno">192</tt>  <tt class="py-line"> </tt>
+<a name="observables"></a><div id="observables-def"><a name="L193"></a><tt class="py-lineno">193</tt> <a class="py-toggle" href="#" id="observables-toggle" onclick="return toggle('observables');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="bc2_EVenereas-module.html#observables">observables</a> <tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="observables-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="observables-expanded"><a name="L194"></a><tt class="py-lineno">194</tt>  <tt class="py-line">        <tt class="py-docstring">''' Variables de todos los observables '''</tt> </tt>
+<a name="L195"></a><tt class="py-lineno">195</tt>  <tt class="py-line">        <tt id="link-36" class="py-name" targets="Variable appDiagnostico.observables=appDiagnostico-module.html#observables,Function bc2.observables()=bc2-module.html#observables,Function bc2_EVenereas.observables()=bc2_EVenereas-module.html#observables,Function ckCtrlDiagnostico.observables()=ckCtrlDiagnostico-module.html#observables"><a title="appDiagnostico.observables
+bc2.observables
+bc2_EVenereas.observables
+ckCtrlDiagnostico.observables" class="py-name" href="#" onclick="return doclink('link-36', 'observables', 'link-36');">observables</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
+<a name="L196"></a><tt class="py-lineno">196</tt>  <tt class="py-line">        <tt id="link-37" class="py-name"><a title="appDiagnostico.observables
+bc2.observables
+bc2_EVenereas.observables
+ckCtrlDiagnostico.observables" class="py-name" href="#" onclick="return doclink('link-37', 'observables', 'link-36');">observables</a></tt><tt class="py-op">.</tt><tt class="py-name">append</tt> <tt class="py-op">(</tt><tt id="link-38" class="py-name"><a title="bc2_EVenereas.Fiebre" class="py-name" href="#" onclick="return doclink('link-38', 'Fiebre', 'link-24');">Fiebre</a></tt> <tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L197"></a><tt class="py-lineno">197</tt>  <tt class="py-line">        <tt id="link-39" class="py-name"><a title="appDiagnostico.observables
+bc2.observables
+bc2_EVenereas.observables
+ckCtrlDiagnostico.observables" class="py-name" href="#" onclick="return doclink('link-39', 'observables', 'link-36');">observables</a></tt><tt class="py-op">.</tt><tt class="py-name">append</tt> <tt class="py-op">(</tt><tt id="link-40" class="py-name"><a title="bc2_EVenereas.DolorCabeza" class="py-name" href="#" onclick="return doclink('link-40', 'DolorCabeza', 'link-25');">DolorCabeza</a></tt> <tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L198"></a><tt class="py-lineno">198</tt>  <tt class="py-line">        <tt id="link-41" class="py-name"><a title="appDiagnostico.observables
+bc2.observables
+bc2_EVenereas.observables
+ckCtrlDiagnostico.observables" class="py-name" href="#" onclick="return doclink('link-41', 'observables', 'link-36');">observables</a></tt><tt class="py-op">.</tt><tt class="py-name">append</tt> <tt class="py-op">(</tt><tt id="link-42" class="py-name"><a title="bc2_EVenereas.MalestarGeneral" class="py-name" href="#" onclick="return doclink('link-42', 'MalestarGeneral', 'link-26');">MalestarGeneral</a></tt> <tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L199"></a><tt class="py-lineno">199</tt>  <tt class="py-line">        <tt id="link-43" class="py-name"><a title="appDiagnostico.observables
+bc2.observables
+bc2_EVenereas.observables
+ckCtrlDiagnostico.observables" class="py-name" href="#" onclick="return doclink('link-43', 'observables', 'link-36');">observables</a></tt><tt class="py-op">.</tt><tt class="py-name">append</tt> <tt class="py-op">(</tt><tt id="link-44" class="py-name"><a title="bc2_EVenereas.Depresion" class="py-name" href="#" onclick="return doclink('link-44', 'Depresion', 'link-27');">Depresion</a></tt> <tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L200"></a><tt class="py-lineno">200</tt>  <tt class="py-line">        <tt id="link-45" class="py-name"><a title="appDiagnostico.observables
+bc2.observables
+bc2_EVenereas.observables
+ckCtrlDiagnostico.observables" class="py-name" href="#" onclick="return doclink('link-45', 'observables', 'link-36');">observables</a></tt><tt class="py-op">.</tt><tt class="py-name">append</tt> <tt class="py-op">(</tt><tt id="link-46" class="py-name"><a title="bc2_EVenereas.Infertilidad" class="py-name" href="#" onclick="return doclink('link-46', 'Infertilidad', 'link-28');">Infertilidad</a></tt> <tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L201"></a><tt class="py-lineno">201</tt>  <tt class="py-line">        <tt id="link-47" class="py-name"><a title="appDiagnostico.observables
+bc2.observables
+bc2_EVenereas.observables
+ckCtrlDiagnostico.observables" class="py-name" href="#" onclick="return doclink('link-47', 'observables', 'link-36');">observables</a></tt><tt class="py-op">.</tt><tt class="py-name">append</tt> <tt class="py-op">(</tt><tt id="link-48" class="py-name"><a title="bc2_EVenereas.Vomitos" class="py-name" href="#" onclick="return doclink('link-48', 'Vomitos', 'link-29');">Vomitos</a></tt> <tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L202"></a><tt class="py-lineno">202</tt>  <tt class="py-line">        <tt id="link-49" class="py-name"><a title="appDiagnostico.observables
+bc2.observables
+bc2_EVenereas.observables
+ckCtrlDiagnostico.observables" class="py-name" href="#" onclick="return doclink('link-49', 'observables', 'link-36');">observables</a></tt><tt class="py-op">.</tt><tt class="py-name">append</tt> <tt class="py-op">(</tt><tt id="link-50" class="py-name"><a title="bc2_EVenereas.Diarrea" class="py-name" href="#" onclick="return doclink('link-50', 'Diarrea', 'link-30');">Diarrea</a></tt> <tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L203"></a><tt class="py-lineno">203</tt>  <tt class="py-line">        <tt id="link-51" class="py-name"><a title="appDiagnostico.observables
+bc2.observables
+bc2_EVenereas.observables
+ckCtrlDiagnostico.observables" class="py-name" href="#" onclick="return doclink('link-51', 'observables', 'link-36');">observables</a></tt><tt class="py-op">.</tt><tt class="py-name">append</tt> <tt class="py-op">(</tt><tt id="link-52" class="py-name"><a title="bc2_EVenereas.HemorragiaGenitales" class="py-name" href="#" onclick="return doclink('link-52', 'HemorragiaGenitales', 'link-31');">HemorragiaGenitales</a></tt> <tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L204"></a><tt class="py-lineno">204</tt>  <tt class="py-line">        <tt id="link-53" class="py-name"><a title="appDiagnostico.observables
+bc2.observables
+bc2_EVenereas.observables
+ckCtrlDiagnostico.observables" class="py-name" href="#" onclick="return doclink('link-53', 'observables', 'link-36');">observables</a></tt><tt class="py-op">.</tt><tt class="py-name">append</tt> <tt class="py-op">(</tt><tt id="link-54" class="py-name"><a title="bc2_EVenereas.Sarpullidos" class="py-name" href="#" onclick="return doclink('link-54', 'Sarpullidos', 'link-32');">Sarpullidos</a></tt> <tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L205"></a><tt class="py-lineno">205</tt>  <tt class="py-line">        <tt id="link-55" class="py-name"><a title="appDiagnostico.observables
+bc2.observables
+bc2_EVenereas.observables
+ckCtrlDiagnostico.observables" class="py-name" href="#" onclick="return doclink('link-55', 'observables', 'link-36');">observables</a></tt><tt class="py-op">.</tt><tt class="py-name">append</tt> <tt class="py-op">(</tt><tt id="link-56" class="py-name"><a title="bc2_EVenereas.VerrugasGenitales" class="py-name" href="#" onclick="return doclink('link-56', 'VerrugasGenitales', 'link-33');">VerrugasGenitales</a></tt> <tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L206"></a><tt class="py-lineno">206</tt>  <tt class="py-line">        <tt id="link-57" class="py-name"><a title="appDiagnostico.observables
+bc2.observables
+bc2_EVenereas.observables
+ckCtrlDiagnostico.observables" class="py-name" href="#" onclick="return doclink('link-57', 'observables', 'link-36');">observables</a></tt><tt class="py-op">.</tt><tt class="py-name">append</tt> <tt class="py-op">(</tt><tt id="link-58" class="py-name"><a title="bc2_EVenereas.InflamacionGangliosLinfaticos" class="py-name" href="#" onclick="return doclink('link-58', 'InflamacionGangliosLinfaticos', 'link-34');">InflamacionGangliosLinfaticos</a></tt> <tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L207"></a><tt class="py-lineno">207</tt>  <tt class="py-line">        <tt id="link-59" class="py-name"><a title="appDiagnostico.observables
+bc2.observables
+bc2_EVenereas.observables
+ckCtrlDiagnostico.observables" class="py-name" href="#" onclick="return doclink('link-59', 'observables', 'link-36');">observables</a></tt><tt class="py-op">.</tt><tt class="py-name">append</tt> <tt class="py-op">(</tt><tt id="link-60" class="py-name"><a title="bc2_EVenereas.DolorOrinar" class="py-name" href="#" onclick="return doclink('link-60', 'DolorOrinar', 'link-35');">DolorOrinar</a></tt> <tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L208"></a><tt class="py-lineno">208</tt>  <tt class="py-line">         </tt>
+<a name="L209"></a><tt class="py-lineno">209</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt id="link-61" class="py-name"><a title="appDiagnostico.observables
+bc2.observables
+bc2_EVenereas.observables
+ckCtrlDiagnostico.observables" class="py-name" href="#" onclick="return doclink('link-61', 'observables', 'link-36');">observables</a></tt> </tt>
+</div><a name="L210"></a><tt class="py-lineno">210</tt>  <tt class="py-line"> </tt>
+<a name="Enfermedad"></a><div id="Enfermedad-def"><a name="L211"></a><tt class="py-lineno">211</tt> <a class="py-toggle" href="#" id="Enfermedad-toggle" onclick="return toggle('Enfermedad');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bc2_EVenereas.Enfermedad-class.html">Enfermedad</a><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Enfermedad-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Enfermedad-expanded"><a name="L212"></a><tt class="py-lineno">212</tt>  <tt class="py-line">        <tt class="py-docstring">''' Valores que tiene enfermedad '''</tt> </tt>
+<a name="Enfermedad.__init__"></a><div id="Enfermedad.__init__-def"><a name="L213"></a><tt class="py-lineno">213</tt> <a class="py-toggle" href="#" id="Enfermedad.__init__-toggle" onclick="return toggle('Enfermedad.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="bc2_EVenereas.Enfermedad-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">nombre</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Enfermedad.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Enfermedad.__init__-expanded"><a name="L214"></a><tt class="py-lineno">214</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">nombre</tt><tt class="py-op">=</tt><tt class="py-name">nombre</tt> </tt>
+</div></div><a name="L215"></a><tt class="py-lineno">215</tt>  <tt class="py-line"> </tt>
+<a name="Sida"></a><div id="Sida-def"><a name="L216"></a><tt class="py-lineno">216</tt> <a class="py-toggle" href="#" id="Sida-toggle" onclick="return toggle('Sida');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bc2_EVenereas.Sida-class.html">Sida</a><tt class="py-op">(</tt><tt class="py-base-class">Enfermedad</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Sida-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Sida-expanded"><a name="L217"></a><tt class="py-lineno">217</tt>  <tt class="py-line">        <tt class="py-docstring">''' Enfermedad Sida, sus Sintomas y Ayuda '''</tt> </tt>
+<a name="Sida.__init__"></a><div id="Sida.__init__-def"><a name="L218"></a><tt class="py-lineno">218</tt> <a class="py-toggle" href="#" id="Sida.__init__-toggle" onclick="return toggle('Sida.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="bc2_EVenereas.Sida-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Sida.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Sida.__init__-expanded"><a name="L219"></a><tt class="py-lineno">219</tt>  <tt class="py-line">            <tt class="py-name">fiebre</tt><tt class="py-op">=</tt><tt id="link-62" class="py-name"><a title="bc2_EVenereas.Fiebre" class="py-name" href="#" onclick="return doclink('link-62', 'Fiebre', 'link-24');">Fiebre</a></tt><tt class="py-op">(</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+<a name="L220"></a><tt class="py-lineno">220</tt>  <tt class="py-line">            <tt class="py-name">dolorCabeza</tt><tt class="py-op">=</tt><tt id="link-63" class="py-name"><a title="bc2_EVenereas.DolorCabeza" class="py-name" href="#" onclick="return doclink('link-63', 'DolorCabeza', 'link-25');">DolorCabeza</a></tt><tt class="py-op">(</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+<a name="L221"></a><tt class="py-lineno">221</tt>  <tt class="py-line">            <tt class="py-name">malestarGeneral</tt><tt class="py-op">=</tt><tt id="link-64" class="py-name"><a title="bc2_EVenereas.MalestarGeneral" class="py-name" href="#" onclick="return doclink('link-64', 'MalestarGeneral', 'link-26');">MalestarGeneral</a></tt><tt class="py-op">(</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+<a name="L222"></a><tt class="py-lineno">222</tt>  <tt class="py-line">            <tt class="py-name">depresion</tt><tt class="py-op">=</tt><tt id="link-65" class="py-name"><a title="bc2_EVenereas.Depresion" class="py-name" href="#" onclick="return doclink('link-65', 'Depresion', 'link-27');">Depresion</a></tt><tt class="py-op">(</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+<a name="L223"></a><tt class="py-lineno">223</tt>  <tt class="py-line">            <tt class="py-name">infertilidad</tt><tt class="py-op">=</tt><tt id="link-66" class="py-name"><a title="bc2_EVenereas.Infertilidad" class="py-name" href="#" onclick="return doclink('link-66', 'Infertilidad', 'link-28');">Infertilidad</a></tt><tt class="py-op">(</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+<a name="L224"></a><tt class="py-lineno">224</tt>  <tt class="py-line">            <tt class="py-name">vomitos</tt><tt class="py-op">=</tt><tt id="link-67" class="py-name"><a title="bc2_EVenereas.Vomitos" class="py-name" href="#" onclick="return doclink('link-67', 'Vomitos', 'link-29');">Vomitos</a></tt><tt class="py-op">(</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+<a name="L225"></a><tt class="py-lineno">225</tt>  <tt class="py-line">            <tt class="py-name">diarrea</tt><tt class="py-op">=</tt><tt id="link-68" class="py-name"><a title="bc2_EVenereas.Diarrea" class="py-name" href="#" onclick="return doclink('link-68', 'Diarrea', 'link-30');">Diarrea</a></tt><tt class="py-op">(</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+<a name="L226"></a><tt class="py-lineno">226</tt>  <tt class="py-line">            <tt class="py-name">inflamacionGangliosLinfaticos</tt><tt class="py-op">=</tt><tt id="link-69" class="py-name"><a title="bc2_EVenereas.InflamacionGangliosLinfaticos" class="py-name" href="#" onclick="return doclink('link-69', 'InflamacionGangliosLinfaticos', 'link-34');">InflamacionGangliosLinfaticos</a></tt><tt class="py-op">(</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+<a name="L227"></a><tt class="py-lineno">227</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">debePresentar</tt><tt class="py-op">=</tt><tt class="py-op">[</tt><tt class="py-name">fiebre</tt><tt class="py-op">,</tt> <tt class="py-name">dolorCabeza</tt><tt class="py-op">,</tt> <tt class="py-name">malestarGeneral</tt><tt class="py-op">,</tt> <tt class="py-name">depresion</tt><tt class="py-op">,</tt><tt class="py-name">infertilidad</tt><tt class="py-op">,</tt> <tt class="py-name">vomitos</tt><tt class="py-op">,</tt> <tt class="py-name">diarrea</tt><tt class="py-op">,</tt> <tt class="py-name">inflamacionGangliosLinfaticos</tt><tt class="py-op">]</tt> </tt>
+<a name="L228"></a><tt class="py-lineno">228</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">ayuda</tt><tt class="py-op">=</tt><tt class="py-string">" No se cuenta con una vacuna que cure el sida. En la actualidad se trata con medicamentos antirretrovirales, para mejorar la respuesta inmunitaria y con otros medicamentos que ayudan a combatir las infecciones oportunistas."</tt> </tt>
+<a name="L229"></a><tt class="py-lineno">229</tt>  <tt class="py-line">            <tt id="link-70" class="py-name" targets="Class bc2_EVenereas.Enfermedad=bc2_EVenereas.Enfermedad-class.html"><a title="bc2_EVenereas.Enfermedad" class="py-name" href="#" onclick="return doclink('link-70', 'Enfermedad', 'link-70');">Enfermedad</a></tt><tt class="py-op">.</tt><tt id="link-71" class="py-name"><a title="bc2.AdmisionObstruida.__init__
+bc2.ApagadoMotor.__init__
+bc2.Averia.__init__
+bc2.AvisoNivelAceite.__init__
+bc2.AvisoTemperaturaMotor.__init__
+bc2.BujiasInadecuadas.__init__
+bc2.ExcesoConsumoAceite.__init__
+bc2.FalloValvulaRalenti.__init__
+bc2.FaltaPotencia.__init__
+bc2.FiltracionAceiteRetenes.__init__
+bc2.FisuraJuntaCulata.__init__
+bc2.Observable.__init__
+bc2.ProblemaManguito.__init__
+bc2.ProblemaTermostato.__init__
+bc2.RalentiIrregular.__init__
+bc2.RegimenRevolucionesExcesivo.__init__
+bc2.TironesEnFrio.__init__
+bc2.ValvulasAdmisionObstruidas.__init__
+bc2_EVenereas.Clamidias.__init__
+bc2_EVenereas.Depresion.__init__
+bc2_EVenereas.Diarrea.__init__
+bc2_EVenereas.DolorCabeza.__init__
+bc2_EVenereas.DolorOrinar.__init__
+bc2_EVenereas.Enfermedad.__init__
+bc2_EVenereas.Fiebre.__init__
+bc2_EVenereas.Gonorrea.__init__
+bc2_EVenereas.HemorragiaGenitales.__init__
+bc2_EVenereas.HerpesGenital.__init__
+bc2_EVenereas.Infertilidad.__init__
+bc2_EVenereas.InflamacionGangliosLinfaticos.__init__
+bc2_EVenereas.MalestarGeneral.__init__
+bc2_EVenereas.Observable.__init__
+bc2_EVenereas.Sarpullidos.__init__
+bc2_EVenereas.Sida.__init__
+bc2_EVenereas.Sifilis.__init__
+bc2_EVenereas.Triconomiasis.__init__
+bc2_EVenereas.VerrugasGenitales.__init__
+bc2_EVenereas.Vomitos.__init__
+ckVtsDiagnosticoD.DiagnosticDlg.__init__
+modelo.Cubrir.__init__
+modelo.Especificar.__init__
+modelo.Inferencia.__init__
+modelo.MetodoCoberturaCausal.__init__
+modelo.Obtener.__init__
+modelo.Seleccionar.__init__
+modelo.Verificar.__init__" class="py-name" href="#" onclick="return doclink('link-71', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt><tt class="py-name">nombre</tt><tt class="py-op">=</tt><tt class="py-string">u'Sida (VIH)'</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L230"></a><tt class="py-lineno">230</tt>  <tt class="py-line"> </tt>
+<a name="L231"></a><tt class="py-lineno">231</tt>  <tt class="py-line"> </tt>
+<a name="Clamidias"></a><div id="Clamidias-def"><a name="L232"></a><tt class="py-lineno">232</tt> <a class="py-toggle" href="#" id="Clamidias-toggle" onclick="return toggle('Clamidias');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bc2_EVenereas.Clamidias-class.html">Clamidias</a> <tt class="py-op">(</tt><tt class="py-base-class">Enfermedad</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Clamidias-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Clamidias-expanded"><a name="L233"></a><tt class="py-lineno">233</tt>  <tt class="py-line">        <tt class="py-docstring">''' Enfermedad Clamidias, sus Sintomas y Ayuda '''</tt> </tt>
+<a name="Clamidias.__init__"></a><div id="Clamidias.__init__-def"><a name="L234"></a><tt class="py-lineno">234</tt> <a class="py-toggle" href="#" id="Clamidias.__init__-toggle" onclick="return toggle('Clamidias.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="bc2_EVenereas.Clamidias-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Clamidias.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Clamidias.__init__-expanded"><a name="L235"></a><tt class="py-lineno">235</tt>  <tt class="py-line">                 </tt>
+<a name="L236"></a><tt class="py-lineno">236</tt>  <tt class="py-line">                <tt class="py-name">dolorOrinar</tt> <tt class="py-op">=</tt> <tt id="link-72" class="py-name"><a title="bc2_EVenereas.DolorOrinar" class="py-name" href="#" onclick="return doclink('link-72', 'DolorOrinar', 'link-35');">DolorOrinar</a></tt><tt class="py-op">(</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+<a name="L237"></a><tt class="py-lineno">237</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">debePresentar</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-name">dolorOrinar</tt><tt class="py-op">]</tt> </tt>
+<a name="L238"></a><tt class="py-lineno">238</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">ayuda</tt> <tt class="py-op">=</tt> <tt class="py-string">"La infeccion debe desaparecer en 1 o 2 semanas con un buen tratamiento de antibioticos. Todos los companeros sexuales deberian tambien ser tratados, aunque no tengan si&#173;ntomas."</tt> </tt>
+<a name="L239"></a><tt class="py-lineno">239</tt>  <tt class="py-line">                <tt id="link-73" class="py-name"><a title="bc2_EVenereas.Enfermedad" class="py-name" href="#" onclick="return doclink('link-73', 'Enfermedad', 'link-70');">Enfermedad</a></tt><tt class="py-op">.</tt><tt id="link-74" class="py-name"><a title="bc2.AdmisionObstruida.__init__
+bc2.ApagadoMotor.__init__
+bc2.Averia.__init__
+bc2.AvisoNivelAceite.__init__
+bc2.AvisoTemperaturaMotor.__init__
+bc2.BujiasInadecuadas.__init__
+bc2.ExcesoConsumoAceite.__init__
+bc2.FalloValvulaRalenti.__init__
+bc2.FaltaPotencia.__init__
+bc2.FiltracionAceiteRetenes.__init__
+bc2.FisuraJuntaCulata.__init__
+bc2.Observable.__init__
+bc2.ProblemaManguito.__init__
+bc2.ProblemaTermostato.__init__
+bc2.RalentiIrregular.__init__
+bc2.RegimenRevolucionesExcesivo.__init__
+bc2.TironesEnFrio.__init__
+bc2.ValvulasAdmisionObstruidas.__init__
+bc2_EVenereas.Clamidias.__init__
+bc2_EVenereas.Depresion.__init__
+bc2_EVenereas.Diarrea.__init__
+bc2_EVenereas.DolorCabeza.__init__
+bc2_EVenereas.DolorOrinar.__init__
+bc2_EVenereas.Enfermedad.__init__
+bc2_EVenereas.Fiebre.__init__
+bc2_EVenereas.Gonorrea.__init__
+bc2_EVenereas.HemorragiaGenitales.__init__
+bc2_EVenereas.HerpesGenital.__init__
+bc2_EVenereas.Infertilidad.__init__
+bc2_EVenereas.InflamacionGangliosLinfaticos.__init__
+bc2_EVenereas.MalestarGeneral.__init__
+bc2_EVenereas.Observable.__init__
+bc2_EVenereas.Sarpullidos.__init__
+bc2_EVenereas.Sida.__init__
+bc2_EVenereas.Sifilis.__init__
+bc2_EVenereas.Triconomiasis.__init__
+bc2_EVenereas.VerrugasGenitales.__init__
+bc2_EVenereas.Vomitos.__init__
+ckVtsDiagnosticoD.DiagnosticDlg.__init__
+modelo.Cubrir.__init__
+modelo.Especificar.__init__
+modelo.Inferencia.__init__
+modelo.MetodoCoberturaCausal.__init__
+modelo.Obtener.__init__
+modelo.Seleccionar.__init__
+modelo.Verificar.__init__" class="py-name" href="#" onclick="return doclink('link-74', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">nombre</tt> <tt class="py-op">=</tt> <tt class="py-string">"Infeccion por clamidias"</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L240"></a><tt class="py-lineno">240</tt>  <tt class="py-line"> </tt>
+<a name="L241"></a><tt class="py-lineno">241</tt>  <tt class="py-line"> </tt>
+<a name="HerpesGenital"></a><div id="HerpesGenital-def"><a name="L242"></a><tt class="py-lineno">242</tt> <a class="py-toggle" href="#" id="HerpesGenital-toggle" onclick="return toggle('HerpesGenital');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bc2_EVenereas.HerpesGenital-class.html">HerpesGenital</a> <tt class="py-op">(</tt><tt class="py-base-class">Enfermedad</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="HerpesGenital-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="HerpesGenital-expanded"><a name="L243"></a><tt class="py-lineno">243</tt>  <tt class="py-line">        <tt class="py-docstring">''' Enfermedad Herpes Genital, sus Sintomas y Ayuda '''</tt> </tt>
+<a name="HerpesGenital.__init__"></a><div id="HerpesGenital.__init__-def"><a name="L244"></a><tt class="py-lineno">244</tt> <a class="py-toggle" href="#" id="HerpesGenital.__init__-toggle" onclick="return toggle('HerpesGenital.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="bc2_EVenereas.HerpesGenital-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="HerpesGenital.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="HerpesGenital.__init__-expanded"><a name="L245"></a><tt class="py-lineno">245</tt>  <tt class="py-line">                 </tt>
+<a name="L246"></a><tt class="py-lineno">246</tt>  <tt class="py-line">                <tt class="py-name">fiebre</tt> <tt class="py-op">=</tt> <tt id="link-75" class="py-name"><a title="bc2_EVenereas.Fiebre" class="py-name" href="#" onclick="return doclink('link-75', 'Fiebre', 'link-24');">Fiebre</a></tt><tt class="py-op">(</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+<a name="L247"></a><tt class="py-lineno">247</tt>  <tt class="py-line">                <tt class="py-name">verrugas</tt> <tt class="py-op">=</tt> <tt id="link-76" class="py-name"><a title="bc2_EVenereas.VerrugasGenitales" class="py-name" href="#" onclick="return doclink('link-76', 'VerrugasGenitales', 'link-33');">VerrugasGenitales</a></tt><tt class="py-op">(</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+<a name="L248"></a><tt class="py-lineno">248</tt>  <tt class="py-line">                <tt class="py-name">sarpullidos</tt> <tt class="py-op">=</tt> <tt id="link-77" class="py-name"><a title="bc2_EVenereas.Sarpullidos" class="py-name" href="#" onclick="return doclink('link-77', 'Sarpullidos', 'link-32');">Sarpullidos</a></tt><tt class="py-op">(</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+<a name="L249"></a><tt class="py-lineno">249</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">debePresentar</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-name">fiebre</tt><tt class="py-op">,</tt> <tt class="py-name">verrugas</tt><tt class="py-op">,</tt> <tt class="py-name">sarpullidos</tt><tt class="py-op">]</tt> </tt>
+<a name="L250"></a><tt class="py-lineno">250</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">ayuda</tt> <tt class="py-op">=</tt> <tt class="py-string">"El tratamiento del herpes genital no cura la enfermedad pero mejora los si&#173;ntomas. Los banos calientes pueden aliviar el dolor asociado a las lesiones genitales. Tambien se recomienda una limpieza muy suave con agua y jabon. "</tt> </tt>
+<a name="L251"></a><tt class="py-lineno">251</tt>  <tt class="py-line">                <tt id="link-78" class="py-name"><a title="bc2_EVenereas.Enfermedad" class="py-name" href="#" onclick="return doclink('link-78', 'Enfermedad', 'link-70');">Enfermedad</a></tt><tt class="py-op">.</tt><tt id="link-79" class="py-name"><a title="bc2.AdmisionObstruida.__init__
+bc2.ApagadoMotor.__init__
+bc2.Averia.__init__
+bc2.AvisoNivelAceite.__init__
+bc2.AvisoTemperaturaMotor.__init__
+bc2.BujiasInadecuadas.__init__
+bc2.ExcesoConsumoAceite.__init__
+bc2.FalloValvulaRalenti.__init__
+bc2.FaltaPotencia.__init__
+bc2.FiltracionAceiteRetenes.__init__
+bc2.FisuraJuntaCulata.__init__
+bc2.Observable.__init__
+bc2.ProblemaManguito.__init__
+bc2.ProblemaTermostato.__init__
+bc2.RalentiIrregular.__init__
+bc2.RegimenRevolucionesExcesivo.__init__
+bc2.TironesEnFrio.__init__
+bc2.ValvulasAdmisionObstruidas.__init__
+bc2_EVenereas.Clamidias.__init__
+bc2_EVenereas.Depresion.__init__
+bc2_EVenereas.Diarrea.__init__
+bc2_EVenereas.DolorCabeza.__init__
+bc2_EVenereas.DolorOrinar.__init__
+bc2_EVenereas.Enfermedad.__init__
+bc2_EVenereas.Fiebre.__init__
+bc2_EVenereas.Gonorrea.__init__
+bc2_EVenereas.HemorragiaGenitales.__init__
+bc2_EVenereas.HerpesGenital.__init__
+bc2_EVenereas.Infertilidad.__init__
+bc2_EVenereas.InflamacionGangliosLinfaticos.__init__
+bc2_EVenereas.MalestarGeneral.__init__
+bc2_EVenereas.Observable.__init__
+bc2_EVenereas.Sarpullidos.__init__
+bc2_EVenereas.Sida.__init__
+bc2_EVenereas.Sifilis.__init__
+bc2_EVenereas.Triconomiasis.__init__
+bc2_EVenereas.VerrugasGenitales.__init__
+bc2_EVenereas.Vomitos.__init__
+ckVtsDiagnosticoD.DiagnosticDlg.__init__
+modelo.Cubrir.__init__
+modelo.Especificar.__init__
+modelo.Inferencia.__init__
+modelo.MetodoCoberturaCausal.__init__
+modelo.Obtener.__init__
+modelo.Seleccionar.__init__
+modelo.Verificar.__init__" class="py-name" href="#" onclick="return doclink('link-79', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">nombre</tt> <tt class="py-op">=</tt> <tt class="py-string">"Herpes Genital"</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L252"></a><tt class="py-lineno">252</tt>  <tt class="py-line"> </tt>
+<a name="L253"></a><tt class="py-lineno">253</tt>  <tt class="py-line"> </tt>
+<a name="Gonorrea"></a><div id="Gonorrea-def"><a name="L254"></a><tt class="py-lineno">254</tt> <a class="py-toggle" href="#" id="Gonorrea-toggle" onclick="return toggle('Gonorrea');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bc2_EVenereas.Gonorrea-class.html">Gonorrea</a> <tt class="py-op">(</tt><tt class="py-base-class">Enfermedad</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Gonorrea-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Gonorrea-expanded"><a name="L255"></a><tt class="py-lineno">255</tt>  <tt class="py-line">        <tt class="py-docstring">''' Enfermedad Gonorrea, sus Sintomas y Ayuda '''</tt> </tt>
+<a name="Gonorrea.__init__"></a><div id="Gonorrea.__init__-def"><a name="L256"></a><tt class="py-lineno">256</tt> <a class="py-toggle" href="#" id="Gonorrea.__init__-toggle" onclick="return toggle('Gonorrea.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="bc2_EVenereas.Gonorrea-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Gonorrea.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Gonorrea.__init__-expanded"><a name="L257"></a><tt class="py-lineno">257</tt>  <tt class="py-line"> </tt>
+<a name="L258"></a><tt class="py-lineno">258</tt>  <tt class="py-line">                <tt class="py-name">dolorOrinar</tt> <tt class="py-op">=</tt> <tt id="link-80" class="py-name"><a title="bc2_EVenereas.DolorOrinar" class="py-name" href="#" onclick="return doclink('link-80', 'DolorOrinar', 'link-35');">DolorOrinar</a></tt><tt class="py-op">(</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+<a name="L259"></a><tt class="py-lineno">259</tt>  <tt class="py-line">                <tt class="py-name">sarpullidos</tt> <tt class="py-op">=</tt> <tt id="link-81" class="py-name"><a title="bc2_EVenereas.Sarpullidos" class="py-name" href="#" onclick="return doclink('link-81', 'Sarpullidos', 'link-32');">Sarpullidos</a></tt><tt class="py-op">(</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+<a name="L260"></a><tt class="py-lineno">260</tt>  <tt class="py-line">                <tt class="py-name">verrugas</tt> <tt class="py-op">=</tt> <tt id="link-82" class="py-name"><a title="bc2_EVenereas.VerrugasGenitales" class="py-name" href="#" onclick="return doclink('link-82', 'VerrugasGenitales', 'link-33');">VerrugasGenitales</a></tt><tt class="py-op">(</tt><tt class="py-name">True</tt><tt class="py-op">)</tt>       </tt>
+<a name="L261"></a><tt class="py-lineno">261</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">debePresentar</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-name">dolorOrinar</tt><tt class="py-op">,</tt> <tt class="py-name">sarpullidos</tt><tt class="py-op">,</tt> <tt class="py-name">verrugas</tt><tt class="py-op">]</tt> </tt>
+<a name="L262"></a><tt class="py-lineno">262</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">ayuda</tt> <tt class="py-op">=</tt> <tt class="py-string">"La gonorrea es muy facil de curar con medicamentos."</tt> </tt>
+<a name="L263"></a><tt class="py-lineno">263</tt>  <tt class="py-line">                <tt id="link-83" class="py-name"><a title="bc2_EVenereas.Enfermedad" class="py-name" href="#" onclick="return doclink('link-83', 'Enfermedad', 'link-70');">Enfermedad</a></tt><tt class="py-op">.</tt><tt id="link-84" class="py-name"><a title="bc2.AdmisionObstruida.__init__
+bc2.ApagadoMotor.__init__
+bc2.Averia.__init__
+bc2.AvisoNivelAceite.__init__
+bc2.AvisoTemperaturaMotor.__init__
+bc2.BujiasInadecuadas.__init__
+bc2.ExcesoConsumoAceite.__init__
+bc2.FalloValvulaRalenti.__init__
+bc2.FaltaPotencia.__init__
+bc2.FiltracionAceiteRetenes.__init__
+bc2.FisuraJuntaCulata.__init__
+bc2.Observable.__init__
+bc2.ProblemaManguito.__init__
+bc2.ProblemaTermostato.__init__
+bc2.RalentiIrregular.__init__
+bc2.RegimenRevolucionesExcesivo.__init__
+bc2.TironesEnFrio.__init__
+bc2.ValvulasAdmisionObstruidas.__init__
+bc2_EVenereas.Clamidias.__init__
+bc2_EVenereas.Depresion.__init__
+bc2_EVenereas.Diarrea.__init__
+bc2_EVenereas.DolorCabeza.__init__
+bc2_EVenereas.DolorOrinar.__init__
+bc2_EVenereas.Enfermedad.__init__
+bc2_EVenereas.Fiebre.__init__
+bc2_EVenereas.Gonorrea.__init__
+bc2_EVenereas.HemorragiaGenitales.__init__
+bc2_EVenereas.HerpesGenital.__init__
+bc2_EVenereas.Infertilidad.__init__
+bc2_EVenereas.InflamacionGangliosLinfaticos.__init__
+bc2_EVenereas.MalestarGeneral.__init__
+bc2_EVenereas.Observable.__init__
+bc2_EVenereas.Sarpullidos.__init__
+bc2_EVenereas.Sida.__init__
+bc2_EVenereas.Sifilis.__init__
+bc2_EVenereas.Triconomiasis.__init__
+bc2_EVenereas.VerrugasGenitales.__init__
+bc2_EVenereas.Vomitos.__init__
+ckVtsDiagnosticoD.DiagnosticDlg.__init__
+modelo.Cubrir.__init__
+modelo.Especificar.__init__
+modelo.Inferencia.__init__
+modelo.MetodoCoberturaCausal.__init__
+modelo.Obtener.__init__
+modelo.Seleccionar.__init__
+modelo.Verificar.__init__" class="py-name" href="#" onclick="return doclink('link-84', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">nombre</tt> <tt class="py-op">=</tt> <tt class="py-string">"Gonorrea"</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L264"></a><tt class="py-lineno">264</tt>  <tt class="py-line"> </tt>
+<a name="L265"></a><tt class="py-lineno">265</tt>  <tt class="py-line"> </tt>
+<a name="Sifilis"></a><div id="Sifilis-def"><a name="L266"></a><tt class="py-lineno">266</tt> <a class="py-toggle" href="#" id="Sifilis-toggle" onclick="return toggle('Sifilis');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bc2_EVenereas.Sifilis-class.html">Sifilis</a><tt class="py-op">(</tt><tt class="py-base-class">Enfermedad</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Sifilis-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Sifilis-expanded"><a name="L267"></a><tt class="py-lineno">267</tt>  <tt class="py-line">        <tt class="py-docstring">''' Enfermedad Sifilis, sus Sintomas y Ayuda '''</tt> </tt>
+<a name="Sifilis.__init__"></a><div id="Sifilis.__init__-def"><a name="L268"></a><tt class="py-lineno">268</tt> <a class="py-toggle" href="#" id="Sifilis.__init__-toggle" onclick="return toggle('Sifilis.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="bc2_EVenereas.Sifilis-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Sifilis.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Sifilis.__init__-expanded"><a name="L269"></a><tt class="py-lineno">269</tt>  <tt class="py-line">                 </tt>
+<a name="L270"></a><tt class="py-lineno">270</tt>  <tt class="py-line">                <tt class="py-name">fiebre</tt> <tt class="py-op">=</tt> <tt id="link-85" class="py-name"><a title="bc2_EVenereas.Fiebre" class="py-name" href="#" onclick="return doclink('link-85', 'Fiebre', 'link-24');">Fiebre</a></tt><tt class="py-op">(</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+<a name="L271"></a><tt class="py-lineno">271</tt>  <tt class="py-line">                <tt class="py-name">dolorCabeza</tt> <tt class="py-op">=</tt> <tt id="link-86" class="py-name"><a title="bc2_EVenereas.DolorCabeza" class="py-name" href="#" onclick="return doclink('link-86', 'DolorCabeza', 'link-25');">DolorCabeza</a></tt><tt class="py-op">(</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+<a name="L272"></a><tt class="py-lineno">272</tt>  <tt class="py-line">                <tt class="py-name">inflamacionGangliosLinfaticos</tt> <tt class="py-op">=</tt> <tt id="link-87" class="py-name"><a title="bc2_EVenereas.InflamacionGangliosLinfaticos" class="py-name" href="#" onclick="return doclink('link-87', 'InflamacionGangliosLinfaticos', 'link-34');">InflamacionGangliosLinfaticos</a></tt> <tt class="py-op">(</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+<a name="L273"></a><tt class="py-lineno">273</tt>  <tt class="py-line">                <tt class="py-name">verrugas</tt> <tt class="py-op">=</tt> <tt id="link-88" class="py-name"><a title="bc2_EVenereas.VerrugasGenitales" class="py-name" href="#" onclick="return doclink('link-88', 'VerrugasGenitales', 'link-33');">VerrugasGenitales</a></tt><tt class="py-op">(</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+<a name="L274"></a><tt class="py-lineno">274</tt>  <tt class="py-line">                <tt class="py-name">malestarGeneral</tt> <tt class="py-op">=</tt> <tt id="link-89" class="py-name"><a title="bc2_EVenereas.MalestarGeneral" class="py-name" href="#" onclick="return doclink('link-89', 'MalestarGeneral', 'link-26');">MalestarGeneral</a></tt><tt class="py-op">(</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+<a name="L275"></a><tt class="py-lineno">275</tt>  <tt class="py-line"> </tt>
+<a name="L276"></a><tt class="py-lineno">276</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">debePresentar</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-name">fiebre</tt><tt class="py-op">,</tt> <tt class="py-name">dolorCabeza</tt><tt class="py-op">,</tt> <tt class="py-name">inflamacionGangliosLinfaticos</tt><tt class="py-op">,</tt> <tt class="py-name">verrugas</tt><tt class="py-op">,</tt> <tt class="py-name">malestarGeneral</tt><tt class="py-op">]</tt> </tt>
+<a name="L277"></a><tt class="py-lineno">277</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">ayuda</tt> <tt class="py-op">=</tt> <tt class="py-string">"Normalmente se trata con penicilina, pero pueden usarse otros antibioticos para los pacientes alergicos a la penicilina."</tt> </tt>
+<a name="L278"></a><tt class="py-lineno">278</tt>  <tt class="py-line">                <tt id="link-90" class="py-name"><a title="bc2_EVenereas.Enfermedad" class="py-name" href="#" onclick="return doclink('link-90', 'Enfermedad', 'link-70');">Enfermedad</a></tt><tt class="py-op">.</tt><tt id="link-91" class="py-name"><a title="bc2.AdmisionObstruida.__init__
+bc2.ApagadoMotor.__init__
+bc2.Averia.__init__
+bc2.AvisoNivelAceite.__init__
+bc2.AvisoTemperaturaMotor.__init__
+bc2.BujiasInadecuadas.__init__
+bc2.ExcesoConsumoAceite.__init__
+bc2.FalloValvulaRalenti.__init__
+bc2.FaltaPotencia.__init__
+bc2.FiltracionAceiteRetenes.__init__
+bc2.FisuraJuntaCulata.__init__
+bc2.Observable.__init__
+bc2.ProblemaManguito.__init__
+bc2.ProblemaTermostato.__init__
+bc2.RalentiIrregular.__init__
+bc2.RegimenRevolucionesExcesivo.__init__
+bc2.TironesEnFrio.__init__
+bc2.ValvulasAdmisionObstruidas.__init__
+bc2_EVenereas.Clamidias.__init__
+bc2_EVenereas.Depresion.__init__
+bc2_EVenereas.Diarrea.__init__
+bc2_EVenereas.DolorCabeza.__init__
+bc2_EVenereas.DolorOrinar.__init__
+bc2_EVenereas.Enfermedad.__init__
+bc2_EVenereas.Fiebre.__init__
+bc2_EVenereas.Gonorrea.__init__
+bc2_EVenereas.HemorragiaGenitales.__init__
+bc2_EVenereas.HerpesGenital.__init__
+bc2_EVenereas.Infertilidad.__init__
+bc2_EVenereas.InflamacionGangliosLinfaticos.__init__
+bc2_EVenereas.MalestarGeneral.__init__
+bc2_EVenereas.Observable.__init__
+bc2_EVenereas.Sarpullidos.__init__
+bc2_EVenereas.Sida.__init__
+bc2_EVenereas.Sifilis.__init__
+bc2_EVenereas.Triconomiasis.__init__
+bc2_EVenereas.VerrugasGenitales.__init__
+bc2_EVenereas.Vomitos.__init__
+ckVtsDiagnosticoD.DiagnosticDlg.__init__
+modelo.Cubrir.__init__
+modelo.Especificar.__init__
+modelo.Inferencia.__init__
+modelo.MetodoCoberturaCausal.__init__
+modelo.Obtener.__init__
+modelo.Seleccionar.__init__
+modelo.Verificar.__init__" class="py-name" href="#" onclick="return doclink('link-91', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">nombre</tt> <tt class="py-op">=</tt> <tt class="py-string">"Sifilis"</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L279"></a><tt class="py-lineno">279</tt>  <tt class="py-line"> </tt>
+<a name="L280"></a><tt class="py-lineno">280</tt>  <tt class="py-line"> </tt>
+<a name="Triconomiasis"></a><div id="Triconomiasis-def"><a name="L281"></a><tt class="py-lineno">281</tt> <a class="py-toggle" href="#" id="Triconomiasis-toggle" onclick="return toggle('Triconomiasis');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="bc2_EVenereas.Triconomiasis-class.html">Triconomiasis</a><tt class="py-op">(</tt><tt class="py-base-class">Enfermedad</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Triconomiasis-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Triconomiasis-expanded"><a name="L282"></a><tt class="py-lineno">282</tt>  <tt class="py-line">        <tt class="py-docstring">''' Enfermedad Triconomiasis, sus Sintomas y Ayuda '''</tt> </tt>
+<a name="Triconomiasis.__init__"></a><div id="Triconomiasis.__init__-def"><a name="L283"></a><tt class="py-lineno">283</tt> <a class="py-toggle" href="#" id="Triconomiasis.__init__-toggle" onclick="return toggle('Triconomiasis.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="bc2_EVenereas.Triconomiasis-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Triconomiasis.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Triconomiasis.__init__-expanded"><a name="L284"></a><tt class="py-lineno">284</tt>  <tt class="py-line">                 </tt>
+<a name="L285"></a><tt class="py-lineno">285</tt>  <tt class="py-line">                <tt class="py-name">dolorOrinar</tt> <tt class="py-op">=</tt> <tt id="link-92" class="py-name"><a title="bc2_EVenereas.DolorOrinar" class="py-name" href="#" onclick="return doclink('link-92', 'DolorOrinar', 'link-35');">DolorOrinar</a></tt><tt class="py-op">(</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+<a name="L286"></a><tt class="py-lineno">286</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">debePresentar</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-name">dolorOrinar</tt><tt class="py-op">]</tt> </tt>
+<a name="L287"></a><tt class="py-lineno">287</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">ayuda</tt> <tt class="py-op">=</tt> <tt class="py-string">"Para evitar nuevas infecciones, la pareja sexual debe tratarse tambien."</tt> </tt>
+<a name="L288"></a><tt class="py-lineno">288</tt>  <tt class="py-line">                <tt id="link-93" class="py-name"><a title="bc2_EVenereas.Enfermedad" class="py-name" href="#" onclick="return doclink('link-93', 'Enfermedad', 'link-70');">Enfermedad</a></tt><tt class="py-op">.</tt><tt id="link-94" class="py-name"><a title="bc2.AdmisionObstruida.__init__
+bc2.ApagadoMotor.__init__
+bc2.Averia.__init__
+bc2.AvisoNivelAceite.__init__
+bc2.AvisoTemperaturaMotor.__init__
+bc2.BujiasInadecuadas.__init__
+bc2.ExcesoConsumoAceite.__init__
+bc2.FalloValvulaRalenti.__init__
+bc2.FaltaPotencia.__init__
+bc2.FiltracionAceiteRetenes.__init__
+bc2.FisuraJuntaCulata.__init__
+bc2.Observable.__init__
+bc2.ProblemaManguito.__init__
+bc2.ProblemaTermostato.__init__
+bc2.RalentiIrregular.__init__
+bc2.RegimenRevolucionesExcesivo.__init__
+bc2.TironesEnFrio.__init__
+bc2.ValvulasAdmisionObstruidas.__init__
+bc2_EVenereas.Clamidias.__init__
+bc2_EVenereas.Depresion.__init__
+bc2_EVenereas.Diarrea.__init__
+bc2_EVenereas.DolorCabeza.__init__
+bc2_EVenereas.DolorOrinar.__init__
+bc2_EVenereas.Enfermedad.__init__
+bc2_EVenereas.Fiebre.__init__
+bc2_EVenereas.Gonorrea.__init__
+bc2_EVenereas.HemorragiaGenitales.__init__
+bc2_EVenereas.HerpesGenital.__init__
+bc2_EVenereas.Infertilidad.__init__
+bc2_EVenereas.InflamacionGangliosLinfaticos.__init__
+bc2_EVenereas.MalestarGeneral.__init__
+bc2_EVenereas.Observable.__init__
+bc2_EVenereas.Sarpullidos.__init__
+bc2_EVenereas.Sida.__init__
+bc2_EVenereas.Sifilis.__init__
+bc2_EVenereas.Triconomiasis.__init__
+bc2_EVenereas.VerrugasGenitales.__init__
+bc2_EVenereas.Vomitos.__init__
+ckVtsDiagnosticoD.DiagnosticDlg.__init__
+modelo.Cubrir.__init__
+modelo.Especificar.__init__
+modelo.Inferencia.__init__
+modelo.MetodoCoberturaCausal.__init__
+modelo.Obtener.__init__
+modelo.Seleccionar.__init__
+modelo.Verificar.__init__" class="py-name" href="#" onclick="return doclink('link-94', '__init__', 'link-1');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">nombre</tt> <tt class="py-op">=</tt> <tt class="py-string">"Triconomiasis"</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L289"></a><tt class="py-lineno">289</tt>  <tt class="py-line"> </tt>
+<a name="L290"></a><tt class="py-lineno">290</tt>  <tt class="py-line"> </tt>
+<a name="L291"></a><tt class="py-lineno">291</tt>  <tt class="py-line"> </tt>
+<a name="hipotesis"></a><div id="hipotesis-def"><a name="L292"></a><tt class="py-lineno">292</tt> <a class="py-toggle" href="#" id="hipotesis-toggle" onclick="return toggle('hipotesis');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="bc2_EVenereas-module.html#hipotesis">hipotesis</a><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="hipotesis-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="hipotesis-expanded"><a name="L293"></a><tt class="py-lineno">293</tt>  <tt class="py-line">    <tt class="py-docstring">''' Variables de las enfermedas dandoles el valor de su clase propia de enfermedad (lista las enfermedades) '''</tt> </tt>
+<a name="L294"></a><tt class="py-lineno">294</tt>  <tt class="py-line">    <tt class="py-name">sida</tt><tt class="py-op">=</tt><tt id="link-95" class="py-name" targets="Class bc2_EVenereas.Sida=bc2_EVenereas.Sida-class.html"><a title="bc2_EVenereas.Sida" class="py-name" href="#" onclick="return doclink('link-95', 'Sida', 'link-95');">Sida</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L295"></a><tt class="py-lineno">295</tt>  <tt class="py-line">    <tt class="py-name">clamidias</tt> <tt class="py-op">=</tt> <tt id="link-96" class="py-name" targets="Class bc2_EVenereas.Clamidias=bc2_EVenereas.Clamidias-class.html"><a title="bc2_EVenereas.Clamidias" class="py-name" href="#" onclick="return doclink('link-96', 'Clamidias', 'link-96');">Clamidias</a></tt> <tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L296"></a><tt class="py-lineno">296</tt>  <tt class="py-line">    <tt class="py-name">herpesGenital</tt> <tt class="py-op">=</tt> <tt id="link-97" class="py-name" targets="Class bc2_EVenereas.HerpesGenital=bc2_EVenereas.HerpesGenital-class.html"><a title="bc2_EVenereas.HerpesGenital" class="py-name" href="#" onclick="return doclink('link-97', 'HerpesGenital', 'link-97');">HerpesGenital</a></tt> <tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L297"></a><tt class="py-lineno">297</tt>  <tt class="py-line">    <tt class="py-name">gonorrea</tt> <tt class="py-op">=</tt> <tt id="link-98" class="py-name" targets="Class bc2_EVenereas.Gonorrea=bc2_EVenereas.Gonorrea-class.html"><a title="bc2_EVenereas.Gonorrea" class="py-name" href="#" onclick="return doclink('link-98', 'Gonorrea', 'link-98');">Gonorrea</a></tt> <tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L298"></a><tt class="py-lineno">298</tt>  <tt class="py-line">    <tt class="py-name">sifilis</tt> <tt class="py-op">=</tt> <tt id="link-99" class="py-name" targets="Class bc2_EVenereas.Sifilis=bc2_EVenereas.Sifilis-class.html"><a title="bc2_EVenereas.Sifilis" class="py-name" href="#" onclick="return doclink('link-99', 'Sifilis', 'link-99');">Sifilis</a></tt> <tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L299"></a><tt class="py-lineno">299</tt>  <tt class="py-line">    <tt class="py-name">triconomiasis</tt> <tt class="py-op">=</tt> <tt id="link-100" class="py-name" targets="Class bc2_EVenereas.Triconomiasis=bc2_EVenereas.Triconomiasis-class.html"><a title="bc2_EVenereas.Triconomiasis" class="py-name" href="#" onclick="return doclink('link-100', 'Triconomiasis', 'link-100');">Triconomiasis</a></tt> <tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L300"></a><tt class="py-lineno">300</tt>  <tt class="py-line">    <tt class="py-name">lHp</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-name">sida</tt><tt class="py-op">,</tt> <tt class="py-name">clamidias</tt><tt class="py-op">,</tt> <tt class="py-name">herpesGenital</tt><tt class="py-op">,</tt> <tt class="py-name">gonorrea</tt><tt class="py-op">,</tt> <tt class="py-name">sifilis</tt><tt class="py-op">,</tt> <tt class="py-name">triconomiasis</tt><tt class="py-op">]</tt> </tt>
+<a name="L301"></a><tt class="py-lineno">301</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">lHp</tt> </tt>
+</div><a name="L302"></a><tt class="py-lineno">302</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Thu Jun 26 19:16:31 2014
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
